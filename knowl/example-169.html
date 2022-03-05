@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-02-22T08:27:19+01:00       *-->
+<!--*       on 2022-03-05T17:21:10+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,27 +15,14 @@
 </head>
 <body class="ignore-math">
 <article class="example example-like"><h3 class="heading">
-<span class="type">Esempio</span><span class="space"> </span><span class="codenumber">20.3.13</span><span class="period">.</span>
+<span class="type">Esempio</span><span class="space"> </span><span class="codenumber">20.3.8</span><span class="period">.</span>
 </h3>
-<p>Applichiamo l'<a href="" class="xref" data-knowl="./knowl/alg-euclide_domini.html" title="Algoritmo 20.3.12: Algoritmo di Euclide per i domini euclidei">Algoritmo 20.3.12</a> per trovare il massimo comun divisore tra i polinomi <span class="process-math">\(a\coloneqq 4x^{5}-8x^{4}+x^{3}-5x^{2}+7x-2\)</span> e <span class="process-math">\(b\coloneqq 2x^{4}-3x^{3}-2x^{2}-4x+1\)</span> a coefficienti in <span class="process-math">\(\Razionali\text{.}\)</span> Dividendo <span class="process-math">\(a\)</span> per <span class="process-math">\(b\)</span> troviamo</p>
+<p>Sia <span class="process-math">\(K\)</span> un campo e siano <span class="process-math">\(f\)</span> e <span class="process-math">\(g\)</span> due polinomi in <span class="process-math">\(K[x]\)</span> con <span class="process-math">\(g\)</span> diverso da <span class="process-math">\(0\text{.}\)</span> Allora esistono e sono univocamente determinati <span class="process-math">\(q\)</span> e <span class="process-math">\(r\)</span> in <span class="process-math">\(K[x]\)</span> tali che</p>
 <div class="displaymath process-math">
 \begin{equation*}
-a=b(2x-1)+2x^{3}+x^{2}+x-1\text{.}
+f=gq+r
 \end{equation*}
 </div>
-<p class="continuation">Procediamo con le altre divisioni:</p>
-<div class="displaymath process-math">
-\begin{align*}
-b \amp =(2x^{3}+x^{2}+x-1)(x-2)-x^{2}-x-1\\
-2x^{3}+x^{2}+x-1 \amp =(-x^{2}-x-1)(-2x+1)+0
-\end{align*}
-</div>
-<p class="continuation">L'ultimo resto non nullo è <span class="process-math">\(-x^{2}-x-1\)</span> che è dunque il massimo comun divisore di <span class="process-math">\(a\)</span> e <span class="process-math">\(b\text{.}\)</span> Per ottenere un'identità di Bezout procediamo così:</p>
-<div class="displaymath process-math">
-\begin{align*}
--x^{2}-x-1 \amp =b-(2x^{3}+x^{2}+x-1)(x-2)\\
-\amp =b-(a-b(2x-1))(x-2)=a(2-x)+b(2x^{2}-5x+3) 
-\end{align*}
-</div></article><span class="incontext"><a href="sec-PID_euclidei.html#example-169" class="internal">Contesto</a></span>
+<p class="continuation">con <span class="process-math">\(\deg r &lt; \deg g\)</span> o <span class="process-math">\(r=0\text{.}\)</span> In particolare, <span class="process-math">\(K[x]\text{,}\)</span> è un dominio euclideo rispetto alla funzione grado.</p></article><span class="incontext"><a href="sec-PID_euclidei.html#example-169" class="internal">Contesto</a></span>
 </body>
 </html>

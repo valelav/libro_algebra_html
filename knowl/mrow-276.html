@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-02-22T08:28:02+01:00       *-->
+<!--*       on 2022-03-05T17:21:59+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,10 +16,14 @@
 <body class="ignore-math">
 <div class="displaymath process-math">
 \begin{align*}
-(a,b)+(c,d) \amp =(a+c,b+d)\\
-(a,b)\cdot(c,d)\amp =(a\cdot c+b\cdot d,a\cdot d+b\cdot c)
+ls\cdot(m\cdot n) \amp =l\cdot(m\cdot n)+m\cdot n \amp \knowl{./knowl/rem-definizione_moltiplicazione.html}{\text{Osservazione A.4.7}} \\
+\amp = (l\cdot m)\cdot n+m\cdot n \amp \text{ipotesi induttiva}\\
+\amp = n\cdot(l\cdot m)+n\cdot m \amp \knowl{./knowl/item-peano_commutativa_moltiplicazione.html}{\text{Punto 3}}\\
+\amp = n\cdot(l\cdot m+m) \amp \knowl{./knowl/prop-distributiva_sinistra.html}{\text{Proposizione A.4.10}}\\
+\amp = (l\cdot m+m)\cdot n \amp \knowl{./knowl/item-peano_commutativa_moltiplicazione.html}{\text{Punto 3}}\\
+\amp = (ls\cdot m)\cdot n \amp \knowl{./knowl/rem-definizione_moltiplicazione.html}{\text{Osservazione A.4.7}} 
 \end{align*}
 </div>
-<span class="incontext"><a href="sec-interi.html#md-88" class="internal">Contesto</a></span>
+<span class="incontext"><a href="sec-operazioni_naturali.html#md-88" class="internal">Contesto</a></span>
 </body>
 </html>

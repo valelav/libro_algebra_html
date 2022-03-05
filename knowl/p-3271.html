@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-02-22T08:27:56+01:00       *-->
+<!--*       on 2022-03-05T17:21:52+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,20 +15,12 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Capoverso</span></h3>
-<p>Proviamo infine il <a href="" class="xref" data-knowl="./knowl/item-peano_commutativa_addizione.html" title="Punto 3">Punto 3</a> per induzione su <span class="process-math">\(n\text{.}\)</span></p>
+<p>Proviamo prima che <span class="process-math">\(B\)</span> è finito e che <span class="process-math">\(\abs{B}\le\abs{A}\text{.}\)</span> Procediamo per induzione su <span class="process-math">\(\abs{A}\text{.}\)</span></p>
 <ul class="disc">
-<li><p>Sia <span class="process-math">\(n=0\text{:}\)</span> dal <a href="" class="xref" data-knowl="./knowl/item-peano_neutro_addizione.html" title="Punto 1">Punto 1</a> sappiamo che <span class="process-math">\(m+0=0+m\)</span> per ogni <span class="process-math">\(m\)</span> naturale.</p></li>
-<li>
-<p>Sia <span class="process-math">\(n\)</span> un naturale per cui vale la proprietà e proviamo che vale per <span class="process-math">\(ns\text{.}\)</span> Allora</p>
-<div class="displaymath process-math">
-\begin{align*}
-m+ns \amp =(m+n)s \amp \knowl{./knowl/lem-preassociativa_addizione.html}{\text{Lemma A.4.8}} \\
-\amp =(n+m)s \amp \text{ipotesi induttiva}\\
-\amp =ns+m \amp \knowl{./knowl/lem-preassociativa_addizione.html}{\text{Lemma A.4.8}} 
-\end{align*}
-</div>
-</li>
+<li><p>Se <span class="process-math">\(\abs{A}=0\)</span> allora <span class="process-math">\(A=\vuoto\)</span> e l'unico sottoinsieme di <span class="process-math">\(\vuoto\)</span> è l'insieme vuoto stesso e, quindi, la proprietà è ovvia.</p></li>
+<li><p>Sia vera la proprietà per gli insiemi di cardinalità <span class="process-math">\(n\)</span> e proviamo che è vera se  <span class="process-math">\(A\)</span> è un insieme tale che <span class="process-math">\(\abs{A}=ns\text{.}\)</span> Sia <span class="process-math">\(B\)</span> un suo sottoinsieme, e sia <span class="process-math">\(f\colon\seg{ns}\to A\)</span> una funzione biiettiva. Posto <span class="process-math">\(a\coloneqq nf\text{,}\)</span> la funzione <span class="process-math">\(f\)</span> induce una funzione biiettiva tra <span class="process-math">\(\seg{n}\)</span> e <span class="process-math">\(A'\coloneqq A\setminus\{a\}\text{:}\)</span> dunque, <span class="process-math">\(A'\)</span> è finito e <span class="process-math">\(\abs{A'}=n\text{.}\)</span> Per ipotesi induttiva, <span class="process-math">\(B'\coloneqq B\cap A'\)</span> è finito e <span class="process-math">\(\abs{B'}\le n\text{.}\)</span> Se <span class="process-math">\(B=B'\)</span> abbiamo allora che <span class="process-math">\(B\)</span> è finito e <span class="process-math">\(\abs{B}\le n\le ns\text{.}\)</span> Se <span class="process-math">\(B\ne B'\)</span> abbiamo allora che <span class="process-math">\(B=B'\cup\{a\}\text{:}\)</span> per il <a href="" class="xref" data-knowl="./knowl/lem-insieme_finito_piu_uno.html" title="Lemma A.3.8">Lemma A.3.8</a> otteniamo che <span class="process-math">\(B\)</span> è finito e <span class="process-math">\(\abs{B}=\abs{B'}s\text{:}\)</span> dal <a href="" class="xref" data-knowl="./knowl/lem-ordine_rispetta_successore.html" title="Lemma A.3.3">Lemma A.3.3</a> segue che <span class="process-math">\(\abs{B}\le ns\text{,}\)</span> come richiesto.</p></li>
 </ul>
-<span class="incontext"><a href="sec-operazioni_naturali.html#p-3271" class="internal">Contesto</a></span>
+<p class="continuation">Se <span class="process-math">\(B=A\)</span> ovviamente <span class="process-math">\(\abs{B}=\abs{A}\text{.}\)</span> Se invece <span class="process-math">\(B\subsetneq A\text{,}\)</span> allora, preso un elemento <span class="process-math">\(a\in A\setminus B\text{,}\)</span> il <a href="" class="xref" data-knowl="./knowl/lem-insieme_finito_piu_uno.html" title="Lemma A.3.8">Lemma A.3.8</a> implica che <span class="process-math">\(\abs{B}s=\abs{B\cup\{a\}}\le\abs{A}\text{.}\)</span> Dunque, <span class="process-math">\(\abs{B} &lt; \abs{A}\text{.}\)</span></p>
+<span class="incontext"><a href="sec-insiemi_finiti_infiniti.html#p-3271" class="internal">Contesto</a></span>
 </body>
 </html>
