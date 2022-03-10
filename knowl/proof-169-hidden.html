@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-07T19:22:13+01:00       *-->
+<!--*       on 2022-03-10T11:00:10+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -13,6 +13,42 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><p>Se <span class="process-math">\(G\)</span> contiene un elemento di periodo <span class="process-math">\(p^{2}\text{,}\)</span> allora è ciclico.</p>
-<p>Se <span class="process-math">\(G\)</span> non contiene elementi di periodo <span class="process-math">\(p^{2}\text{,}\)</span> allora tutti i suoi elementi non banali hanno periodo <span class="process-math">\(p\text{,}\)</span> per il <a href="" class="xref" data-knowl="./knowl/cor-periodo_elemento_divide_ordine.html" title="Corollario 11.2.7">Corollario 11.2.7</a>. Sia allora <span class="process-math">\(g\)</span> un elemento non banale di <span class="process-math">\(G\)</span> e sia <span class="process-math">\(h\)</span> un elemento di <span class="process-math">\(G\setminus\grgen{g}\text{.}\)</span> Dunque, <span class="process-math">\(g\)</span> e <span class="process-math">\(h\)</span> hanno entrambi periodo <span class="process-math">\(p\)</span> ed entrambi generano un sottogruppo ciclico di ordine <span class="process-math">\(p\text{.}\)</span> Per il <a href="" class="xref" data-knowl="./knowl/thm-lagrange.html" title="Teorema 11.2.6: Teorema di Lagrange">Teorema di Lagrange</a>, l'intersezione di <span class="process-math">\(\grgen{g}\)</span> e <span class="process-math">\(\grgen{h}\)</span> ha ordine che divide <span class="process-math">\(p\text{,}\)</span> ma, essendo <span class="process-math">\(\grgen{g}\ne\grgen{h}\text{,}\)</span> ne segue che <span class="process-math">\(\grgen{g}\cap\grgen{h}=1\text{.}\)</span> Di conseguenza, per la <a href="" class="xref" data-knowl="./knowl/prop-diverse_espressioni-prodotto.html" title="Proposizione 11.3.4">Proposizione 11.3.4</a>, il prodotto <span class="process-math">\(\grgen{g}\grgen{h}\)</span> ha ordine <span class="process-math">\(p^{2}\text{,}\)</span> cioè coincide con <span class="process-math">\(G\text{.}\)</span> Per il <a href="" class="xref" data-knowl="./knowl/cor-ordine_quadrato_di_primo_implica_abeliano.html" title="Corollario 14.2.7">Corollario 14.2.7</a>, <span class="process-math">\(G\)</span> è abeliano, quindi <span class="process-math">\(\grgen{g}\)</span> e <span class="process-math">\(\grgen{h}\)</span> sono normali in <span class="process-math">\(G\text{.}\)</span> Riassumendo, <span class="process-math">\(G\)</span> è il prodotto diretto dei gruppi ciclici <span class="process-math">\(\grgen{g}\)</span> e <span class="process-math">\(\grgen{h}\text{,}\)</span> entrambi di ordine <span class="process-math">\(p\text{,}\)</span> cioè <span class="process-math">\(G\simeq C_{p}\times C_{p}\text{.}\)</span></p></article></body>
+<body class="ignore-math"><article class="hiddenproof"><p>Mostriamo che vale la proprietà associativa. Abbiamo allora</p>
+<div class="displaymath process-math">
+\begin{align*}
+((h_{1},n_{1})(h_{2},n_{2}))(h_{3},n_{3}) \amp = (h_{1}h_{2},n_{1}\phi_{h_{2}}\cdot n_{2})(h_{3},n_{3})  \amp \text{definizione}\\
+\amp = (h_{1}h_{2}h_{3},(n_{1}\phi_{h_{2}}\cdot  n_{2})\phi_{h_{3}}\cdot n_{3}) \amp \text{definizione}\\
+\amp = (h_{1}h_{2}h_{3},(n_{1}\phi_{h_{2}}\phi_{h_{3}}\cdot  n_{2}\phi_{h_{3}}\cdot n_{3}) \amp \phi_{h_{3}}\in\Aut{N}\\
+\amp = (h_{1}h_{2}h_{3},(n_{1}\phi_{h_{2}h_{3}}\cdot   n_{2}\phi{h_{3}}\cdot n_{3})\amp \phi\text{ è omomorfismo} \\
+\amp = (h_{1},n_{1})(h_{2}h_{3},  n_{2}\phi{h_{3}}\cdot n_{3})\amp \text{definizione} \\
+\amp = (h_{1},n_{1})((h_{2},n_{2})(h_{3},n_{3}))\amp \text{definizione} 
+\end{align*}
+</div>
+<p>Mostriamo ora che <span class="process-math">\((1_{H},1_{N})\)</span> è elemento neutro. Infatti, per ogni <span class="process-math">\((h,n)\in H\ltimes_{\phi} N\)</span> si ha</p>
+<div class="displaymath process-math">
+\begin{equation*}
+(h,n)(1_{H},1_{N})=(h1_{H},n\phi_{1_{H}}\cdot 1_{N})=(h,n\Id_{N}\cdot 1_{N})=(h,n\cdot 1_{N})=(h,n)
+\end{equation*}
+</div>
+<p class="continuation">e</p>
+<div class="displaymath process-math">
+\begin{equation*}
+(1_{H},1_{N})(h,n)=(1_{H}h,1_{N}\phi_{h}\cdot n)=(h,1_{N}\cdot n)=(h,n)\text{.}
+\end{equation*}
+</div>
+<p>Infine mostriamo che ogni elemento <span class="process-math">\((h,n)\)</span> ha come inverso <span class="process-math">\((h^{-1},n^{-1}\phi_{h^{-1}})\text{.}\)</span> Infatti</p>
+<div class="displaymath process-math">
+\begin{align*}
+(h,n)(h^{-1},n^{-1}\phi_{h^{-1}}) \amp =(hh^{-1},n\phi_{h^{-1}}\cdot n^{-1}\phi_{h^{-1}})\\
+\amp =(1_{H},(nn^{-1})\phi_{h^{-1}})=(1_{H},1_{N}\phi_{h^{-1}})=(1_{H},1_{N})
+\end{align*}
+</div>
+<p class="continuation">e</p>
+<div class="displaymath process-math">
+\begin{align*}
+(h^{-1},n^{-1}\phi_{h^{-1}})(h,n) \amp =(h^{-1}n,n^{-1}\phi_{h^{-1}}\phi_{h}\cdot n)=(1_{H},n^{-1}\phi_{h^{-1}h}\cdot n)\\
+\amp =(1_{H},n^{-1}\phi_{1}\cdot n)=(1_{H},n^{-1}\Id_{N}\cdot n)\\
+\amp =(1_{H},n^{-1}n)=(1_{H},1_{N})\text{.}
+\end{align*}
+</div></article></body>
 </html>

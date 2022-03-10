@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-07T19:20:26+01:00       *-->
+<!--*       on 2022-03-10T10:57:27+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -13,37 +13,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><p>Procediamo per induzione su <span class="process-math">\(r\text{,}\)</span> il caso <span class="process-math">\(r=1\)</span> essendo banale.</p>
-<p>Il caso chiave è <span class="process-math">\(r=2\text{.}\)</span> Un intero <span class="process-math">\(x\)</span> soddisfa entrambe le congruenze se e solo se <span class="process-math">\(x-a_{1}\)</span> è multiplo di <span class="process-math">\(n_{1}\)</span> e <span class="process-math">\(x-a_{2}\)</span> è multiplo di <span class="process-math">\(n_{2}\text{,}\)</span> cioè se e solo se esistono interi <span class="process-math">\(y\)</span> e <span class="process-math">\(z\)</span> tali che <span class="process-math">\(x=a_{1}+n_{1}y\)</span> e <span class="process-math">\(x=a_{2}+n_{2}z\text{.}\)</span> Uguagliando le due espressioni ci riduciamo all'equazione</p>
+<body class="ignore-math"><article class="hiddenproof"><p>Consideriamo la funzione <span class="process-math">\(\tau\colon \Interi/mn\to\Interi/m\times\Interi/n\)</span> definita da <span class="process-math">\(\class[mn]{a}\tau\coloneqq(\class[m]{a},\class[n]{a})\text{.}\)</span> Notiamo innanzitutto che <span class="process-math">\(\tau\)</span> è ben definita: se <span class="process-math">\(\class[mn]{a}=\class[mn]{b}\text{,}\)</span> cioè <span class="process-math">\(b-a\)</span> è multiplo di <span class="process-math">\(mn\text{,}\)</span> allora <span class="process-math">\(b-a\)</span> è multiplo sia di <span class="process-math">\(m\)</span> che di <span class="process-math">\(n\text{,}\)</span> cioè <span class="process-math">\(\class[m]{a}=\class[m]{b}\)</span> e <span class="process-math">\(\class[n]{a}=\class[n]{b}\text{.}\)</span></p>
+<p>Per il <a href="" class="xref" data-knowl="./knowl/thm-cinese_del_resto.html" title="Teorema 5.4.6: Teorema cinese del resto">Teorema cinese del resto</a>, la funzione <span class="process-math">\(\tau\)</span> è suriettiva. Infatti, data una coppia <span class="process-math">\((\class[m]{c},\class[n]{d})\text{,}\)</span> sappiamo che esiste un intero <span class="process-math">\(a\)</span> tale che <span class="process-math">\(a\equiv c\pmod{m}\)</span> e <span class="process-math">\(a\equiv d\pmod{n}\text{,}\)</span> cioè <span class="process-math">\(\class[m]{a}=\class[m]{c}\)</span> e <span class="process-math">\(\class[n]{a}=\class[n]{d}\text{.}\)</span> Pertanto</p>
 <div class="displaymath process-math">
 \begin{equation*}
-n_{1}y-n_{2}z=a_{2}-a_{1}\text{.}
+\class[mn]{a}\tau=(\class[m]{a},\class[n]{a})=(\class[m]{c},\class[n]{d}).
 \end{equation*}
 </div>
-<p class="continuation">Questa può essere considerata come un'equazione lineare diofantina nelle incognite <span class="process-math">\(y\)</span> e <span class="process-math">\(z\text{.}\)</span> Poiché <span class="process-math">\(n_{1}\)</span> e <span class="process-math">\(n_{2}\)</span> sono coprimi, per la <a href="" class="xref" data-knowl="./knowl/prop-equazione_lineare_diofantina_risolubile.html" title="Proposizione 4.5.6">Proposizione 4.5.6</a> l'equazione è risolubile e, data una soluzione particolare <span class="process-math">\(y=\bar{y}\text{,}\)</span> <span class="process-math">\(z=\bar{z}\text{,}\)</span> le soluzioni sono del tipo</p>
-<div class="displaymath process-math">
-\begin{align*}
-y \amp = \bar{y} + n_{2}h\\
-z \amp = \bar{z} + n_{1}h
-\end{align*}
-</div>
-<p class="continuation">al variare di <span class="process-math">\(h\)</span> in <span class="process-math">\(\Interi\text{.}\)</span> Prendendo una delle due espressioni e sostituendola nella corrispondente espressione di <span class="process-math">\(x\)</span> troviamo</p>
-<div class="displaymath process-math">
-\begin{equation*}
-x=a_{1}+n_{1}y=a_{1}+n_{1}(\bar{y}+n_{2}h)=a_{1}+n_{1}\bar{y}+n_{1}n_{2}h
-\end{equation*}
-</div>
-<p class="continuation">che può essere riscritta come <span class="process-math">\(x=a+nh\text{,}\)</span> cioè <span class="process-math">\(x\equiv a \pmod{n}\)</span> con <span class="process-math">\(a=a_{1}+n_{1}\bar{y}\)</span> e <span class="process-math">\(n=n_{1}n_{2}\text{.}\)</span></p>
-<p>Consideriamo ora il caso in cui <span class="process-math">\(n\ge 3\text{:}\)</span> per ipotesi induttiva le prime <span class="process-math">\(n-1\)</span> congruenze sono equivalenti a una congruenza del tipo <span class="process-math">\(x\equiv a' \pmod{n'}\)</span> per un opportuno intero <span class="process-math">\(a'\)</span> e <span class="process-math">\(n'=n_{1}\cdot n_{2}\cdots n_{r-1}\text{.}\)</span> Il sistema diventa, dunque:</p>
-<div class="displaymath process-math">
-\begin{equation*}
-\left\{
-\begin{alignedat}{2}
-x \amp \equiv a'    \amp\amp\pmod{n'}\\
-x \amp \equiv a_{r} \amp\amp\pmod{n_{r}}
-\end{alignedat}
-\right.
-\end{equation*}
-</div>
-<p class="continuation">Poiché <span class="process-math">\(n'\)</span> e <span class="process-math">\(n_{r}\)</span> sono coprimi per la <a href="" class="xref" data-knowl="./knowl/prop-coprimo_con_prodotto.html" title="Proposizione 4.4.8">Proposizione 4.4.8</a>, ci siamo ridotti al caso <span class="process-math">\(r=2\)</span> e la tesi segue immediatamente.</p></article></body>
+<p class="continuation">Dal momento che <span class="process-math">\(\abs{\Interi/mn}=mn=\abs{\Interi/m\times\Interi/n}\text{,}\)</span> la funzione <span class="process-math">\(\tau\)</span> è, quindi, biiettiva.</p>
+<p>Consideriamo ora i sottoinsiemi <span class="process-math">\(S\text{,}\)</span> <span class="process-math">\(M\)</span> e <span class="process-math">\(N\)</span> rispettivamente di <span class="process-math">\(\Interi/mn\text{,}\)</span> <span class="process-math">\(\Interi/m\)</span> e <span class="process-math">\(\Interi/n\)</span> formati dalle classi invertibili. Per la <a href="" class="xref" data-knowl="./knowl/prop-coprimo_con_prodotto.html" title="Proposizione 4.4.8">Proposizione 4.4.8</a>, un intero <span class="process-math">\(a\)</span> è coprimo con <span class="process-math">\(mn\)</span> se e solo se è coprimo con <span class="process-math">\(m\)</span> e <span class="process-math">\(n\text{.}\)</span> In particolare, <span class="process-math">\(\class[mn]{a}\)</span> è invertibile se e solo se <span class="process-math">\(\class[m]{a}\)</span> e <span class="process-math">\(\class[n]{a}\)</span> sono invertibili. Pertanto, <span class="process-math">\(\tau\)</span> induce una biiezione tra <span class="process-math">\(S\)</span> e <span class="process-math">\(M\times N\text{:}\)</span> poiché <span class="process-math">\(\abs{M}=\euler{m}\text{,}\)</span> <span class="process-math">\(\abs{N}=\euler{n}\)</span> e <span class="process-math">\(\abs{S}=\euler{mn}\text{,}\)</span> il risultato segue.</p></article></body>
 </html>

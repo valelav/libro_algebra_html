@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-07T19:21:39+01:00       *-->
+<!--*       on 2022-03-10T10:59:08+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,12 +15,20 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Dimostrazione</span></h3>
-<p>Basta mostrare che la funzione <span class="process-math">\(\phi_{g}\)</span> e la funzione <span class="process-math">\(\phi_{g^{-1}}\)</span> sono una inversa dell'altra. Infatti per ogni <span class="process-math">\(x\)</span> in <span class="process-math">\(X\)</span> si ha</p>
+<p>Preso <span class="process-math">\(x\in X\text{,}\)</span> si ha che <span class="process-math">\(x1_{G}=x\text{:}\)</span> dunque, <span class="process-math">\(\sim_{G}\)</span> soddisfa la proprietà riflessiva.</p>
+<p>Se <span class="process-math">\(x\sim_{G}y\text{,}\)</span> allora esiste <span class="process-math">\(g\in G\)</span> tale che <span class="process-math">\(y=xg\text{:}\)</span> applicando <span class="process-math">\(g^{-1}\)</span> a entrambi i membri di questa uguaglianza e usando le proprietà che definiscono un'azione otteniamo</p>
 <div class="displaymath process-math">
 \begin{equation*}
-x(\phi_{g}\phi_{g^{-1}})=(x\phi_{g})\phi_{g^{-1}}=(xg)g^{-1}=x(gg^{-1})=x1_{G}=x\text{,}
+yg^{-1}=(xg)g^{-1}=x(gg^{-1})=x1_{G}=x\text{.}
 \end{equation*}
 </div>
-<p class="continuation">dove abbiamo usato le due proprietà che definiscono un'azione. Analogamente, si vede che <span class="process-math">\(x(\phi_{g^{-1}}\phi_{g})=x\text{.}\)</span></p></article><span class="incontext"><a href="sec-azioni_definizioni.html#proof-128" class="internal">Contesto</a></span>
+<p class="continuation">Dunque, <span class="process-math">\(\sim_{G}\)</span> soddisfa la proprietà simmetrica.</p>
+<p>Infine, se <span class="process-math">\(x\sim_{G}y\)</span> e <span class="process-math">\(y\sim_{G}z\text{,}\)</span> allora esistono <span class="process-math">\(g\)</span> e <span class="process-math">\(h\)</span> in <span class="process-math">\(G\)</span> tali che <span class="process-math">\(y=xg\)</span> e <span class="process-math">\(z=yh\text{.}\)</span> Applicando le proprietà che definiscono un'azione otteniamo</p>
+<div class="displaymath process-math">
+\begin{equation*}
+z=yh=(xg)h=x(gh)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Dunque, l'elemento <span class="process-math">\(gh\)</span> di <span class="process-math">\(G\)</span> manda <span class="process-math">\(x\)</span> in <span class="process-math">\(z\)</span> e, pertanto, <span class="process-math">\(\sim_{G}\)</span> soddisfa la proprietà transitiva.</p></article><span class="incontext"><a href="sec-orbite_stabilizzatori.html#proof-128" class="internal">Contesto</a></span>
 </body>
 </html>

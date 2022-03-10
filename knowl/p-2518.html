@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-07T19:22:36+01:00       *-->
+<!--*       on 2022-03-10T11:00:44+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,8 +14,52 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h6 class="heading"><span class="type">Capoverso</span></h6>
-<p>Considerare un'entrata non nulla <span class="process-math">\(a\)</span> di una matrice non nulla di <span class="process-math">\(I\)</span> e applicare il punto precedente.</p>
-<span class="incontext"><a href="sec-anelli_quoziente.html#p-2518" class="internal">Contesto</a></span>
+<h3 class="heading"><span class="type">Capoverso</span></h3>
+<p>Definiamo ora in <span class="process-math">\(S\)</span> due operazioni ponendo</p>
+<div class="displaymath process-math">
+\begin{align*}
+(a,b) + (c,d) \amp \coloneqq (ad+bc,bd) \\
+(a,b)(c,d)    \amp \coloneqq (ac,bd)    
+\end{align*}
+</div>
+<p class="continuation">Mostriamo che queste operazioni sono compatibili con la relazione di equivalenza. Siano allora <span class="process-math">\((a,b)\sim(a',b')\)</span> e <span class="process-math">\((c,d)\sim(c',d')\text{,}\)</span> cioè <span class="process-math">\(ab'=ba'\)</span> e <span class="process-math">\(cd'=dc'\text{.}\)</span> Abbiamo allora</p>
+<div class="displaymath process-math">
+\begin{equation*}
+(ad+bc)b'd'=ab'dd'+cd'bb'=ba'dd'+dc'bb'=(a'd'+b'c')bd
+\end{equation*}
+</div>
+<p class="continuation">cioè <span class="process-math">\((ad+bc,bd)\sim(a'd'+b'c',b'd')\)</span> e</p>
+<div class="displaymath process-math">
+\begin{equation*}
+acb'd'=ab'cd'=ba'dc'=bda'c'
+\end{equation*}
+</div>
+<p class="continuation">cioè <span class="process-math">\((ac,bd)\sim(a'c',b'd')\text{.}\)</span> Poiché queste operazioni sono compatibili con la relazione di equivalenza, le seguenti operazioni in <span class="process-math">\(Q\)</span> sono ben definite</p>
+<div class="displaymath process-math">
+\begin{align*}
+\frac{a}{b}+\frac{c}{d} \amp \coloneqq \frac{ad+bc}{bd}\\
+\frac{a}{b}\frac{c}{d} \amp \coloneqq \frac{ac}{bd}
+\end{align*}
+</div>
+<p class="continuation">Si verifica immediatamente che queste operazioni sono commutative. Verifichiamo che sono entrambe associative:</p>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(\frac{a}{b}+\frac{c}{d}\right)+\frac{e}{f}=\frac{ad+bc}{bd}+\frac{e}{f}=\frac{(ad+bc)f+bde}{bdf}=\frac{adf+bcf+bde}{bdf}
+\end{equation*}
+</div>
+<p class="continuation">e</p>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{a}{b}+\left(\frac{c}{d}+\frac{e}{f}\right)=\frac{a}{b}+\frac{cf+de}{df}=\frac{adf+b(cf+de)}{bdf}=\frac{adf+bcf+bde}{bdf}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">L'addizione è, dunque, associativa. Per quanto riguarda la moltiplicazione abbiamo</p>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(\frac{a}{b}\frac{c}{d}\right)\frac{e}{f}=\frac{ac}{bd}\frac{e}{f}=\frac{ace}{bdf}=\frac{a}{b}\frac{ce}{df}=\frac{a}{b}\left(\frac{c}{d}\frac{e}{f}\right)
+\end{equation*}
+</div>
+<p class="continuation">e anche questa risulta associativa.</p>
+<span class="incontext"><a href="sec-campo_dei_quozienti.html#p-2518" class="internal">Contesto</a></span>
 </body>
 </html>

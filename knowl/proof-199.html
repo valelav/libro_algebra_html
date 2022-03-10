@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-07T19:22:37+01:00       *-->
+<!--*       on 2022-03-10T11:00:46+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,27 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Dimostrazione</span></h3>
-<p>Sappiamo che l'intersezione di tutti i sottocampi di <span class="process-math">\(K\)</span> è un sottocampo <span class="process-math">\(F\text{:}\)</span> in particolare, <span class="process-math">\(F\)</span> è un sottoanello e, quindi, contiene l'intersezione <span class="process-math">\(S\)</span> di tutti i sottoanelli di <span class="process-math">\(K\text{.}\)</span> Per l'<a href="" class="xref" data-knowl="./knowl/rem-campo_quozienti_contenuto.html" title="Osservazione 18.3.6">Osservazione 18.3.6</a>, <span class="process-math">\(F\)</span> è il campo dei quozienti di <span class="process-math">\(S\text{.}\)</span></p>
-<p>Per la <a href="" class="xref" data-knowl="./knowl/prop-sottoanello_minimo_caratteristica.html" title="Proposizione 18.2.23">Proposizione 18.2.23</a>, sappiamo che se <span class="process-math">\(\car K=0\text{,}\)</span> allora <span class="process-math">\(S\)</span> è isomorfo a <span class="process-math">\(\Interi\)</span> e, quindi, <span class="process-math">\(F\)</span> è isomorfo a <span class="process-math">\(\Razionali\)</span> (in particolare, <span class="process-math">\(S\)</span> è contenuto strettamente in <span class="process-math">\(F\)</span>); se, invece <span class="process-math">\(\car K=p\)</span> con <span class="process-math">\(p\)</span> primo, allora <span class="process-math">\(S\)</span> è isomorfo a <span class="process-math">\(\Interi/p\text{,}\)</span> che, essendo un campo, coincide con il proprio campo dei quozienti.</p></article><span class="incontext"><a href="sec-campo_dei_quozienti.html#proof-199" class="internal">Contesto</a></span>
+<p>Il fatto che <span class="process-math">\(R[x]\)</span> sia un gruppo abeliano rispetto all'addizione segue immediatamente dalla definizione di addizione coefficiente per coefficiente: in particolare, l'elemento neutro è il polinomio nullo e l'opposto del polinomio <span class="process-math">\((a_{0},a_{1},\ldots,a_{i},\ldots)\)</span> è il polinomio <span class="process-math">\((-a_{0},-a_{1},\ldots,-a_{i},\ldots)\text{.}\)</span></p>
+<p>Mostriamo ora che la moltiplicazione è associativa: siano</p>
+<div class="displaymath process-math">
+\begin{align*}
+f \amp\coloneqq(a_{0},a_{1},\ldots,a_{i},\ldots) \\
+g \amp\coloneqq(b_{0},b_{1},\ldots,b_{i},\ldots) \\
+h \amp\coloneqq(c_{0},c_{1},\ldots,c_{i},\ldots) 
+\end{align*}
+</div>
+<p class="continuation">tre polinomi. Abbiamo allora che <span class="process-math">\(fg\)</span> è il polinomio il cui coefficiente di indice <span class="process-math">\(j\)</span> è <span class="process-math">\(d_{j}\coloneqq\sum_{h+k=j}a_{h}b_{k}\)</span> e, di conseguenza, il coefficiente di indice <span class="process-math">\(i\)</span> di <span class="process-math">\((fg)h\)</span> è</p>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{j+l=i}d_{j}c_{l}=\sum_{j+l=i}\sum_{h+k=j}a_{h}b_{k}c_{l}=\sum_{h+k+l=i}a_{h}b_{k}c_{l}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Analogamente, <span class="process-math">\(gh\)</span> è il polinomio il cui coefficiente di indice <span class="process-math">\(j\)</span> è <span class="process-math">\(e_{j}\coloneqq\sum_{k+l=j}b_{k}c_{l}\)</span> e, di conseguenza, il coefficiente di indice <span class="process-math">\(i\)</span> di <span class="process-math">\(f(gh)\)</span> è</p>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{h+j=i}a_{h}e_{j}=\sum_{h+j=i}\sum_{k+l=j}a_{h}b_{k}c_{l}=\sum_{h+k+l=i}a_{h}b_{k}c_{l}\text{.}
+\end{equation*}
+</div>
+<p>Consideriamo ora il polinomio <span class="process-math">\(1\coloneqq(1,0,0,\ldots)\)</span> che ha il coefficiente di indice <span class="process-math">\(0\)</span> uguale a <span class="process-math">\(1\)</span> e tutti gli altri coefficienti nulli. Si verifica facilmente che <span class="process-math">\(1\)</span> è elemento neutro rispetto alla moltiplicazione. Lasciamo per esercizio la dimostrazione delle proprietà distributive e del fatto che <span class="process-math">\(R[x]\)</span> è commutativo.</p></article><span class="incontext"><a href="sec-anello_polinomi.html#proof-199" class="internal">Contesto</a></span>
 </body>
 </html>

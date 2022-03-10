@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-07T19:20:19+01:00       *-->
+<!--*       on 2022-03-10T10:57:17+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,15 +15,24 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Dimostrazione</span></h3>
-<p>Dimostriamo solo il <a href="" class="xref" data-knowl="./knowl/addizione_classi_di_resto_associativa.html" title="Punto 1">Punto 1</a> e lasciamo il resto per esercizio. Abbiamo</p>
+<p>Sappiamo che esiste una classe <span class="process-math">\(\class[n]{d}\)</span> tale che <span class="process-math">\(\class[n]{d}+\class[n]{a}=\class[n]{0}\)</span> con <span class="process-math">\(\class[n]{0}\)</span> elemento neutro. Abbiamo allora</p>
 <div class="displaymath process-math">
-\begin{align*}
-\class[n]{a}+(\class[n]{b}+\class[n]{c}) \amp = \class[n]{a}+\class[n]{b+c} \amp \text{definizione di addizione} \\
-\amp = \class[n]{a+(b+c)} \amp \text{definizione di addizione} \\
-\amp = \class[n]{(a+b)+c} \amp \text{associatività dell'addizione in }\Interi \\
-\amp = \class[n]{a+b}+\class[n]{c} \amp \text{definizione di addizione} \\
-\amp = (\class[n]{a}+\class[n]{b})+\class[n]{c} \amp \text{definizione di addizione} 
-\end{align*}
-</div></article><span class="incontext"><a href="sec-operazioniclassiresto.html#proof-38" class="internal">Contesto</a></span>
+\begin{equation*}
+\class[n]{d}+(\class[n]{a}+\class[n]{b})=\class[n]{d}+(\class[n]{a}+\class[n]{c})
+\end{equation*}
+</div>
+<p class="continuation">Per la proprietà associativa abbiamo</p>
+<div class="displaymath process-math">
+\begin{equation*}
+(\class[n]{d}+\class[n]{a})+\class[n]{b}=(\class[n]{d}+\class[n]{a})+\class[n]{c}
+\end{equation*}
+</div>
+<p class="continuation">da cui segue</p>
+<div class="displaymath process-math">
+\begin{equation*}
+\class[n]{0}+\class[n]{b}=\class[n]{0}+\class[n]{c}
+\end{equation*}
+</div>
+<p class="continuation">e, quindi, <span class="process-math">\(\class[n]{b}=\class[n]{c}\text{.}\)</span></p></article><span class="incontext"><a href="sec-operazioniclassiresto.html#proof-38" class="internal">Contesto</a></span>
 </body>
 </html>
