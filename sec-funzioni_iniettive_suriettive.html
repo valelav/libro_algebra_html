@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-15T23:30:36+01:00       *-->
+<!--*       on 2022-03-21T07:16:37-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -50,9 +50,6 @@
 <link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="_static/runtime.dae47fcea5a0b194.bundle.js"></script><script type="text/javascript" src="_static/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="_static/runestone.61f83a67b708750a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="_static/runestone.d062db89aaf1dddd.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Vai all'indice generale</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{mathtools}\require{cancel}\DeclareMathOperator{\rk}{rk}
@@ -442,7 +439,7 @@
 </h3>
 <p id="p-251">Sia <span class="process-math">\(f\colon\Naturali\to\Interi\)</span> data da <span class="process-math">\(n\mapsto n+1\)</span> e sia <span class="process-math">\(g\colon\Interi\to\Interi\)</span> data da <span class="process-math">\(n\mapsto n^{2}\text{.}\)</span> La composizione <span class="process-math">\(fg\)</span> è allora la funzione che manda <span class="process-math">\(n\)</span> in <span class="process-math">\((n+1)^2\text{.}\)</span> Questa funzione è iniettiva, mentre la funzione <span class="process-math">\(g\)</span> non è iniettiva (ad esempio, <span class="process-math">\(1\)</span> e <span class="process-math">\(-1\)</span> sono mandati entrambi in <span class="process-math">\(1\)</span> da <span class="process-math">\(g\)</span>).</p>
 <p id="p-252">Sia ora <span class="process-math">\(h\colon\Reali\to\Reali\)</span> definita da <span class="process-math">\(x\mapsto\abs{x+1}\)</span> e sia <span class="process-math">\(l\colon\Reali\to\Reali^{\ge0}\)</span> definita da <span class="process-math">\(x\mapsto x^{2}\text{.}\)</span> La composizione <span class="process-math">\(hl\)</span> è allora la funzione che manda <span class="process-math">\(x\)</span> in <span class="process-math">\(\abs{x+1}^{2}\text{,}\)</span> cioè in <span class="process-math">\((x+1)^{2}\text{.}\)</span> Questa funzione è suriettiva: infatti, dato un numero reale non negativo <span class="process-math">\(r\)</span> esiste sempre un numero reale <span class="process-math">\(s\)</span> tale che <span class="process-math">\(s^{2}=r\)</span> e, di conseguenza,</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 (s-1)hl=\abs{s-1+1}l=\abs{s}l=\abs{s}^{2}=s^{2}=r\text{.}
 \end{equation*}
@@ -462,7 +459,7 @@
 <span class="type">Proposizione</span><span class="space"> </span><span class="codenumber">3.2.23</span><span class="period">.</span>
 </h3>
 <p id="p-258"> Sia <span class="process-math">\(f\colon A\to B\)</span> una funzione invertibile. Allora esiste un'unica funzione <span class="process-math">\(g\colon B\to A\)</span> tale che <span class="process-math">\(fg=\Id_{A}\)</span> e <span class="process-math">\(gf=\Id_{B}\text{.}\)</span> Tale funzione è, quindi, detta <dfn class="terminology">inversa</dfn> di <span class="process-math">\(f\)</span> e denotata con il simbolo <span class="process-math">\(f^{-1}\text{.}\)</span></p></article><article class="hiddenproof" id="proof-10"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-10"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-10"><article class="hiddenproof"><p id="p-259">Sia <span class="process-math">\(h\colon B\to A\)</span> tale che <span class="process-math">\(fh=\Id_{A}\)</span> e <span class="process-math">\(hf=\Id_{B}\text{.}\)</span> Allora</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 g=g\Id_{A}=g(fh)=(gf)h=\Id_{B}h=h\text{.}
 \end{equation*}
@@ -473,7 +470,7 @@ g=g\Id_{A}=g(fh)=(gf)h=\Id_{B}h=h\text{.}
 <p id="p-260">Se <span class="process-math">\(f\colon A\to B\)</span> è una funzione invertibile, allora <span class="process-math">\(f^{-1}\)</span> è invertibile e <span class="process-math">\((f^{-1})^{-1}=f\text{.}\)</span></p>
 <p id="p-261">Se <span class="process-math">\(g\colon B\to C\)</span> è una funzione invertibile, allora <span class="process-math">\(fg\)</span> è invertibile e <span class="process-math">\((fg)^{-1}=g^{-1}f^{-1}\text{.}\)</span></p></article><article class="hiddenproof" id="proof-11"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-11"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-11"><article class="hiddenproof"><p id="p-262">Per mostrare che <span class="process-math">\(f^{-1}\)</span> è invertibile, basta esibire una funzione <span class="process-math">\(h\colon A\to B\)</span> tale che <span class="process-math">\(f^{-1}h=\Id_{B}\)</span> e <span class="process-math">\(hf^{-1}=\Id_{A}\text{:}\)</span> la funzione <span class="process-math">\(f\)</span> soddisfa le proprietà richieste ed è, quindi, l'inversa di <span class="process-math">\(f^{-1}\text{.}\)</span></p>
 <p id="p-263">Notiamo ora che <span class="process-math">\(f^{-1}\colon B\to A\)</span> e <span class="process-math">\(g^{-1}\colon C\to B\text{:}\)</span> dunque, la composizione <span class="process-math">\(g^{-1}f^{-1}\)</span> esiste ed è una funzione da <span class="process-math">\(C\)</span> ad <span class="process-math">\(A\text{.}\)</span> Ora</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 (fg)(g^{-1}f^{-1})=f(gg^{-1})f^{-1}=f\Id_{B}f^{-1}=ff^{-1}=\Id_{A}
 \end{equation*}
@@ -492,7 +489,7 @@ g=g\Id_{A}=g(fh)=(gf)h=\Id_{B}h=h\text{.}
 </h3>
 <article class="exercise exercise-like" id="exer-scambio"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
 <p id="p-268">Siano <span class="process-math">\(a_{1}\)</span> e <span class="process-math">\(a_{2}\)</span> due elementi diversi di un insieme <span class="process-math">\(A\text{.}\)</span> Sia data la funzione <span class="process-math">\(g\colon A\to A\)</span> così definita:</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 xg\coloneqq
 \begin{cases}

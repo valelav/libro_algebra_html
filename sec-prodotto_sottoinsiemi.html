@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-15T23:31:39+01:00       *-->
+<!--*       on 2022-03-21T07:17:50-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -50,9 +50,6 @@
 <link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="_static/runtime.dae47fcea5a0b194.bundle.js"></script><script type="text/javascript" src="_static/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="_static/runestone.61f83a67b708750a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="_static/runestone.d062db89aaf1dddd.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Vai all'indice generale</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{mathtools}\require{cancel}\DeclareMathOperator{\rk}{rk}
@@ -362,13 +359,13 @@
 <span class="type">Definizione</span><span class="space"> </span><span class="codenumber">11.1.1</span><span class="period">.</span>
 </h3>
 <p id="p-1430">In un gruppo <span class="process-math">\(G\text{,}\)</span> scritto in notazione moltiplicativa, siano dati due sottoinsiemi non vuoti <span class="process-math">\(S\)</span> e <span class="process-math">\(T\text{.}\)</span> Il <dfn class="terminology">prodotto</dfn> di <span class="process-math">\(S\)</span> e <span class="process-math">\(T\text{,}\)</span> indicato con <span class="process-math">\(ST\)</span> è l'insieme dei prodotti <span class="process-math">\(st\)</span> al variare di <span class="process-math">\(s\)</span> in <span class="process-math">\(S\)</span> e <span class="process-math">\(t\)</span> in <span class="process-math">\(T\text{.}\)</span> In simboli</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 ST\coloneqq\{st\mid s\in S, t\in T\}\text{.}
 \end{equation*}
 </div>
 <p class="continuation">Più in generale, se <span class="process-math">\(S_{1}\text{,}\)</span> <span class="process-math">\(S_{2}\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(S_{r}\)</span> sono sottoinsiemi di <span class="process-math">\(G\text{,}\)</span> il loro prodotto è così definito</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 S_{1}S_{2}\cdots S_{r}\coloneqq\{s_{1}s_{s}\cdots s_{r}\mid s_{i}\in S_{i}, 1\le i\le r\}\text{.}
 \end{equation*}
@@ -376,14 +373,14 @@ S_{1}S_{2}\cdots S_{r}\coloneqq\{s_{1}s_{s}\cdots s_{r}\mid s_{i}\in S_{i}, 1\le
 <span class="type">Esempio</span><span class="space"> </span><span class="codenumber">11.1.2</span><span class="period">.</span>
 </h3>
 <p id="p-1431">Consideriamo i sottoinsiemi <span class="process-math">\(S\coloneqq\{(1\;2),(1\;2\;3)\}\)</span> e <span class="process-math">\(T\coloneqq\{(2\;3),(1\;2\;3)\}\)</span> di <span class="process-math">\(\Sym_{3}\text{.}\)</span> Per trovare <span class="process-math">\(ST\)</span> dobbiamo fare <span class="process-math">\(4\)</span> prodotti:</p>
-<div class="displaymath process-math" id="md-45">
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-45">
 \begin{align*}
 (1\;2)(2\;3)    \amp = (1\;3\;2) \amp (1\;2\;3)(2\;3)    \amp = (1\;3)    \\
 (1\;2)(1\;2\;3) \amp = (1\;3)    \amp (1\;2\;3)(1\;2\;3) \amp = (1\;3\;2) \text{.}
 \end{align*}
 </div>
 <p class="continuation">Notiamo allora che <span class="process-math">\(ST=\{(1\;3\;2),(1\;3)\}\text{.}\)</span> Se invece facciamo il prodotto <span class="process-math">\(TS\)</span> troviamo</p>
-<div class="displaymath process-math" id="md-46">
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-46">
 \begin{align*}
 (2\;3)(1\;2)    \amp = (1\;2\;3) \amp (2\;3)(1\;2\;3)    \amp = (1\;2)    \\
 (1\;2\;3)(1\;2) \amp = (2\;3)    \amp (1\;2\;3)(1\;2\;3) \amp = (1\;3\;2) 
@@ -394,13 +391,13 @@ S_{1}S_{2}\cdots S_{r}\coloneqq\{s_{1}s_{s}\cdots s_{r}\mid s_{i}\in S_{i}, 1\le
 <span class="type">Definizione</span><span class="space"> </span><span class="codenumber">11.1.3</span><span class="period">.</span>
 </h3>
 <p id="p-1433">Dato un gruppo <span class="process-math">\(G\text{,}\)</span> un suo sottogruppo <span class="process-math">\(H\)</span> e un elemento <span class="process-math">\(g\in G\text{,}\)</span> chiamiamo <dfn class="terminology">laterale destro</dfn> di <span class="process-math">\(H\)</span> in <span class="process-math">\(G\)</span> contenente <span class="process-math">\(g\)</span> il prodotto <span class="process-math">\(H\{g\}\)</span> che, per semplificare la notazione, indicheremo con <span class="process-math">\(Hg\text{.}\)</span> In simboli</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 Hg\coloneqq\{hg\mid h\in H\}\text{.}
 \end{equation*}
 </div>
 <p class="continuation">Analogamente, il <dfn class="terminology">laterale sinistro</dfn> di <span class="process-math">\(H\)</span> in <span class="process-math">\(G\)</span> contenente <span class="process-math">\(g\)</span> è il sottoinsieme <span class="process-math">\(gH\)</span> così definito</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 gH\coloneqq\{gh\mid h\in H\}\text{.}
 \end{equation*}
@@ -412,7 +409,7 @@ gH\coloneqq\{gh\mid h\in H\}\text{.}
 <span class="type">Esempio</span><span class="space"> </span><span class="codenumber">11.1.5</span><span class="period">.</span>
 </h3>
 <p id="p-1435">Nel gruppo <span class="process-math">\(\Interi\)</span> rispetto all'addizione, consideriamo il sottogruppo <span class="process-math">\(n\Interi\)</span> formato dai multipli del numero positivo <span class="process-math">\(n\text{.}\)</span> Dato un numero intero <span class="process-math">\(a\)</span> abbiamo allora</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 n\Interi+a=\{h+a\mid h\in n\Interi\}=\{nt+a\mid t\in\Interi\}\text{.}
 \end{equation*}
@@ -421,13 +418,13 @@ n\Interi+a=\{h+a\mid h\in n\Interi\}=\{nt+a\mid t\in\Interi\}\text{.}
 <span class="type">Esempio</span><span class="space"> </span><span class="codenumber">11.1.6</span><span class="period">.</span>
 </h3>
 <p id="p-1436">In <span class="process-math">\(\Sym_{3}\text{,}\)</span> consideriamo il sottogruppo <span class="process-math">\(H\coloneqq\grgen{(1\;2)}\)</span> e l'elemento <span class="process-math">\((1\;3)\text{.}\)</span> Ora <span class="process-math">\(H=\{\Id,(1\;2)\}\text{.}\)</span> Dunque</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 H(1\;3)=\{\Id(1\;3),(1\;2)(1\;3)\}=\{(1\;3),(1\;2\;3)\}
 \end{equation*}
 </div>
 <p class="continuation">e</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 (1\;3)H=\{(1\;3)\Id,(1\;3)(1\;2)\}=\{(1\;3),(1\;3\;2)\}\text{.}
 \end{equation*}

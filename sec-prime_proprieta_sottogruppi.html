@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-15T23:31:19+01:00       *-->
+<!--*       on 2022-03-21T07:17:25-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -50,9 +50,6 @@
 <link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="_static/runtime.dae47fcea5a0b194.bundle.js"></script><script type="text/javascript" src="_static/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="_static/runestone.61f83a67b708750a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="_static/runestone.d062db89aaf1dddd.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Vai all'indice generale</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{mathtools}\require{cancel}\DeclareMathOperator{\rk}{rk}
@@ -397,7 +394,7 @@
 <li id="li-98"><p id="p-1027"><span class="process-math">\(H\ne\vuoto\text{;}\)</span></p></li>
 <li id="li-99"><p id="p-1028"><span class="process-math">\(ab\in H\)</span> per ogni <span class="process-math">\(a\)</span> e <span class="process-math">\(b\)</span> in <span class="process-math">\(H\text{.}\)</span></p></li>
 </ul></article><article class="hiddenproof" id="proof-68"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-68"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-68"><article class="hiddenproof"><p id="p-1029">Per la <a href="" class="xref" data-knowl="./knowl/prop-non_vuoto_equivalente_esistenza_1.html" title="Proposizione 8.2.3">Proposizione 8.2.3</a>, basta provare che, se <span class="process-math">\(H\)</span> soddisfa le proprietà date in enunciato e <span class="process-math">\(a\in H\text{,}\)</span> allora <span class="process-math">\(a^{-1}\in H\text{.}\)</span> Si verifica facilmente per induzione che <span class="process-math">\(a^{r}\in H\)</span> per ogni intero positivo <span class="process-math">\(r\text{.}\)</span> Poiché gli interi positivi sono infiniti e <span class="process-math">\(H\)</span> è finito, ciò significa che esistono due interi positivi diversi <span class="process-math">\(r\)</span> e <span class="process-math">\(s\)</span> tali che <span class="process-math">\(a^{r}=a^{s}\text{.}\)</span> Sia, ad esempio, <span class="process-math">\(r &gt; s\text{:}\)</span> allora, posto <span class="process-math">\(t\coloneqq r-s\text{,}\)</span> si ha <span class="process-math">\(t\ge 1\)</span> e</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-non_vuoto_equivalente_esistenza_1.html ./knowl/prop-cancellazione_gruppo.html">
 \begin{equation*}
 a^{t}=a^{r-s}=a^{r}(a^{s})^{-1}=a^{r}(a^{r})^{-1}=1\text{.}
 \end{equation*}
@@ -417,7 +414,7 @@ a^{t}=a^{r-s}=a^{r}(a^{s})^{-1}=a^{r}(a^{r})^{-1}=1\text{.}
 <span class="type">Proposizione</span><span class="space"> </span><span class="codenumber">8.2.9</span><span class="period">.</span>
 </h3>
 <p id="p-1034">Se <span class="process-math">\(G\)</span> è un gruppo e <span class="process-math">\(\{H_{i}\}_{i\in \Omega}\)</span> è una famiglia di sottogruppi di <span class="process-math">\(G\)</span> (indicizzata da un insieme di indici <span class="process-math">\(\Omega\)</span>), allora</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \bigcap_{i\in \Omega}H_{i}
 \end{equation*}
@@ -435,7 +432,7 @@ a^{t}=a^{r-s}=a^{r}(a^{s})^{-1}=a^{r}(a^{r})^{-1}=1\text{.}
 <span class="type">Definizione</span><span class="space"> </span><span class="codenumber">8.2.11</span><span class="period">.</span>
 </h3>
 <p id="p-1042">Dato un sottoinsieme <span class="process-math">\(X\)</span> di un gruppo <span class="process-math">\(G\text{,}\)</span> il <dfn class="terminology">sottogruppo generato</dfn> da <span class="process-math">\(X\)</span> è l'intersezione di tutti i sottogruppi di <span class="process-math">\(G\)</span> contenenti <span class="process-math">\(X\text{,}\)</span> denotata con <span class="process-math">\(\grgen{X}\text{.}\)</span> In simboli</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \grgen{X}\coloneqq\bigcap_{X\subseteq H\le G}H\text{.}
 \end{equation*}
@@ -449,7 +446,7 @@ a^{t}=a^{r-s}=a^{r}(a^{s})^{-1}=a^{r}(a^{r})^{-1}=1\text{.}
 <span class="type">Proposizione</span><span class="space"> </span><span class="codenumber">8.2.13</span><span class="period">.</span>
 </h3>
 <p id="p-1046">Dato un sottoinsieme <span class="process-math">\(X\)</span> di un gruppo <span class="process-math">\(G\text{,}\)</span> il sottogruppo <span class="process-math">\(\grgen{X}\)</span> è uguale a <span class="process-math">\(1\)</span> se <span class="process-math">\(X=\vuoto\text{,}\)</span> altrimenti è l'insieme dei prodotti del tipo</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 x_{1}x_{2}\cdots x_{r}
 \end{equation*}
@@ -464,7 +461,7 @@ x_{1}x_{2}\cdots x_{r}
 <span class="type">Definizione</span><span class="space"> </span><span class="codenumber">8.2.15</span><span class="period">.</span>
 </h3>
 <p id="p-1051">Dato un elemento <span class="process-math">\(a\)</span> di un gruppo <span class="process-math">\(G\text{,}\)</span> il <dfn class="terminology">centralizzante</dfn> di <span class="process-math">\(a\)</span> in <span class="process-math">\(G\text{,}\)</span> denotato con <span class="process-math">\(\cent{G}{a}\text{,}\)</span> è il sottoinsieme di <span class="process-math">\(G\)</span> formato dagli elementi di <span class="process-math">\(G\)</span> che commutano con <span class="process-math">\(a\text{.}\)</span> In simboli</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \cent{G}{a}\coloneqq \{g\in G\mid ga=ag\}\text{.}
 \end{equation*}
@@ -473,7 +470,7 @@ x_{1}x_{2}\cdots x_{r}
 </h3>
 <p id="p-1052">Dato un elemento <span class="process-math">\(a\)</span> di un gruppo <span class="process-math">\(G\text{,}\)</span> il centralizzante in <span class="process-math">\(G\)</span> di <span class="process-math">\(a\)</span> è un sottogruppo contenente <span class="process-math">\(a\text{.}\)</span></p></article><article class="hiddenproof" id="proof-72"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-72"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-72"><article class="hiddenproof"><p id="p-1053">Chiaramente <span class="process-math">\(a\)</span> commuta con sé stesso: dunque, <span class="process-math">\(a\in\cent{G}{a}\)</span> e, in particolare, <span class="process-math">\(\cent{G}{a}\ne\vuoto\text{.}\)</span></p>
 <p id="p-1054">Siano <span class="process-math">\(g\)</span> e <span class="process-math">\(h\)</span> due elementi di <span class="process-math">\(\cent{G}{a}\text{.}\)</span> Allora</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-potenze_di_commutabili.html">
 \begin{equation*}
 gha=gah=agh
 \end{equation*}
@@ -533,13 +530,13 @@ gha=gah=agh
 <article class="task exercise-like" id="task-26"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <p id="p-1077">Dato un sottoinsieme <span class="process-math">\(A\)</span> di <span class="process-math">\(M\)</span> che sia chiuso rispetto all'unione, mostrare che <span class="process-math">\(A\)</span> è un monoide rispetto all'operazione indotta se e solo se uno degli elementi di <span class="process-math">\(A\)</span> è contenuto in tutti gli altri elementi di <span class="process-math">\(A\text{.}\)</span></p></article><article class="task exercise-like" id="task-27"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <p id="p-1078">Mostrare che</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 A\coloneqq\{\{a\},\{a,b,c\},\{a,b,d\},\{a,b,c,d\}\}
 \end{equation*}
 </div>
 <p class="continuation">e</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 B\coloneqq\{\{b\},\{a,b,c\},\{a,b,d\},\{a,b,c,d\}\}
 \end{equation*}
@@ -568,21 +565,21 @@ c_{2} \amp d_{2}
 a_{1}a_{2}+b_{1}c_{2} \amp a_{1}b_{2}+b_{1}d_{2} \\
 c_{1}a_{2}+d_{1}c_{2} \amp c_{1}b_{2}+d_{1}d_{2}
 \end{psmallmatrix}\text{.}\)</span> Per verificare se appartiene ad <span class="process-math">\(H\)</span> sommiamo gli elementi di ciascuna colonna. Otteniamo</p>
-<div class="displaymath process-math" id="md-40">
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-40">
 \begin{align*}
 (a_{1}a_{2}+b_{1}c_{2})+(c_{1}a_{2}+d_{1}c_{2}) \amp =(a_{1}+c_{1})a_{2}+(b_{1}+d_{1})c_{2}\\
 \amp =1\cdot a_{2}+1\cdot c_{2}=a_{2}+c_{2}=1
 \end{align*}
 </div>
 <p class="continuation">e</p>
-<div class="displaymath process-math" id="md-41">
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-41">
 \begin{align*}
 (a_{1}b_{2}+b_{1}d_{2})+(c_{1}b_{2}+d_{1}d_{2}) \amp =(a_{1}+c_{1})b_{2}+(b_{1}+d_{1})d_{2}\\
 \amp =1\cdot b_{2}+1\cdot d_{2}=b_{2}+d_{2}=1\text{.}
 \end{align*}
 </div>
 <p class="continuation">Quindi <span class="process-math">\(AB\)</span> appartiene ad <span class="process-math">\(H\text{.}\)</span> L'inversa di <span class="process-math">\(A\)</span> è la matrice</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \begin{pmatrix}
 \frac{d_{1}}{\Delta} \amp -\frac{b_{1}}{\Delta} \\
@@ -591,14 +588,14 @@ c_{1}a_{2}+d_{1}c_{2} \amp c_{1}b_{2}+d_{1}d_{2}
 \end{equation*}
 </div>
 <p class="continuation">dove <span class="process-math">\(\Delta=a_{1}d_{1}-b_{1}c_{1}\text{.}\)</span> Abbiamo allora</p>
-<div class="displaymath process-math" id="md-42">
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-42">
 \begin{align*}
 \frac{d_{1}}{\Delta}-\frac{c_{1}}{\Delta} \amp =\frac{d_{1}-c_{1}}{\Delta}=\frac{d_{1}-c_{1}}{a_{1}d_{1}-b_{1}c_{1}}=\frac{d_{1}-c_{1}}{(1-c_{1})d_{1}-b_{1}c_{1}}\\
 \amp =\frac{d_{1}-c_{1}}{d_{1}-c_{1}d_{1}-b_{1}c_{1}}=\frac{d_{1}-c_{1}}{d_{1}-c_{1}(d_{1}+b_{1})}=\frac{d_{1}-c_{1}}{d_{1}-c_{1}\cdot1}=1
 \end{align*}
 </div>
 <p class="continuation">e</p>
-<div class="displaymath process-math" id="md-43">
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-43">
 \begin{align*}
 -\frac{b_{1}}{\Delta}+\frac{a_{1}}{\Delta}\amp =\frac{-b_{1}+a_{1}}{\Delta}=\frac{-b_{1}+a_{1}}{a_{1}d_{1}-b_{1}c_{1}}=\frac{-b_{1}+a_{1}}{a_{1}(1-b_{1})-b_{1}c_{1}}\\
 \amp =\frac{-b_{1}+a_{1}}{a_{1}-a_{1}b_{1}-b_{1}c_{1}}=\frac{-b_{1}+a_{1}}{a_{1}-b_{1}(a_{1}+c_{1})}=\frac{-b_{1}+a_{1}}{a_{1}-b_{1}\cdot1}=1
@@ -634,7 +631,7 @@ c \amp d
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-54" id="solution-54"><span class="type">Soluzione</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-54"><div class="solution solution-like">
 <p id="p-1088">Abbiamo <span class="process-math">\(16\)</span> matrici del primo tipo e <span class="process-math">\(16\)</span> matrici del secondo tipo. In particolare, <span class="process-math">\(H\)</span> è finito e, per la <a href="" class="xref" data-knowl="./knowl/prop-sottogruppi_finiti.html" title="Proposizione 8.2.5">Proposizione 8.2.5</a>, basta verificare che <span class="process-math">\(H\)</span> è chiuso rispetto al prodotto.</p>
 <p id="p-1089">Consideriamo tutti i possibili prodotti di matrici di <span class="process-math">\(H\text{.}\)</span></p>
-<div class="displaymath process-math" id="md-44">
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-44">
 \begin{align*}
 \begin{pmatrix}
 \epsilon_{1} \amp 0 \\
@@ -698,7 +695,7 @@ c \amp d
 <div class="solutions">
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-55" id="solution-55"><span class="type">Soluzione</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-55"><div class="solution solution-like">
 <p id="p-1092">Mostriamo che <span class="process-math">\(\ast\)</span> è associativa. Dati <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\)</span> e <span class="process-math">\(c\)</span> in <span class="process-math">\(G\)</span> abbiamo:</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 (a\ast b)\ast c=(a\cdot u\cdot b)\cdot u\cdot c=a\cdot u\cdot (b\cdot u\cdot c)=a\ast (b\ast c)\text{.}
 \end{equation*}
@@ -712,7 +709,7 @@ c \amp d
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-56" id="solution-56"><span class="type">Soluzione</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-56"><div class="solution solution-like">
 <p id="p-1095">Se <span class="process-math">\(u\)</span> appartiene al centro di <span class="process-math">\((G,\cdot)\)</span> le operazioni <span class="process-math">\(\ast\)</span> e <span class="process-math">\(\diamond\)</span> coincidono e, quindi, <span class="process-math">\((G,\diamond)\)</span> è un gruppo.</p>
 <p id="p-1096">Viceversa, se <span class="process-math">\((G,\diamond)\)</span> è un gruppo allora, per ogni <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\)</span> e <span class="process-math">\(c\)</span> in <span class="process-math">\(G\)</span> si ha <span class="process-math">\((a\diamond b)\diamond c=a\diamond (b\diamond c)\)</span> ovvero</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 (a\cdot b\cdot u)\cdot c\cdot u=a\cdot(b\cdot c\cdot u)\cdot u\text{.}
 \end{equation*}

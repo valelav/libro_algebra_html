@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-15T23:30:58+01:00       *-->
+<!--*       on 2022-03-21T07:17:01-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -50,9 +50,6 @@
 <link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="_static/runtime.dae47fcea5a0b194.bundle.js"></script><script type="text/javascript" src="_static/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="_static/runestone.61f83a67b708750a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="_static/runestone.d062db89aaf1dddd.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Vai all'indice generale</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{mathtools}\require{cancel}\DeclareMathOperator{\rk}{rk}
@@ -451,14 +448,14 @@
 <span class="type">Teorema</span><span class="space"> </span><span class="codenumber">5.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Teorema di Eulero.</span>
 </h3>
 <p id="p-667">Sia <span class="process-math">\(n\)</span> un intero positivo e <span class="process-math">\(a\)</span> un intero coprimo con <span class="process-math">\(n\text{.}\)</span> Allora <span class="process-math">\(a^{\euler{n}}\equiv 1\pmod{n}\text{.}\)</span></p></article><article class="hiddenproof" id="proof-47"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-47"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-47"><article class="hiddenproof"><p id="p-668">Consideriamo le classi di resto invertibili <span class="process-math">\(\class[n]{c_{1}}\text{,}\)</span> <span class="process-math">\(\class[n]{c_{2}}\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(\class[n]{c_{\euler{n}}}\)</span> (poiché <span class="process-math">\(a\)</span> è coprimo con <span class="process-math">\(n\)</span> tra esse c'è ovviamente anche <span class="process-math">\(\class[n]{a}\)</span>). Moltiplichiamole tutte per <span class="process-math">\(\class[n]{a}\text{,}\)</span> ottenendo <span class="process-math">\(\class[n]{a}\class[n]{c_{1}}\text{,}\)</span> <span class="process-math">\(\class[n]{a}\class[n]{c_{2}}\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(\class[n]{a}\class[n]{c_{\euler{n}}}\text{:}\)</span> queste sono tutte diverse per la <a href="" class="xref" data-knowl="./knowl/prop-cancellazione_moltiplicazione_classi_di_resto.html" title="Proposizione 5.2.17: Legge di cancellazione per la moltiplicazione">Proposizione 5.2.17</a> e sono tutte invertibili per la <a href="" class="xref" data-knowl="./knowl/prop-classi_resto_invertibili.html" title="Proposizione 5.2.11">Proposizione 5.2.11</a>. Ma allora sono tutte le classi invertibili, semplicemente in un ordine diverso. Facendo il prodotto di tutte nella prima elencazione e nella seconda otteniamo allora lo stesso risultato</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-cancellazione_moltiplicazione_classi_di_resto.html ./knowl/prop-classi_resto_invertibili.html ./knowl/prop-cancellazione_moltiplicazione_classi_di_resto.html">
 \begin{equation*}
 \class[n]{c_{1}}\class[n]{c_{2}}\cdots\class[n]{c_{\euler{n}}}=
 \class[n]{a}\class[n]{c_{1}}\class[n]{a}\class[n]{c_{2}}\cdots\class[n]{a}\class[n]{c_{\euler{n}}}\text{.}
 \end{equation*}
 </div>
 <p class="continuation">Riordinando, otteniamo:</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-cancellazione_moltiplicazione_classi_di_resto.html ./knowl/prop-classi_resto_invertibili.html ./knowl/prop-cancellazione_moltiplicazione_classi_di_resto.html">
 \begin{equation*}
 \class[n]{c_{1}}\class[n]{c_{2}}\cdots\class[n]{c_{\euler{n}}}=\class[n]{c_{1}}\class[n]{c_{2}}\cdots\class[n]{c_{\euler{n}}}\class[n]{a^{\euler{n}}}\text{.}
 \end{equation*}
@@ -474,7 +471,7 @@
 <span class="type">Esempio</span><span class="space"> </span><span class="codenumber">5.3.7</span><span class="period">.</span>
 </h3>
 <p id="p-673">Supponiamo di voler determinare il resto della divisione di <span class="process-math">\(31^{3215}+23^{2347}\)</span> per <span class="process-math">\(12\text{.}\)</span> In altri termini dobbiamo cercare un intero compreso tra <span class="process-math">\(0\)</span> e <span class="process-math">\(11\)</span> congruo a <span class="process-math">\(31^{3215}+23^{2347}\)</span> modulo <span class="process-math">\(12\text{.}\)</span> Consideriamo prima <span class="process-math">\(31^{3215}\text{:}\)</span> notiamo innanzitutto che <span class="process-math">\(31\equiv 7\pmod{12}\)</span> e, quindi, <span class="process-math">\(31^{3215}\equiv 7^{3215}\pmod{12}\text{.}\)</span> Poiché <span class="process-math">\(7\)</span> è coprimo con <span class="process-math">\(12\text{,}\)</span> il <a href="" class="xref" data-knowl="./knowl/thm-eulero.html" title="Teorema 5.3.5: Teorema di Eulero">Teorema di Eulero</a> ci dice che <span class="process-math">\(7^{\euler{12}}\equiv 1\pmod{12}\text{:}\)</span> si vede facilmente che <span class="process-math">\(\euler{12}=4\text{.}\)</span> Ora <span class="process-math">\(3215\equiv 3\pmod{4}\text{,}\)</span> cioè <span class="process-math">\(3125=4h+3\)</span> per qualche naturale <span class="process-math">\(h\text{:}\)</span> dunque</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/thm-eulero.html">
 \begin{equation*}
 7^{3215}=7^{4h+3}=(7^{4})^{h}7^{3}\equiv 1^{h}7^{3}\pmod{12}\equiv 7^{3}\pmod{12}
 \end{equation*}

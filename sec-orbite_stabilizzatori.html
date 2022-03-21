@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-15T23:31:59+01:00       *-->
+<!--*       on 2022-03-21T07:18:14-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -50,9 +50,6 @@
 <link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="_static/runtime.dae47fcea5a0b194.bundle.js"></script><script type="text/javascript" src="_static/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="_static/runestone.61f83a67b708750a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="_static/runestone.d062db89aaf1dddd.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Vai all'indice generale</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{mathtools}\require{cancel}\DeclareMathOperator{\rk}{rk}
@@ -367,14 +364,14 @@
 </h3>
 <p id="p-1753">Sia <span class="process-math">\(G\)</span> un gruppo che agisce su un insieme <span class="process-math">\(X\text{.}\)</span> La relazione <span class="process-math">\(\sim_{G}\)</span> in <span class="process-math">\(X\)</span> definita da <span class="process-math">\(x\sim_{G}y\)</span> se esiste <span class="process-math">\(g\in G\)</span> tale che <span class="process-math">\(y=xg\)</span> è una relazione di equivalenza.</p></article><article class="hiddenproof" id="proof-128"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-128"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-128"><article class="hiddenproof"><p id="p-1754">Preso <span class="process-math">\(x\in X\text{,}\)</span> si ha che <span class="process-math">\(x1_{G}=x\text{:}\)</span> dunque, <span class="process-math">\(\sim_{G}\)</span> soddisfa la proprietà riflessiva.</p>
 <p id="p-1755">Se <span class="process-math">\(x\sim_{G}y\text{,}\)</span> allora esiste <span class="process-math">\(g\in G\)</span> tale che <span class="process-math">\(y=xg\text{:}\)</span> applicando <span class="process-math">\(g^{-1}\)</span> a entrambi i membri di questa uguaglianza e usando le proprietà che definiscono un'azione otteniamo</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 yg^{-1}=(xg)g^{-1}=x(gg^{-1})=x1_{G}=x\text{.}
 \end{equation*}
 </div>
 <p class="continuation">Dunque, <span class="process-math">\(\sim_{G}\)</span> soddisfa la proprietà simmetrica.</p>
 <p id="p-1756">Infine, se <span class="process-math">\(x\sim_{G}y\)</span> e <span class="process-math">\(y\sim_{G}z\text{,}\)</span> allora esistono <span class="process-math">\(g\)</span> e <span class="process-math">\(h\)</span> in <span class="process-math">\(G\)</span> tali che <span class="process-math">\(y=xg\)</span> e <span class="process-math">\(z=yh\text{.}\)</span> Applicando le proprietà che definiscono un'azione otteniamo</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 z=yh=(xg)h=x(gh)\text{.}
 \end{equation*}
@@ -384,7 +381,7 @@ z=yh=(xg)h=x(gh)\text{.}
 <span class="type">Definizione</span><span class="space"> </span><span class="codenumber">13.2.3</span><span class="period">.</span>
 </h3>
 <p id="p-1757">Dato un gruppo <span class="process-math">\(G\)</span> che agisce su un insieme <span class="process-math">\(X\text{,}\)</span> le classi di equivalenza della relazione <span class="process-math">\(\sim_{G}\)</span> definita nella <a href="" class="xref" data-knowl="./knowl/prop-azione_partizione.html" title="Proposizione 13.2.2">Proposizione 13.2.2</a> sono dette <dfn class="terminology">orbite</dfn>. Dato un elemento <span class="process-math">\(x\)</span> in <span class="process-math">\(X\text{,}\)</span> l'orbita contenente <span class="process-math">\(x\)</span> è denotata con <span class="process-math">\(xG\)</span> ed è precisamente</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-azione_partizione.html">
 \begin{equation*}
 xG\coloneqq\{xg\mid g\in G\}\text{.}
 \end{equation*}
@@ -392,7 +389,7 @@ xG\coloneqq\{xg\mid g\in G\}\text{.}
 <span class="type">Definizione</span><span class="space"> </span><span class="codenumber">13.2.4</span><span class="period">.</span>
 </h3>
 <p id="p-1758">Nel caso particolare in cui consideriamo l'azione di un gruppo <span class="process-math">\(G\)</span> su sé stesso per coniugio, l'orbita contenente un certo elemento <span class="process-math">\(h\)</span> è detta <dfn class="terminology">classe di coniugio</dfn> e denotata con il simbolo <span class="process-math">\(h^{G}\text{.}\)</span> Esplicitamente</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 h^{G}\coloneqq\{h^{g}\mid g\in G\}\text{.}
 \end{equation*}
@@ -401,7 +398,7 @@ h^{G}\coloneqq\{h^{g}\mid g\in G\}\text{.}
 <span class="type">Definizione</span><span class="space"> </span><span class="codenumber">13.2.5</span><span class="period">.</span>
 </h3>
 <p id="p-1760">Dato un gruppo <span class="process-math">\(G\)</span> che agisce su un insieme <span class="process-math">\(X\)</span> e un elemento <span class="process-math">\(x\in X\text{,}\)</span> lo <dfn class="terminology">stabilizzatore</dfn> di <span class="process-math">\(x\)</span> in <span class="process-math">\(G\)</span> è il sottoinsieme <span class="process-math">\(\stab{G}{x}\)</span> di <span class="process-math">\(G\)</span> così definito</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \stab{G}{x}\coloneqq\{g\in G\mid xg=x\}\text{.}
 \end{equation*}
@@ -410,7 +407,7 @@ h^{G}\coloneqq\{h^{g}\mid g\in G\}\text{.}
 </h3>
 <p id="p-1761">Sia <span class="process-math">\(G\)</span> un gruppo che agisce su un insieme <span class="process-math">\(X\)</span> e sia <span class="process-math">\(x\)</span> un elemento di <span class="process-math">\(X\text{.}\)</span> Allora lo stabilizzatore <span class="process-math">\(\stab{G}{x}\)</span> è un sottogruppo di <span class="process-math">\(G\text{.}\)</span></p></article><article class="hiddenproof" id="proof-129"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-129"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-129"><article class="hiddenproof"><p id="p-1762">Poiché <span class="process-math">\(x1_{G}=x\text{,}\)</span> il sottoinsieme <span class="process-math">\(\stab{G}{x}\)</span> è non vuoto.</p>
 <p id="p-1763">Siano ora <span class="process-math">\(g\)</span> e <span class="process-math">\(h\)</span> elementi di <span class="process-math">\(\stab{G}{x}\text{:}\)</span> dunque, <span class="process-math">\(xg=x\)</span> e <span class="process-math">\(xh=x\text{.}\)</span> Pertanto, <span class="process-math">\(x(gh)=(xg)h=xh=\text{,}\)</span> cioè <span class="process-math">\(gh\in \stab{G}{x}\text{.}\)</span> Inoltre, applicando <span class="process-math">\(g^{-1}\)</span> ad ambo i membri di <span class="process-math">\(x=xg\text{,}\)</span> otteniamo</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 xg^{-1}=(xg)g^{-1}=x(gg^{-1})=x1_{G}=x\text{.}
 \end{equation*}
@@ -421,13 +418,13 @@ xg^{-1}=(xg)g^{-1}=x(gg^{-1})=x1_{G}=x\text{.}
 <span class="type">Teorema</span><span class="space"> </span><span class="codenumber">13.2.7</span><span class="period">.</span>
 </h3>
 <p id="p-1765">Sia <span class="process-math">\(G\)</span> un gruppo che agisce su un insieme <span class="process-math">\(X\)</span> e sia <span class="process-math">\(x\)</span> un elemento di <span class="process-math">\(X\text{.}\)</span> Presi due elementi <span class="process-math">\(g\)</span> e <span class="process-math">\(h\)</span> di <span class="process-math">\(G\text{,}\)</span> si ha che <span class="process-math">\(xg=xh\)</span> se e solo se <span class="process-math">\(\stab{G}{x}g=\stab{G}{x}h\text{.}\)</span> In particolare, <span class="process-math">\(\abs{xG}=\ind{G}{\stab{G}{x}}\text{.}\)</span></p></article><article class="hiddenproof" id="proof-130"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-130"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-130"><article class="hiddenproof"><p id="p-1766">Supponiamo prima che <span class="process-math">\(\stab{G}{x}g=\stab{G}{x}h\text{:}\)</span> dunque, esiste <span class="process-math">\(s\in\stab{G}{x}\)</span> tale che <span class="process-math">\(g=sh\text{.}\)</span> Ma allora</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 xg=x(sh)=(xs)h=xh\text{.}
 \end{equation*}
 </div>
 <p id="p-1767">Viceversa, sia <span class="process-math">\(xg=xh\text{:}\)</span> applicando <span class="process-math">\(h^{-1}\)</span> a entrambi i membri, troviamo</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 xgh^{-1}=xhh^{-1}=x1_{G}=x\text{.}
 \end{equation*}
@@ -443,7 +440,7 @@ xgh^{-1}=xhh^{-1}=x1_{G}=x\text{.}
 </h3>
 <p id="p-1771">Dati due elementi <span class="process-math">\(g\)</span> e <span class="process-math">\(h\)</span> di un gruppo, si ha <span class="process-math">\(h^{g}=h\)</span> se e solo se <span class="process-math">\(g\)</span> e <span class="process-math">\(h\)</span> commutano. In particolare, lo stabilizzatore di <span class="process-math">\(h\)</span> in <span class="process-math">\(G\)</span> rispetto all'azione di coniugio coincide con il centralizzante di <span class="process-math">\(h\)</span> in <span class="process-math">\(G\text{.}\)</span></p></article><article class="hiddenproof" id="proof-132"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-132"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-132"><article class="hiddenproof"><p id="p-1772">Se <span class="process-math">\(g\)</span> e <span class="process-math">\(h\)</span> commutano, allora <span class="process-math">\(h^{g}=g^{-1}hg=g^{-1}gh=1h=h\text{.}\)</span></p>
 <p id="p-1773">Viceversa, se <span class="process-math">\(h=h^{g}\text{,}\)</span> cioè <span class="process-math">\(h=g^{-1}hg\text{,}\)</span> allora, moltiplicando a sinistra ambo i membri per <span class="process-math">\(g\text{,}\)</span> otteniamo</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 gh=gg^{-1}hg=hg\text{.}
 \end{equation*}
@@ -452,7 +449,7 @@ gh=gg^{-1}hg=hg\text{.}
 <span class="type">Corollario</span><span class="space"> </span><span class="codenumber">13.2.10</span><span class="period">.</span>
 </h3>
 <p id="p-1774">Dato un elemento <span class="process-math">\(h\)</span> di un gruppo <span class="process-math">\(G\text{,}\)</span> la cardinalità della classe di coniugio <span class="process-math">\(h^{G}\)</span> è uguale all'indice in <span class="process-math">\(G\)</span> del centralizzante di <span class="process-math">\(h\)</span> in <span class="process-math">\(G\text{.}\)</span> In formule</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \abs{h^{G}}=\ind{G}{\cent{G}{h}}\text{.}
 \end{equation*}
@@ -464,7 +461,7 @@ gh=gg^{-1}hg=hg\text{.}
 <span class="type">Proposizione</span><span class="space"> </span><span class="codenumber">13.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">Equazione delle classi.</span>
 </h3>
 <p id="p-1776">Dato un gruppo finito <span class="process-math">\(G\text{,}\)</span> possiamo scrivere</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \abs{G}=\abs{\centro(G)}+c_{1}+c_{2}+\cdots+c_{r}
 \end{equation*}
@@ -481,13 +478,13 @@ gh=gg^{-1}hg=hg\text{.}
 <span class="type">Proposizione</span><span class="space"> </span><span class="codenumber">13.2.15</span><span class="period">.</span>
 </h3>
 <p id="p-1781">Se <span class="process-math">\(G\)</span> è un <span class="process-math">\(p\)</span>-gruppo finito non banale, allora <span class="process-math">\(\centro(G)\)</span> è non banale.</p></article><article class="hiddenproof" id="proof-134"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-134"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-134"><article class="hiddenproof"><p id="p-1782">Sia <span class="process-math">\(\abs{G}=p^{n}\)</span> con <span class="process-math">\(n &gt; 0\text{.}\)</span> L'equazione delle classi di <span class="process-math">\(G\)</span> è allora</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 p^{n}=\abs{\centro(G)}+c_{1}+c_{2}+\cdots+c_{r}
 \end{equation*}
 </div>
 <p class="continuation">dove i <span class="process-math">\(c_{i}\)</span> sono divisori di <span class="process-math">\(p^{n}\)</span> maggiori di <span class="process-math">\(1\text{.}\)</span> Poiché <span class="process-math">\(p\)</span> è primo, i divisori di <span class="process-math">\(p^{n}\)</span> sono i numeri del tipo <span class="process-math">\(p^{t}\)</span> con <span class="process-math">\(0\le t\le n\text{:}\)</span> in particolare, i divisori di <span class="process-math">\(p^{n}\)</span> maggiori di <span class="process-math">\(1\)</span> sono multipli di <span class="process-math">\(p\text{.}\)</span> Ma allora</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \abs{\centro(G)}=p^{n}-c_{1}-c_{2}-\cdots-c_{r}
 \end{equation*}
@@ -501,7 +498,7 @@ p^{n}=\abs{\centro(G)}+c_{1}+c_{2}+\cdots+c_{r}
 <p id="p-1784">Sia <span class="process-math">\(H\)</span> un sottogruppo di un gruppo <span class="process-math">\(G\)</span> e si consideri l'azione di <span class="process-math">\(H\)</span> su <span class="process-math">\(G\)</span> indotta dall'azione regolare destra di <span class="process-math">\(G\)</span> su sé stesso. Dimostrare che le orbite dell'azione indotta sono i laterali sinistri di <span class="process-math">\(H\)</span> in <span class="process-math">\(G\text{.}\)</span></p></article><article class="exercise exercise-like" id="exercise-270"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
 <div class="introduction" id="introduction-61">
 <p id="p-1785">Sia data l'azione di <span class="process-math">\(S\coloneqq\Sym_{3}\)</span> su</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 X\coloneqq\{(i,j)\in\Interi\times\Interi\mid 1\le i\le 3,1\le j\le 3\}
 \end{equation*}
@@ -524,7 +521,7 @@ X\coloneqq\{(i,j)\in\Interi\times\Interi\mid 1\le i\le 3,1\le j\le 3\}
 </div></div>
 </div></article></article><article class="exercise exercise-like" id="exercise-271"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <p id="p-1792">Sia data l'azione di <span class="process-math">\(S\coloneqq\Sym_{3}\)</span> su</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 X\coloneqq\{(i,j,k)\in\Interi\times\Interi\times\Interi\mid 1\le i\le 3,1\le j\le 3,1\le k\}
 \end{equation*}

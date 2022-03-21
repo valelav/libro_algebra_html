@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-15T23:35:16+01:00       *-->
+<!--*       on 2022-03-21T07:20:32-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -50,9 +50,6 @@
 <link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="_static/runtime.dae47fcea5a0b194.bundle.js"></script><script type="text/javascript" src="_static/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="_static/runestone.61f83a67b708750a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="_static/runestone.d062db89aaf1dddd.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Vai all'indice generale</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{mathtools}\require{cancel}\DeclareMathOperator{\rk}{rk}
@@ -360,7 +357,7 @@
 </h2>
 <p id="p-3379">I naturali hanno una struttura di monoide commutativo sia rispetto all'addizione che alla moltiplicazione. Inoltre, le operazioni sono legate dalla proprietà distributiva e dal fatto che l'elemento neutro rispetto all'addizione è assorbente rispetto alla moltiplicazione. Questo tipo di struttura, che non soddisfa tutte le proprietà richieste dalla definizione di anello (<a href="" class="xref" data-knowl="./knowl/def-anello.html" title="Definizione 17.1.1">Definizione 17.1.1</a>), viene talvolta chiamate <dfn class="terminology">semianello commutativo</dfn>, ma la nomenclatura non è univoca.</p>
 <p id="p-3380">Vogliamo ora costruire l'anello dei numeri interi a partire dai naturali. Consideriamo allora l'insieme <span class="process-math">\(S\coloneqq \Naturali\times\Naturali\)</span> e definiamo in <span class="process-math">\(S\)</span> due operazioni di addizione e moltiplicazione nel modo seguente:</p>
-<div class="displaymath process-math" id="md-89">
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-89">
 \begin{align*}
 (a,b)+(c,d) \amp =(a+c,b+d)\\
 (a,b)\cdot(c,d)\amp =(a\cdot c+b\cdot d,a\cdot d+b\cdot c)
@@ -376,7 +373,7 @@
 <span class="type">Proposizione</span><span class="space"> </span><span class="codenumber">A.5.2</span><span class="period">.</span>
 </h2>
 <p id="p-3384">Nell'insieme quoziente <span class="process-math">\(\Interi\coloneqq S/\sim\)</span> sono definite due operazioni di addizione <span class="process-math">\(+\)</span> e di moltiplicazione <span class="process-math">\(\cdot\)</span> nel modo seguente:</p>
-<div class="displaymath process-math" id="md-90">
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-90">
 \begin{align*}
 \class[\sim]{(a,b)}+ \class[\sim]{(c,d)}\amp \coloneqq  \class[\sim]{(a+c,b+d)}\\
 \class[\sim]{(a,b)}\cdot\class[\sim]{(c,d)}\amp \coloneqq  \class[\sim]{(a\cdot c+b\cdot d,a\cdot d+b\cdot c)}
@@ -397,14 +394,14 @@
 </h2>
 <p id="p-3391">La funzione <span class="process-math">\(\phi\colon\Naturali\to\Interi\)</span> definita da <span class="process-math">\(n\phi\coloneqq \class[\sim]{(n,0)}\)</span> è iniettiva ed è un omomorfismo di monoidi sia rispetto all'addizione che alla moltiplicazione (cioè è un omomorfismo di semianelli).</p></article><article class="hiddenproof" id="proof-315"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-315"><h2 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h2></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-315"><article class="hiddenproof"><p id="p-3392">Siano <span class="process-math">\(m\)</span> e <span class="process-math">\(n\)</span> due naturali tali che <span class="process-math">\(m\phi=n\phi\text{,}\)</span> cioè <span class="process-math">\(\class[\sim]{(m,0)}=\class[\sim]{(n,0)}\text{.}\)</span> Ciò significa che <span class="process-math">\((m,0)\sim(n,0)\)</span> e, quindi, <span class="process-math">\(m+0=0+n\text{,}\)</span> vale a dire <span class="process-math">\(m=n\text{.}\)</span> Dunque, <span class="process-math">\(\phi\)</span> è iniettiva.</p>
 <p id="p-3393">Ora <span class="process-math">\(0\phi=\class[\sim]{(0,0)}\text{,}\)</span> cioè <span class="process-math">\(\phi\)</span> manda l'elemento neutro di <span class="process-math">\(+\)</span> in <span class="process-math">\(\Naturali\)</span> nell'elemento neutro di <span class="process-math">\(+\)</span> in <span class="process-math">\(\Interi\text{.}\)</span> Inoltre</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 m\phi+n\phi=\class[\sim]{(m,0)}+\class[\sim]{(n,0)}=\class[\sim]{(m+n,0)}=(m+n)\phi\text{.}
 \end{equation*}
 </div>
 <p class="continuation">Dunque, <span class="process-math">\(\phi\)</span> è un omomorfismo di monoidi additivi.</p>
 <p id="p-3394">Ora <span class="process-math">\(1\phi=\class[\sim]{(1,0)}\text{,}\)</span> cioè <span class="process-math">\(\phi\)</span> manda l'elemento neutro di <span class="process-math">\(\cdot\)</span> in <span class="process-math">\(\Naturali\)</span> nell'elemento neutro di <span class="process-math">\(\cdot\)</span> in <span class="process-math">\(\Interi\text{.}\)</span> Inoltre</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 m\phi\cdot n\phi=\class[\sim]{(m,0)}\cdot \class[\sim]{(n,0)}=\class[\sim]{(m\cdot 0+0\cdot n,0)}=\class[\sim]{(m\cdot n,0)}=(m\cdot n)\phi\text{.}
 \end{equation*}

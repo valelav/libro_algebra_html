@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-15T23:32:17+01:00       *-->
+<!--*       on 2022-03-21T07:18:29-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -50,9 +50,6 @@
 <link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="_static/runtime.dae47fcea5a0b194.bundle.js"></script><script type="text/javascript" src="_static/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="_static/runestone.61f83a67b708750a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="_static/runestone.d062db89aaf1dddd.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Vai all'indice generale</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{mathtools}\require{cancel}\DeclareMathOperator{\rk}{rk}
@@ -363,7 +360,7 @@
 <span class="type">Esempio</span><span class="space"> </span><span class="codenumber">13.4.1</span><span class="period">.</span>
 </h3>
 <p id="p-1918">Supponiamo di voler fare il coniugato del ciclo <span class="process-math">\(\sigma\coloneqq(1\;3\;5)\)</span> tramite la permutazione <span class="process-math">\(\tau\coloneqq(1\;2)(3\;4\;6)\)</span> (siamo in <span class="process-math">\(\Sym_{n}\)</span> con <span class="process-math">\(n\ge 6\)</span>). Abbiamo allora</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \sigma^{\tau}=\tau^{-1}\sigma\tau=(6\;4\;3)(1\;2)(1\;3\;5)(1\;2)(3\;4\;6)=(2\;4\;5)\text{.}
 \end{equation*}
@@ -380,20 +377,20 @@
 <span class="type">Teorema</span><span class="space"> </span><span class="codenumber">13.4.3</span><span class="period">.</span>
 </h3>
 <p id="p-1925">Due permutazioni di <span class="process-math">\(\Sym_{n}\)</span> sono coniugate se e solo se hanno lo stesso tipo.</p></article><article class="hiddenproof" id="proof-146"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-146"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-146"><article class="hiddenproof"><p id="p-1926">Sia <span class="process-math">\(\sigma\)</span> una permutazione di tipo <span class="process-math">\((r_{1},r_{2},\ldots,r_{t})\)</span> con <span class="process-math">\(r_{1}\ge r_{2}\ge\cdots\ge r_{t}&gt; 1\text{.}\)</span> Dunque,</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/lem-coniugato_ciclo.html">
 \begin{equation*}
 \sigma=(a_{1,1}\;\ldots\;a_{1r_{1}})\cdots(a_{t1}\;\ldots\;a_{tr_{t}})
 \end{equation*}
 </div>
 <p class="continuation">con gli <span class="process-math">\(a_{ij}\)</span> tutti distinti. Se <span class="process-math">\(\tau\)</span> è un elemento qualunque di <span class="process-math">\(\Sym_{n}\text{,}\)</span> per il <a href="" class="xref" data-knowl="./knowl/lem-coniugato_ciclo.html" title="Lemma 13.4.2">Lemma 13.4.2</a> abbiamo allora</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/lem-coniugato_ciclo.html">
 \begin{equation*}
 \sigma^{\tau}=(a_{1,1}\;\ldots\;a_{1r_{1}})^{\tau}\cdots(a_{t1}\;\ldots\;a_{tr_{t}})^{\tau}=  (a_{1,1}\tau\;\ldots\;a_{1r_{1}}\tau)\cdots(a_{t1}\tau\;\ldots\;a_{tr_{t}}\tau)\text{.}
 \end{equation*}
 </div>
 <p class="continuation">Per l'iniettività di <span class="process-math">\(\tau\text{,}\)</span> gli <span class="process-math">\(a_{ij}\tau\)</span> sono tutti distinti e, quindi, i cicli che appaiono in questa espressione di <span class="process-math">\(\sigma^{\tau}\)</span> sono disgiunti: pertanto, <span class="process-math">\(\sigma^{\tau}\)</span> ha lo stesso tipo di <span class="process-math">\(\sigma\text{.}\)</span></p>
 <p id="p-1927">Viceversa, sia</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/lem-coniugato_ciclo.html">
 \begin{equation*}
 \sigma'=(b_{1,1}\;\ldots\;b_{1r_{1}})\cdots(b_{t1}\;\ldots\;b_{tr_{t}})
 \end{equation*}
@@ -407,7 +404,7 @@
 </h3>
 <p id="p-1929">Nell'<a href="" class="xref" data-knowl="./knowl/ex-permutazioni_per_tipo.html" title="Esempio 10.2.14">Esempio 10.2.14</a> abbiamo contato quante permutazioni per tipo ci sono in <span class="process-math">\(\Sym_{n}\)</span> con <span class="process-math">\(n\le 5\text{:}\)</span> ora sappiamo che ogni tipo corrisponde a una classe di coniugio. Possiamo allora reinterpretare quelle tabelle e, inoltre, poiché dal <a href="" class="xref" data-knowl="./knowl/cor-ordine_classe_coniugio.html" title="Corollario 13.2.10">Corollario 13.2.10</a> sappiamo che la cardinalità di una classe di coniugio è uguale all'indice del centralizzante di un qualunque elemento della classe, possiamo calcolare l'ordine del centralizzante di ciascun elemento di ogni classe e aggiungere altre informazioni alle tabelle date.</p>
 <p id="p-1930">In <span class="process-math">\(\Sym_{3}\text{:}\)</span></p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \begin{array}{cccc}
 \sigma    \amp \abs{\sigma^{S}} \amp \abs{\sigma} \amp\abs{\cent{S}{\sigma}}\\
@@ -419,7 +416,7 @@
 \end{equation*}
 </div>
 <p id="p-1931">In <span class="process-math">\(\Sym_{4}\text{:}\)</span></p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \begin{array}{cccc}
 \sigma       \amp \abs{\sigma^{S}} \amp \abs{\sigma} \amp\abs{\cent{S}{\sigma}}\\
@@ -433,7 +430,7 @@
 \end{equation*}
 </div>
 <p id="p-1932">In <span class="process-math">\(\Sym_{5}\text{:}\)</span></p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \begin{array}{cccc}
 \sigma          \amp \abs{\sigma^{S}} \amp \abs{\sigma} \amp\abs{\cent{S}{\sigma}}\\
@@ -480,7 +477,7 @@
 <li id="li-140"><p id="p-1949">preso un qualunque <span class="process-math">\(g\in G\setminus H\)</span> e posto <span class="process-math">\(h'\coloneqq h^{g}\text{,}\)</span> la classe <span class="process-math">\(h^{G}\)</span> è unione disgiunta di <span class="process-math">\(h^{H}\)</span> e <span class="process-math">\(h'^{H}\)</span> con <span class="process-math">\(\abs{h^{H}}=\abs{h'^{H}}=\frac{1}{2}\abs{h^{G}}\)</span> e <span class="process-math">\(\cent{G}{h}=\cent{H}{h}\text{.}\)</span></p></li>
 </ul></article><article class="hiddenproof" id="proof-148"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-148"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-148"><article class="hiddenproof"><p id="p-1950">Sappiamo che <span class="process-math">\(H\)</span> è normale in <span class="process-math">\(G\)</span> per il <a href="" class="xref" data-knowl="./knowl/cor-indice_2_normale.html" title="Corollario 13.3.9">Corollario 13.3.9</a>: dunque, <span class="process-math">\(h^{G}\)</span> è contenuta in <span class="process-math">\(H\text{.}\)</span></p>
 <p id="p-1951">Dalla <a href="" class="xref" data-knowl="./knowl/prop-moltiplicativita_indice.html" title="Proposizione 11.2.9">Proposizione 11.2.9</a>  e dal <a href="" class="xref" data-knowl="./knowl/cor-ordine_classe_coniugio.html" title="Corollario 13.2.10">Corollario 13.2.10</a> segue che</p>
-<div class="displaymath process-math" id="md-48">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-moltiplicativita_indice.html ./knowl/cor-ordine_classe_coniugio.html ./knowl/lem-indice_intersezione.html" id="md-48">
 \begin{align*}
 2\abs{h^{H}} \amp =2\ind{H}{\cent{H}{h}}=\ind{G}{H}\ind{H}{\cent{H}{h}}= \ind{G}{\cent{H}{h}}\\
 \amp   =\ind{G}{\cent{G}{h}}\ind{\cent{G}{h}}{\cent{H}{h}}= \abs{h^{G}}\ind{\cent{G}{h}}{\cent{H}{h}}
@@ -537,14 +534,14 @@
 <p id="p-1977">Consideriamo le varie possibilità per la scrittura di <span class="process-math">\(\sigma\)</span> come prodotto di cicli disgiunti. Poiché siamo in <span class="process-math">\(\Sym_{8}\)</span> ci possono essere al più <span class="process-math">\(2\)</span> cicli di lunghezza <span class="process-math">\(4\)</span> e in tal caso non ci possono essere altri cicli. Si ottiene così la classe di coniugio delle permutazioni del tipo <span class="process-math">\((a_{1}\;a_{2}\;a_{3}\;a_{4})(a_{5}\;a_{6}\;a_{7}\;a_{8})\text{,}\)</span> con tutti gli <span class="process-math">\(a_{i}\)</span> distinti. Per determinare il numero di elementi di questa classe di coniugio, notiamo che <span class="process-math">\(a_{1}\text{,}\)</span> <span class="process-math">\(a_{2}\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(a_{8}\)</span> possono essere scelti in <span class="process-math">\(8!\)</span> modi. Tuttavia non tutte queste scelte portano a permutazioni diverse: ciascuno dei due cicli coinvolti può essere scritto in <span class="process-math">\(4\)</span> modi diversi (a seconda della lettera iniziale). Inoltre i due cicli possono essere scambiati fra loro. Dunque abbiamo <span class="process-math">\(\frac{8!}{4\cdot4\cdot2}\)</span> elementi nella classe.</p>
 <p id="p-1978">Consideriamo ora i casi in cui c'è esattamente un ciclo di lunghezza <span class="process-math">\(4\text{:}\)</span> possono essere allora esserci nessuno, uno o due cicli di lunghezza <span class="process-math">\(2\text{.}\)</span> Abbiamo dunque la classe di coniugio degli elementi del tipo <span class="process-math">\((a_{1}\;a_{2}\;a_{3}\;a_{4})\text{:}\)</span> possiamo scegliere le lettere <span class="process-math">\(a_{1}\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(a_{4}\)</span> in <span class="process-math">\(8\cdot7\cdot6\cdot5\)</span> modi diversi. Come prima però, ciascun ciclo può essere scritto in <span class="process-math">\(4\)</span> modi diversi. Ci sono così <span class="process-math">\(\frac{8\cdot7\cdot6\cdot5}{4}\)</span> elementi in questa classe.</p>
 <p id="p-1979">Abbiamo poi la classe di coniugio degli elementi del tipo</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 (a_{1}\;a_{2}\;a_{3}\;a_{4})(a_{5}\;a_{6})\text{:}
 \end{equation*}
 </div>
 <p class="continuation">possiamo scegliere le lettere <span class="process-math">\(a_{1}\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(a_{6}\)</span> in <span class="process-math">\(8\cdot7\cdot6\cdot5\cdot4\cdot3\)</span> modi diversi. Il ciclo di lunghezza <span class="process-math">\(4\)</span> può essere scritto in <span class="process-math">\(4\)</span> modi diversi, mentre il ciclo di lunghezza <span class="process-math">\(2\)</span> può essere scritto in <span class="process-math">\(2\)</span> modi diversi. Ci sono così <span class="process-math">\(\frac{8\cdot7\cdot6\cdot5\cdot4\cdot3}{4\cdot2}\)</span> elementi in questa classe.</p>
 <p id="p-1980">Infine abbiamo la classe di coniugio degli elementi del tipo</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 (a_{1}\;a_{2}\;a_{3}\;a_{4})(a_{5}\;a_{6})(a_{7}\;a_{8})\text{:}
 \end{equation*}
@@ -601,7 +598,7 @@
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-119" id="solution-119"><span class="type">Soluzione</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-119"><div class="solution solution-like">
 <p id="p-2003">Al punto precedente abbiamo mostrato che le permutazioni di periodo <span class="process-math">\(35\)</span> sono tutte dello stesso tipo e sono dunque coniugate tra loro in <span class="process-math">\(\Sym_{12}\text{:}\)</span> la cardinalità della classe di coniugio è uguale all'indice in <span class="process-math">\(\Sym_{12}\)</span> del centralizzante di una qualsiasi di esse. Poiché <span class="process-math">\(\Sym_{12}\)</span> ha ordine <span class="process-math">\(12!\)</span> e la classe di coniugio ha cardinalità <span class="process-math">\(\frac{12!}{35}\)</span> ne consegue che il centralizzante in <span class="process-math">\(\Sym_{12}\)</span> ha ordine <span class="process-math">\(35\text{.}\)</span></p>
 <p id="p-2004">Il centralizzante <span class="process-math">\(\cent{\Sym_{12}}{\sigma}\)</span> contiene perlomeno il sottogruppo ciclico generato da <span class="process-math">\(\sigma\text{:}\)</span> poiché <span class="process-math">\(\sigma\)</span> ha periodo <span class="process-math">\(35\)</span> e il centralizzante ha pure ordine <span class="process-math">\(35\text{,}\)</span> ne consegue che <span class="process-math">\(\cent{\Sym_{12}}{\sigma}=\grgen{\sigma}\text{.}\)</span> Notiamo ora che la permutazione <span class="process-math">\(\sigma\)</span> è pari e appartiene quindi ad <span class="process-math">\(A_{12}\text{:}\)</span> pertanto, tutto il gruppo ciclico generato da <span class="process-math">\(\sigma\)</span> è contenuto in <span class="process-math">\(A_{12}\)</span> e, quindi,</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \cent{A_{12}}{\sigma}=\cent{\Sym_{12}}{\sigma}\cap A_{12}=\grgen{\sigma}\text{:}
 \end{equation*}
