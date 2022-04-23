@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-04-20T07:36:11+02:00       *-->
+<!--*       on 2022-04-23T14:44:31+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,7 +14,14 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="hiddenproof"><h2 class="heading"><span class="type">Dimostrazione</span></h2>
-<p>Per la <a href="" class="xref" data-knowl="./knowl/prop-definizione_ricorrenza.html" title="Proposizione A.2.9">Proposizione A.2.9</a> esistono e sono unici omomorfismi di algebre <span class="process-math">\(f\colon\Naturali\to\Naturali'\)</span> e <span class="process-math">\(g\colon\Naturali'\to\Naturali\)</span> tali che <span class="process-math">\(0f=0'\)</span> e <span class="process-math">\(0'g=0\text{.}\)</span> Dunque, <span class="process-math">\(fg\)</span> è un omomorfismo da <span class="process-math">\(\Naturali\)</span> in sé che manda <span class="process-math">\(0\)</span> in <span class="process-math">\(0\text{:}\)</span> anche l'identità è ovviamente un omomorfismo <span class="process-math">\(\Naturali\)</span> in sé che manda <span class="process-math">\(0\)</span> in <span class="process-math">\(0\text{:}\)</span> per la proprietà di unicità della <a href="" class="xref" data-knowl="./knowl/prop-definizione_ricorrenza.html" title="Proposizione A.2.9">Proposizione A.2.9</a>, abbiamo che <span class="process-math">\(fg=\Id_{\Naturali}\text{.}\)</span> Analogamente, <span class="process-math">\(gf=\Id_{\Naturali'}\text{,}\)</span> dunque, <span class="process-math">\(f\)</span> e <span class="process-math">\(g\)</span> sono l'una l'inversa dell'altra.</p></article><span class="incontext"><a href="sec-assiomi_peano.html#proof-294" class="internal">Contesto</a></span>
+<article class="hiddenproof"><h3 class="heading"><span class="type">Dimostrazione</span></h3>
+<p>Esiste una matrice invertibile <span class="process-math">\(M\)</span> tale che <span class="process-math">\(M^{-1}AM=B\text{.}\)</span> Ma allora <span class="process-math">\(M^{-1}(A-k\Id)M=M^{-1}AM-kM^{-1}\Id M=B-k\Id\text{.}\)</span> Dunque l'enunciato è vero per <span class="process-math">\(t=1\text{.}\)</span> Procediamo per induzione su <span class="process-math">\(t\text{:}\)</span> per <span class="process-math">\(t\gt 1\)</span> abbiamo allora</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+M^{-1}(A-k\Id)^{t}M\amp =M^{-1}(A-k\Id)^{t-1}(A-k\Id)M\\
+\amp =M^{-1}(A-k\Id)^{t-1}MM^{-1}(A-k\Id)M\\
+\amp =(B-k\Id)^{t-1}(B-k\Id)=(B-k\Id)^{t}
+\end{align*}
+</div></article><span class="incontext"><a href="sec-jordan.html#proof-294" class="internal">Contesto</a></span>
 </body>
 </html>

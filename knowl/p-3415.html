@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-04-20T07:36:18+02:00       *-->
+<!--*       on 2022-04-23T14:44:31+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,8 +14,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Capoverso</span></h3>
-<p>Dal <a href="" class="xref" data-knowl="./knowl/lem-addizione_naturali.html" title="Lemma A.4.2">Lemma A.4.2</a> segue che <span class="process-math">\(n+0=nf_{0}=n\)</span> per ogni <span class="process-math">\(n\in\Naturali\text{.}\)</span> Dalla definizione di addizione si ha <span class="process-math">\(0+n=0f_{n}=n\text{.}\)</span> Questo dimostra il <a href="" class="xref" data-knowl="./knowl/item-peano_neutro_addizione.html" title="Punto 1">Punto 1</a>.</p>
-<span class="incontext"><a href="sec-operazioni_naturali.html#p-3415" class="internal">Contesto</a></span>
+<h4 class="heading"><span class="type">Capoverso</span></h4>
+<p>Esiste una matrice invertibile <span class="process-math">\(M\)</span> tale che <span class="process-math">\(M^{-1}AM=B\text{.}\)</span> Ma allora <span class="process-math">\(M^{-1}(A-k\Id)M=M^{-1}AM-kM^{-1}\Id M=B-k\Id\text{.}\)</span> Dunque l'enunciato è vero per <span class="process-math">\(t=1\text{.}\)</span> Procediamo per induzione su <span class="process-math">\(t\text{:}\)</span> per <span class="process-math">\(t\gt 1\)</span> abbiamo allora</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+M^{-1}(A-k\Id)^{t}M\amp =M^{-1}(A-k\Id)^{t-1}(A-k\Id)M\\
+\amp =M^{-1}(A-k\Id)^{t-1}MM^{-1}(A-k\Id)M\\
+\amp =(B-k\Id)^{t-1}(B-k\Id)=(B-k\Id)^{t}
+\end{align*}
+</div>
+<span class="incontext"><a href="sec-jordan.html#p-3415" class="internal">Contesto</a></span>
 </body>
 </html>

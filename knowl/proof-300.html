@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-04-20T07:36:15+02:00       *-->
+<!--*       on 2022-04-23T14:44:35+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,12 +15,10 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h2 class="heading"><span class="type">Dimostrazione</span></h2>
-<p>La funzione <span class="process-math">\(\Id_{\Naturali}\)</span> è un omomorfismo di algebre da <span class="process-math">\((\Naturali,s)\)</span> in sé: poiché <span class="process-math">\(0\Id_{\Naturali}=0=0f_{0}\text{,}\)</span> dalla <a href="" class="xref" data-knowl="./knowl/prop-definizione_ricorrenza.html" title="Proposizione A.2.9">Proposizione A.2.9</a> segue che <span class="process-math">\(f_{0}=\Id_{\Naturali}\text{.}\)</span> Analogamente, poiché <span class="process-math">\(s\)</span> è un omomorfismo di algebre da <span class="process-math">\((\Naturali,s)\)</span> in sé e <span class="process-math">\(0s=0f_{1}\text{,}\)</span> risulta <span class="process-math">\(f_{1}=s\text{.}\)</span></p>
-<p>Il fatto che <span class="process-math">\(f_{n}\)</span> sia un omomorfismo si esprime dicendo che <span class="process-math">\(f_{n}s=sf_{n}\text{,}\)</span> cioè <span class="process-math">\(f_{n}f_{1}=f_{1}f_{n}\text{:}\)</span> infine <span class="process-math">\(0f_{n}f_{1}=nf_{1}=ns=0f_{ns}\)</span> e, quindi, <span class="process-math">\(f_{n}f_{1}\)</span> e <span class="process-math">\(f_{ns}\)</span> sono omomorfismi che coincidono su <span class="process-math">\(0\)</span> e, di conseguenza, coincidono.</p>
-<p>Per provare che <span class="process-math">\(f_{n}\)</span> è iniettiva, procediamo per induzione su <span class="process-math">\(n\text{.}\)</span></p>
+<p>Procediamo per induzione.</p>
 <ul class="disc">
-<li><p>Per <span class="process-math">\(n=0\text{,}\)</span> abbiamo già notato che <span class="process-math">\(f_{0}=\Id_{\Naturali}\)</span> che è ovviamente iniettiva.</p></li>
-<li><p>Se <span class="process-math">\(n\)</span> è un naturale tale che <span class="process-math">\(f_{n}\)</span> sia iniettiva, allora <span class="process-math">\(f_{ns}=f_{n}f_{1}=f_{n}s\)</span> e, quindi, <span class="process-math">\(f_ns\)</span> è iniettiva perché composta di iniettive (<a href="" class="xref" data-knowl="./knowl/prop-composizione_iniettive_suriettive.html" title="Proposizione 3.2.18">Proposizione 3.2.18</a>).</p></li>
-</ul></article><span class="incontext"><a href="sec-operazioni_naturali.html#proof-300" class="internal">Contesto</a></span>
+<li><p>Poiché <span class="process-math">\(0\notin\im s\text{,}\)</span> chiaramente <span class="process-math">\(0\notin\alg{0}s\text{;}\)</span></p></li>
+<li><p>sia ora <span class="process-math">\(n\)</span> un numero naturale tale che <span class="process-math">\(n\notin\alg{n}s\text{:}\)</span> dobbiamo provare che <span class="process-math">\(ns\notin\alg{ns}s\text{.}\)</span> Se così non fosse, cioè se <span class="process-math">\(ns\in\alg{ns}s\text{,}\)</span> dovrebbe esistere <span class="process-math">\(m\in\alg{ns}\)</span> tale che <span class="process-math">\(ns=ms\text{:}\)</span> poiché <span class="process-math">\(s\)</span> è iniettiva avremmo allora <span class="process-math">\(n=m\in\alg{ns}=\alg{n}s\)</span> (dove l'ultima uguaglianza segue  dalla <a href="" class="xref" data-knowl="./knowl/prop-immagine_algebra_generata.html" title="Proposizione A.1.9">Proposizione A.1.9</a>) contro l'assunzione che <span class="process-math">\(n\notin\alg{n}s\text{.}\)</span> Dunque, <span class="process-math">\(ns\notin\alg{ns}s\text{.}\)</span></p></li>
+</ul></article><span class="incontext"><a href="sec-assiomi_peano.html#proof-300" class="internal">Contesto</a></span>
 </body>
 </html>
