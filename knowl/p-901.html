@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-04-26T19:19:26+02:00       *-->
+<!--*       on 2022-04-28T11:01:58+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,16 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Capoverso</span></h4>
-<p>L'insieme delle matrici <span class="process-math">\(\matt{m}{n}{R}\)</span> a <span class="process-math">\(m\)</span> righe e <span class="process-math">\(n\)</span> colonne a coefficienti in un anello <span class="process-math">\(R\)</span> è un gruppo abeliano rispetto all'addizione (con elemento neutro la matrice nulla). L'ordine di questo gruppo dipende dall'ordine di <span class="process-math">\(R\)</span> (in particolare, è finito se e solo se <span class="process-math">\(R\)</span> è finito).</p>
-<span class="incontext"><a href="sec-gruppi.html#p-901" class="internal">Contesto</a></span>
+<p>Supponiamo ora che <span class="process-math">\(a\)</span> e <span class="process-math">\(b\)</span> siano invertibili e sia <span class="process-math">\(n\)</span> un intero negativo. Allora</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-proprieta_potenze_elemento_invertibile.html ./knowl/prop-proprieta_inverso_rivisto.html ./knowl/prop-proprieta_potenze_elemento_invertibile.html ./knowl/prop-potenze_di_commutabili.html">
+\begin{align*}
+(a\cdot b)^{n} \amp = ((a\cdot b)^{-n})^{-1} \amp \knowl{./knowl/prop-proprieta_potenze_elemento_invertibile.html}{\text{Proposizione 7.1.19}}\\
+\amp =(a^{-n}\cdot b^{-n})^{-1} \amp \text{perché }-n\text{ è naturale}\\
+\amp =(b^{-n})^{-1}\cdot (a^{-n})^{-1} \amp \knowl{./knowl/prop-proprieta_inverso_rivisto.html}{\text{Proposizione 7.1.15}}\\
+\amp =b^{n}\cdot a^{n} \amp \knowl{./knowl/prop-proprieta_potenze_elemento_invertibile.html}{\text{Proposizione 7.1.19}}\\
+\amp =a^{n}\cdot b^{n} \amp \knowl{./knowl/prop-potenze_di_commutabili.html}{\text{Proposizione 7.1.21}}
+\end{align*}
+</div>
+<span class="incontext"><a href="sec-monoidi.html#p-901" class="internal">Contesto</a></span>
 </body>
 </html>
