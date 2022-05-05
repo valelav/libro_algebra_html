@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-02T13:25:34+02:00       *-->
+<!--*       on 2022-05-05T12:20:22+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,18 +14,20 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Capoverso</span></h4>
-<p>Sia <span class="process-math">\(V\)</span> un <span class="process-math">\(K\)</span>-spazio vettoriale di dimensione finita e dotato di un endomorfismo <span class="process-math">\(\theta\text{.}\)</span> Siano <span class="process-math">\(V_{1}\text{,}\)</span> <span class="process-math">\(V_{2}\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(V_{r}\)</span> sottospazi <span class="process-math">\(\theta\)</span>-stabili di <span class="process-math">\(V\)</span> tali che <span class="process-math">\(V=V_{1}\oplus V_{2}\oplus\cdots\oplus V_{r}\text{.}\)</span> Fissata una base per ciascuno dei <span class="process-math">\(V_{i}\text{,}\)</span> sia <span class="process-math">\(B_{i}\)</span> la matrice rappresentativa rispetto a tale base dell'endomorfismo di <span class="process-math">\(V_{i}\)</span> indotto da <span class="process-math">\(\theta\text{.}\)</span> Allora, la matrice rappresentativa di <span class="process-math">\(\theta\)</span> rispetto alla base di <span class="process-math">\(V\)</span> formata dall'unione delle basi scelte dei sottospazi <span class="process-math">\(V_{i}\)</span> è la <dfn class="terminology">matrice diagonale a blocchi</dfn>:</p>
+<h3 class="heading"><span class="type">Capoverso</span></h3>
+<p>Fissata una base <span class="process-math">\(\vect{v}_{1}\text{,}\)</span> <span class="process-math">\(\dots\text{,}\)</span> <span class="process-math">\(\vect{v}_{n}\)</span> di un <span class="process-math">\(K\)</span>-spazio vettoriale <span class="process-math">\(V\)</span> di dimensione finita, ricordiamo che la <dfn class="terminology">matrice rappresentativa</dfn> di un endomorfismo <span class="process-math">\(\theta\)</span> rispetto alla base assegnata è la matrice a coefficienti in <span class="process-math">\(K\)</span></p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
+A\coloneqq
 \begin{pmatrix}
-B_{1}  \amp 0      \amp \dots  \amp 0 \\
-0      \amp B_{2}  \amp \dots  \amp 0 \\
-\vdots \amp \vdots \amp \ddots \amp \vdots\\
-0      \amp 0      \amp \dots  \amp B_{s}
-\end{pmatrix}\text{.}
+a_{11} \amp a_{12} \amp \dots \amp a_{1n}\\
+a_{21} \amp a_{22} \amp \dots \amp a_{2n}\\
+\vdots \amp \vdots \amp \ddots\amp \vdots\\
+a_{n1} \amp a_{n2} \amp \dots \amp a_{nn}
+\end{pmatrix}
 \end{equation*}
 </div>
+<p class="continuation">definita da <span class="process-math">\(\vect{v}_{i}\theta=\vect{v}_{1}a_{i1}+\dots+\vect{v}_{n}a_{in}\text{.}\)</span> In altri termini, la <span class="process-math">\(i\)</span>-esima riga di <span class="process-math">\(A\)</span> dà le componenti di <span class="process-math">\(\vect{v}_{i}\theta\)</span> rispetto alla base assegnata<a href="" class="fn-knowl original" data-knowl="./knowl/fn-31-hidden.html" title="Nota a piè di pagina 27.2.1"><sup> 1 </sup></a>. Viceversa, data una matrice <span class="process-math">\(A\text{,}\)</span> le formule soprastanti definiscono un endomorfismo <span class="process-math">\(\theta\)</span> detto <dfn class="terminology">endomorfismo associato</dfn> ad <span class="process-math">\(A\)</span> rispetto alla base assegnata. Abbiamo così una corrispondenza biiettiva tra <span class="process-math">\(\End_{K}(V)\)</span> e <span class="process-math">\(\mat{n}{K}\)</span> e si vede facilmente che questa corrispondenza è un isomorfismo di anelli. Questo isomorfismo dipende dalla base scelta per <span class="process-math">\(V\text{:}\)</span> in particolare, dato un certo endomorfismo <span class="process-math">\(\theta\text{,}\)</span> le matrici che rappresentano <span class="process-math">\(\theta\)</span> al variare della base sono tutte e sole le matrici del tipo <span class="process-math">\(M^{-1}AM\)</span> dove <span class="process-math">\(M\)</span> è una matrice invertibile, vale a dire sono le matrici <dfn class="terminology">simili</dfn> ad <span class="process-math">\(A\text{.}\)</span></p>
 <span class="incontext"><a href="sec-matrici_rappresentative.html#p-3378" class="internal">Contesto</a></span>
 </body>
 </html>

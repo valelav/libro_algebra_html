@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-02T13:24:18+02:00       *-->
+<!--*       on 2022-05-05T12:18:37+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,17 +14,13 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-potenze_di_commutabili.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-proprieta_potenze_elemento_invertibile.html ./knowl/prop-proprieta_inverso_rivisto.html ./knowl/prop-proprieta_potenze_elemento_invertibile.html ./knowl/prop-potenze_di_commutabili.html">
 \begin{align*}
-(a\cdot b)^{k+1} \amp = (a\cdot b)^{k}\cdot(a\cdot b)     \amp \text{definizione di potenza} \\
-\amp = (a^{k}\cdot b^{k})\cdot(a\cdot b)   \amp \text{ipotesi induttiva}\\
-\amp = (a^{k} \cdot b^{k})\cdot(b\cdot a)  \amp \text{ipotesi}\\
-\amp = a^{k} \cdot (b^{k}\cdot(b\cdot a))  \amp \text{proprietà associativa}\\
-\amp = a^{k} \cdot ((b^{k}\cdot b)\cdot a) \amp \text{proprietà associativa}\\
-\amp = a^{k} \cdot (b^{k+1}\cdot a)        \amp \text{definizione di potenza}\\
-\amp = a^{k} \cdot (a\cdot b^{k+1})        \amp \knowl{./knowl/prop-potenze_di_commutabili.html}{\text{Proposizione 7.1.21}}\\
-\amp = (a^{k} \cdot a)\cdot b^{k+1}        \amp \text{proprietà associativa}\\
-\amp = a^{k+1} \cdot b^{k+1}               \amp \text{definizione di potenza}
+(a\cdot b)^{n} \amp = ((a\cdot b)^{-n})^{-1} \amp \knowl{./knowl/prop-proprieta_potenze_elemento_invertibile.html}{\text{Proposizione 7.1.19}}\\
+\amp =(a^{-n}\cdot b^{-n})^{-1} \amp \text{perché }-n\text{ è naturale}\\
+\amp =(b^{-n})^{-1}\cdot (a^{-n})^{-1} \amp \knowl{./knowl/prop-proprieta_inverso_rivisto.html}{\text{Proposizione 7.1.15}}\\
+\amp =b^{n}\cdot a^{n} \amp \knowl{./knowl/prop-proprieta_potenze_elemento_invertibile.html}{\text{Proposizione 7.1.19}}\\
+\amp =a^{n}\cdot b^{n} \amp \knowl{./knowl/prop-potenze_di_commutabili.html}{\text{Proposizione 7.1.21}}
 \end{align*}
 </div>
 <span class="incontext"><a href="sec-monoidi.html#md-35" class="internal">Contesto</a></span>

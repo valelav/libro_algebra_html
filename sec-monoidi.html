@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-02T13:22:54+02:00       *-->
+<!--*       on 2022-05-05T12:17:15+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -387,7 +387,7 @@
 <p id="p-851">Dato un insieme <span class="process-math">\(X\text{,}\)</span> l'insieme <span class="process-math">\(X^{X}\)</span> è un monoide rispetto alla composizione (con elemento neutro la funzione identica). Se <span class="process-math">\(X\)</span> contiene almeno due elementi, il monoide <span class="process-math">\(X^{X}\)</span> è non commutativo (<a href="" class="xref" data-knowl="./knowl/ex-composizione_insieme_due_elementi_non_commutativa.html" title="Esempio 6.2.4">Esempio 6.2.4</a>).</p></article><article class="example example-like" id="example-67"><h3 class="heading">
 <span class="type">Esempio</span><span class="space"> </span><span class="codenumber">7.1.6</span><span class="period">.</span>
 </h3>
-<p id="p-852">Dato un insieme <span class="process-math">\(X\text{,}\)</span> il suo booleano <span class="process-math">\(\parti{X}\)</span> è un monoide sia rispetto all'unione insiemistica (con elemento neutro <span class="process-math">\(\vuoto\)</span>), sia rispetto all'intersezione insiemistica (con elemento neutro <span class="process-math">\(X\)</span>).</p></article><article class="definition definition-like" id="def-elemento_invertibile"><h3 class="heading">
+<p id="p-852">Dato un insieme <span class="process-math">\(X\text{,}\)</span> il suo booleano <span class="process-math">\(\parti{X}\)</span> è un monoide commutativo sia rispetto all'unione insiemistica (con elemento neutro <span class="process-math">\(\vuoto\)</span>), sia rispetto all'intersezione insiemistica (con elemento neutro <span class="process-math">\(X\)</span>).</p></article><article class="definition definition-like" id="def-elemento_invertibile"><h3 class="heading">
 <span class="type">Definizione</span><span class="space"> </span><span class="codenumber">7.1.7</span><span class="period">.</span>
 </h3>
 <p id="p-853">Un elemento <span class="process-math">\(a\)</span> di un monoide <span class="process-math">\(M\)</span> è detto <dfn class="terminology">invertibile</dfn> se esiste un elemento <span class="process-math">\(b\)</span> in <span class="process-math">\(M\)</span> tale che</p>
@@ -516,16 +516,25 @@ a^{m}\cdot a^{k+1} \amp = a^{m}\cdot (a^{k}\cdot a)          \amp\text{definizio
 <ul class="circle">
 <li id="li-89"><p id="p-888">se <span class="process-math">\(m \ge 0\)</span> e <span class="process-math">\(n \ge 0\text{,}\)</span> basta considerare la <a href="" class="xref" data-knowl="./knowl/prop-proprieta_potenze_monoide.html" title="Proposizione 7.1.17">Proposizione 7.1.17</a>;</p></li>
 <li id="li-90">
-<p id="p-889">se uno tra <span class="process-math">\(m\)</span> e <span class="process-math">\(n\)</span> è negativo e l'altro è positivo (ad esempio, <span class="process-math">\(m \gt0\)</span> e <span class="process-math">\(n \lt0\text{,}\)</span> l'altro caso è analogo) allora</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/lem-inverso_di_potenze.html" id="md-33">
-\begin{align*}
-a^{m+n} \amp =a^{m+n}\cdot 1                    \amp\\
-\amp =a^{m+n}\cdot (a^{-n}\cdot a^{n})  \amp\knowl{./knowl/lem-inverso_di_potenze.html}{\text{Lemma 7.1.18}}\\
-\amp =(a^{m+n}\cdot a^{-n})\cdot a^{n} \amp\text{proprietà associativa}\\
-\amp =a^{m+n+(-n)}\cdot a^{n}           \amp \text{perché } m+n\ge 0\text{ e }-n\ge 0\\
-\amp =a^{m}\cdot a^{n}                  \amp
-\end{align*}
+<p id="p-889">se uno tra <span class="process-math">\(m\)</span> e <span class="process-math">\(n\)</span> è negativo (ad esempio, <span class="process-math">\(n \lt 0\text{,}\)</span> l'altro caso è analogo) allora, per la <a href="" class="xref" data-knowl="./knowl/prop-proprieta_potenze_monoide.html" title="Proposizione 7.1.17">Proposizione 7.1.17</a>, abbiamo</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-proprieta_potenze_monoide.html ./knowl/lem-inverso_di_potenze.html">
+\begin{equation*}
+a^{m+n}a^{-n}=a^{m+n-n}=a^{m}\text{.}
+\end{equation*}
 </div>
+<p class="continuation">Moltiplicando a destra ambo i membri per <span class="process-math">\(a^{n}\text{,}\)</span> otteniamo</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-proprieta_potenze_monoide.html ./knowl/lem-inverso_di_potenze.html">
+\begin{equation*}
+(a^{m+n}a^{-n})a^{n}=a^{m}a^{n}
+\end{equation*}
+</div>
+<p class="continuation">che, per la proprietà associativa, dà</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-proprieta_potenze_monoide.html ./knowl/lem-inverso_di_potenze.html">
+\begin{equation*}
+a^{m+n}(a^{-n}a^{n})=a^{m}a^{n}\text{:}
+\end{equation*}
+</div>
+<p class="continuation">poiché <span class="process-math">\(a^{-n}a^{n}=1\)</span> per il <a href="" class="xref" data-knowl="./knowl/lem-inverso_di_potenze.html" title="Lemma 7.1.18">Lemma 7.1.18</a>, otteniamo immediatamente l'uguaglianza voluta.</p>
 </li>
 </ul>
 </li>
@@ -554,7 +563,7 @@ a^{m}\cdot a^{n}=a^{m+n}=a^{n+m}=a^{n}\cdot a^{m}\text{.}
 <span class="type">Proposizione</span><span class="space"> </span><span class="codenumber">7.1.21</span><span class="period">.</span>
 </h3>
 <p id="p-894">Siano <span class="process-math">\(a\)</span> e <span class="process-math">\(b\)</span> due elementi commutabili di un monoide. Allora ogni potenza di <span class="process-math">\(a\)</span> commuta con ogni potenza di <span class="process-math">\(b\)</span> (dove le potenze vanno prese con esponenti solo naturali per gli elementi non invertibili).</p></article><article class="hiddenproof" id="proof-60"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-60"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-60"><article class="hiddenproof"><p id="p-895">Dimostriamo innanzitutto che <span class="process-math">\(a\)</span> commuta con <span class="process-math">\(b^{n}\)</span> per ogni naturale <span class="process-math">\(n\text{.}\)</span> Procediamo per induzione su <span class="process-math">\(n\text{.}\)</span> Il caso <span class="process-math">\(n=0\)</span> è banale: infatti <span class="process-math">\(b^{0}=1\)</span> commuta con ogni altro elemento. Sia allora <span class="process-math">\(k\)</span> un naturale tale per cui <span class="process-math">\(a\)</span> commuta con <span class="process-math">\(b^{k}\)</span> e mostriamo che <span class="process-math">\(a\)</span> commuta con <span class="process-math">\(b^{k+1}\text{.}\)</span> Dunque:</p>
-<div class="displaymath process-math" data-contains-math-knowls="" id="md-34">
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-33">
 \begin{align*}
 a\cdot b^{k+1} \amp = a\cdot(b^{k}\cdot b)  \amp \text{definizione di potenza} \\
 \amp = (a\cdot b^{k})\cdot b \amp \text{proprietà associativa} \\
@@ -590,7 +599,7 @@ b^{n}a\cdot 1=1\cdot ab^{n}
 </h3>
 <p id="p-898">Siano <span class="process-math">\(a\)</span> e <span class="process-math">\(b\)</span> due elementi commutabili di un monoide. Per ogni naturale <span class="process-math">\(n\)</span> si ha <span class="process-math">\((a\cdot b)^{n}=a^{n}\cdot b^{n}\text{:}\)</span> se <span class="process-math">\(a\)</span> e <span class="process-math">\(b\)</span> sono invertibili, l'identità vale per <span class="process-math">\(n\)</span> intero qualunque.</p></article><article class="hiddenproof" id="proof-61"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-61"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-61"><article class="hiddenproof"><p id="p-899">Consideriamo prima il caso in cui <span class="process-math">\(n\)</span> sia naturale e procediamo per induzione su <span class="process-math">\(n\text{.}\)</span> Se <span class="process-math">\(n=0\text{,}\)</span> abbiamo <span class="process-math">\((a\cdot b)^{0}=1\)</span> e <span class="process-math">\(a^{0}\cdot b^{0}=1\cdot 1=1\text{.}\)</span></p>
 <p id="p-900">Sia allora <span class="process-math">\(k\)</span> un naturale per cui vale la proprietà e mostriamo che vale per <span class="process-math">\(k+1\text{.}\)</span> Dunque</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-potenze_di_commutabili.html" id="md-35">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-potenze_di_commutabili.html" id="md-34">
 \begin{align*}
 (a\cdot b)^{k+1} \amp = (a\cdot b)^{k}\cdot(a\cdot b)     \amp \text{definizione di potenza} \\
 \amp = (a^{k}\cdot b^{k})\cdot(a\cdot b)   \amp \text{ipotesi induttiva}\\
@@ -604,7 +613,7 @@ b^{n}a\cdot 1=1\cdot ab^{n}
 \end{align*}
 </div>
 <p id="p-901">Supponiamo ora che <span class="process-math">\(a\)</span> e <span class="process-math">\(b\)</span> siano invertibili e sia <span class="process-math">\(n\)</span> un intero negativo. Allora</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-proprieta_potenze_elemento_invertibile.html ./knowl/prop-proprieta_inverso_rivisto.html ./knowl/prop-proprieta_potenze_elemento_invertibile.html ./knowl/prop-potenze_di_commutabili.html" id="md-36">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-proprieta_potenze_elemento_invertibile.html ./knowl/prop-proprieta_inverso_rivisto.html ./knowl/prop-proprieta_potenze_elemento_invertibile.html ./knowl/prop-potenze_di_commutabili.html" id="md-35">
 \begin{align*}
 (a\cdot b)^{n} \amp = ((a\cdot b)^{-n})^{-1} \amp \knowl{./knowl/prop-proprieta_potenze_elemento_invertibile.html}{\text{Proposizione 7.1.19}}\\
 \amp =(a^{-n}\cdot b^{-n})^{-1} \amp \text{perché }-n\text{ è naturale}\\

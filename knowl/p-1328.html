@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-02T13:24:31+02:00       *-->
+<!--*       on 2022-05-05T12:18:52+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,25 +15,13 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Capoverso</span></h3>
-<p>Veniamo, infine, al caso in cui abbiamo più cicli della stessa lunghezza. Dare la formula generale, anche se non difficile concettualmente, richiederebbe veramente troppi indici. Accontentiamoci di un esempio abbastanza generale. Prendiamo una permutazione di tipo <span class="process-math">\((3,3,2,2,2)\)</span> in <span class="process-math">\(\Sym_{14}\text{.}\)</span> Come nel caso precedente avremmo</p>
+<p>Vogliamo ora contare quante permutazioni di ciascun tipo ci sono in <span class="process-math">\(\Sym_{n}\text{.}\)</span> Cominciamo dagli <span class="process-math">\(r\)</span>-cicli con <span class="process-math">\(r\ge 2\)</span> (l'unico <span class="process-math">\(1\)</span>-ciclo è l'identità). Per scrivere un <span class="process-math">\(r\)</span>-ciclo <span class="process-math">\((a_{1}\; a_{2}\;\ldots\; a_{r})\text{,}\)</span> dobbiamo innanzitutto scegliere la lettera <span class="process-math">\(a_{1}\text{:}\)</span> possiamo farlo in <span class="process-math">\(n\)</span> modi diversi. Una volta scelta <span class="process-math">\(a_{1}\text{,}\)</span> dobbiamo scegliere <span class="process-math">\(a_{2}\)</span> che sia diversa da <span class="process-math">\(a_{1}\text{:}\)</span> abbiamo <span class="process-math">\(n-1\)</span> possibilità. Scegliamo poi <span class="process-math">\(a_{3}\)</span> tra <span class="process-math">\(n-2\)</span> possibilità e così via fino ad arrivare a <span class="process-math">\(a_{r}\)</span> da scegliere tra <span class="process-math">\(n-r+1\)</span> possibilità residue. Abbiamo così ottenuto <span class="process-math">\(n(n-1)\cdots(n-r+1)\)</span> scritture diverse: queste scritture non sono però tutte distinte, perché ogni <span class="process-math">\(r\)</span>-ciclo può essere scritto in <span class="process-math">\(r\)</span> modi diversi. Dobbiamo, quindi, dividere il numero delle scritture per <span class="process-math">\(r\)</span> e ottenere così il numero degli <span class="process-math">\(r\)</span>-cicli in <span class="process-math">\(\Sym_{n}\text{:}\)</span></p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\frac{14\cdot13\cdot12\cdot11\cdot10\cdot9\cdot8\cdot7\cdot6\cdot5\cdot4\cdot3}{3\cdot3\cdot2\cdot2\cdot2}
+\frac{n(n-1)\cdots(n-r+1)}{r}\text{.}
 \end{equation*}
 </div>
-<p class="continuation">possibilità. Ma non è finita qui: possiamo anche ottenere la stessa permutazione scrivendo in un ordine diverso i <span class="process-math">\(3\)</span>-cicli e i <span class="process-math">\(2\)</span>-cicli, sempre rispettando l'ordine debolmente decrescente delle lunghezze dei cicli:</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-(1\;2\;3)(4\;5\;6)(7\;8)(9\;10)(11\;12)=(4\;5\;6)(1\;2\;3)(7\;8)(11\;12)(9\;10)=\cdots\text{.}
-\end{equation*}
-</div>
-<p class="continuation">Possiamo riordinare i <span class="process-math">\(3\)</span>-cicli in <span class="process-math">\(2!=2\)</span> modi diversi e i <span class="process-math">\(2\)</span>-cicli in <span class="process-math">\(3!=6\)</span> modi diversi. Dobbiamo, quindi, dividere per <span class="process-math">\(2!\cdot 3!\)</span> e ottenere così:</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\frac{14\cdot13\cdot12\cdot11\cdot10\cdot9\cdot8\cdot7\cdot6\cdot5\cdot4\cdot3}{3\cdot3\cdot2\cdot2\cdot2\cdot 2!\cdot3!}\text{.}
-\end{equation*}
-</div>
-<p class="continuation">In generale si procede come nel caso dei cicli di lunghezza diversa e poi si divide per il prodotto dei fattoriali delle occorrenze di ciascuna lunghezza.</p>
+<p class="continuation">Ad esempio i <span class="process-math">\(4\)</span>-cicli in <span class="process-math">\(\Sym_{6}\)</span> sono <span class="process-math">\(\frac{6\cdot5\cdot4\cdot3}{4}=90\text{.}\)</span></p>
 <span class="incontext"><a href="sec-cicli.html#p-1328" class="internal">Contesto</a></span>
 </body>
 </html>

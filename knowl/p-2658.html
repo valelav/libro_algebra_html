@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-02T13:25:08+02:00       *-->
+<!--*       on 2022-05-05T12:19:37+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,31 +15,22 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Capoverso</span></h4>
-<p>Siano dati i polinomi <span class="process-math">\(f\coloneqq 3x^{4}+2x^{3}-1\)</span> e <span class="process-math">\(g\coloneqq 2x^{2}+1\)</span> a coefficienti in <span class="process-math">\(\Razionali\text{.}\)</span> Dividiamo allora i termini di grado massimo: <span class="process-math">\(3x^{4}=\frac{3}{2}x^{2}\cdot 2x^{2}\text{.}\)</span> Otteniamo così</p>
+<p>Mostriamo innanzitutto l'esistenza di <span class="process-math">\(q\)</span> e <span class="process-math">\(r\)</span> per induzione su <span class="process-math">\(n\text{.}\)</span> Se <span class="process-math">\(n \lt m\text{,}\)</span> basta prendere <span class="process-math">\(q=0\)</span> e <span class="process-math">\(r=f\text{.}\)</span> Se <span class="process-math">\(n\ge m\text{,}\)</span> allora sottraiamo da <span class="process-math">\(f\)</span> un multiplo opportuno di <span class="process-math">\(g\text{,}\)</span> in modo che il coefficiente di <span class="process-math">\(x^{n}\)</span> nel polinomio così ottenuto sia <span class="process-math">\(0\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+h \amp\coloneqq f-ga_{n}b_{m}^{-1}x^{n-m} \\
+\amp = a_{0}+a_{1}x+\cdots+a_{n}x^{n} \\
+\amp -(b_{0}a_{n}b_{m}^{-1}x^{n-m}+b_{1}a_{n}b_{m}^{-1}x^{n-m+1}+\cdots+b_{m}a_{n}b_{m}^{-1}x^{n}) \\
+\amp = c_{0}+c_{1}x+\cdots+c_{n-1}x^{n-1}
+\end{align*}
+</div>
+<p class="continuation">per certi <span class="process-math">\(c_{i}\)</span> in <span class="process-math">\(R\text{.}\)</span> Per ipotesi induttiva, esistono allora <span class="process-math">\(\bar{q}\)</span> e <span class="process-math">\(r\)</span> tali che <span class="process-math">\(h=g\bar{q}+r\)</span> con <span class="process-math">\(\deg r \lt \deg g\)</span> o <span class="process-math">\(r=0\text{.}\)</span> Ma allora</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-3x^{4}+2x^{3}-1-\frac{3}{2}x^{2}(2x^{2}+1)=2x^{3}-\frac{3}{2}x^{2}-1\text{.}
+f=h+ga_{n}b_{m}^{-1}x^{n-m}=g\bar{q}+r+ga_{n}b_{m}^{-1}x^{n-m}=g(\bar{q}+a_{n}b_{m}^{-1}x^{n-m})+r=gq+r
 \end{equation*}
 </div>
-<p class="continuation">Dividiamo ora il termine di grado massimo del polinomio così ottenuto per il termine di grado massimo di <span class="process-math">\(g\text{,}\)</span> ottenendo così  <span class="process-math">\(2x^{3}=x\cdot 2x^{2}\text{.}\)</span> Pertanto</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-2x^{3}-\frac{3}{2}x^{2}-1-x(2x^{2}+1)=-\frac{3}{2}x^{2}-x-1\text{.}
-\end{equation*}
-</div>
-<p class="continuation">Dividiamo ora il termine di grado massimo del polinomio così ottenuto per il termine di grado massimo di <span class="process-math">\(g\text{,}\)</span> ottenendo così <span class="process-math">\(-\frac{3}{2}x^{2}=-\frac{3}{4}\cdot 2x^{2}\text{.}\)</span> Pertanto</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
--\frac{3}{2}x^{2}-x-1-\left(-\frac{3}{4}\right)(2x^{2}+1)=-x-\frac{1}{4}\text{.}
-\end{equation*}
-</div>
-<p class="continuation">Possiamo fermarci. Abbiamo allora</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-3x^{4}+2x^{3}-1=\left(\frac{3}{2}x^{2}+x-\frac{3}{4}\right)(2x^{2}+1)+\left(-x-\frac{1}{4}\right)\text{,}
-\end{equation*}
-</div>
-<p class="continuation">cioè <span class="process-math">\(q=\frac{3}{2}x^{2}+x-\frac{3}{4}\)</span> e <span class="process-math">\(r=-x-\frac{1}{4}\text{.}\)</span></p>
+<p class="continuation">avendo posto <span class="process-math">\(q\coloneqq \bar{q}+a_{n}b_{m}^{-1}x^{n-m}\text{.}\)</span></p>
 <span class="incontext"><a href="sec-valutazione_polinomi.html#p-2658" class="internal">Contesto</a></span>
 </body>
 </html>
