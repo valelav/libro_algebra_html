@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-08T09:33:10+02:00       *-->
+<!--*       on 2022-05-12T12:10:31+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,13 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Capoverso</span></h4>
-<p>Mostriamo ora che la matrice rappresentativa di <span class="process-math">\(\theta\)</span> rispetto a questa base è la matrice <span class="process-math">\(J_{n}(\lambda)\)</span> data in enunciato. Per <span class="process-math">\(1\le j\le n-1\)</span> si ha <span class="process-math">\(\vect{v}_{j}(\theta-\lambda\Id)=\vect{v}_{j+1}\)</span> e, pertanto, <span class="process-math">\(\vect{v}_{j}\theta=\vect{v}_{j}\lambda+\vect{v}_{j+1}\text{.}\)</span> Ciò permette di determinare i coefficienti della riga <span class="process-math">\(j\)</span>-esima. Per determinare l'ultima riga della matrice notiamo che <span class="process-math">\(\vect{v}_{n}(\theta-\lambda\Id)=\vect{v}(\theta-\lambda\Id)^{n-1}(\theta-\lambda\Id)= \vect{v}(\theta-\lambda\Id)^{n}=\vect{0}\text{.}\)</span> Pertanto <span class="process-math">\(\vect{v}_{n}\theta=\vect{v}_{n}\lambda\)</span> da cui ricaviamo i coefficienti dell'ultima riga della matrice.</p>
-<span class="incontext"><a href="sec-jordan.html#p-3414" class="internal">Contesto</a></span>
+<p>Determiniamo la matrice rappresentativa di <span class="process-math">\(\theta\)</span> rispetto alla base prescelta. Osserviamo che, per <span class="process-math">\(1\le i\le n-1\text{,}\)</span> si ha <span class="process-math">\(\vect{v}_{i}\theta=\vect{v}_{i+1}\text{.}\)</span> In particolare, <span class="process-math">\(\vect{v}_{1}\theta= \vect{v}_{1}\cdot 0+\vect{v}_{2}\cdot 1+\vect{v}_{3}\cdot 0+\cdots+\vect{v}_{n}\cdot 0\text{:}\)</span> quindi, i coefficienti sulla prima riga della matrice rappresentativa di <span class="process-math">\(\theta\)</span> sono <span class="process-math">\((0,1,0,\dots,0)\text{.}\)</span> In maniera analoga determiniamo le righe della matrice fino alla <span class="process-math">\(n-1\)</span>-esima. Per determinare l'ultima riga, osserviamo che <span class="process-math">\(\vect{v}p=\vect{0}\text{,}\)</span> cioè <span class="process-math">\(\vect{v}a_{0}+\vect{v}\theta a_{1}+\dots+\vect{v}\theta^{n}\)</span> vale a dire <span class="process-math">\(\vect{v}\theta^{n}=-\vect{v}a_{0}-\vect{v}\theta a_{1}+\dots-\vect{v}\theta^{n-1}a_{n-1}\text{.}\)</span> Ma allora</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\vect{v}_{n}\theta=\vect{v}\theta^{n-1}\theta=\vect{v}\theta^{n}=
+-\vect{v}_{1}a_{0}-\vect{v}_{2}a_{1}-\cdots-\vect{v}_{n}a_{n-1}\text{.}
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-matrici_compagne.html#p-3414" class="internal">Contesto</a></span>
 </body>
 </html>

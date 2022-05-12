@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-08T09:33:11+02:00       *-->
+<!--*       on 2022-05-12T12:10:35+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,21 +14,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h6 class="heading"><span class="type">Capoverso</span></h6>
-<p>Ovviamente dobbiamo proseguire: sappiamo che ci sono due blocchi ma non abbiamo ancora idea del loro ordine. Prendiamo allora la matrice <span class="process-math">\((A-2\Idmatrix)^{2}\text{,}\)</span> cioè la matrice</p>
+<h4 class="heading"><span class="type">Capoverso</span></h4>
+<p>Esiste una matrice invertibile <span class="process-math">\(M\)</span> tale che <span class="process-math">\(M^{-1}AM=B\text{.}\)</span> Ma allora <span class="process-math">\(M^{-1}(A-k\Idmatrix)M=M^{-1}AM-kM^{-1}\Idmatrix M=B-k\Idmatrix\text{.}\)</span> Dunque l'enunciato è vero per <span class="process-math">\(t=1\text{.}\)</span> Procediamo per induzione su <span class="process-math">\(t\text{:}\)</span> per <span class="process-math">\(t\gt 1\)</span> abbiamo allora</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\begin{pmatrix}
-0 \amp 0 \amp 0 \amp 0 \amp 2 \amp 0 \\
-0 \amp 0 \amp 0 \amp 4 \amp 0 \amp 0 \\
-0 \amp 0 \amp 0 \amp 0 \amp 0 \amp 0 \\
-0 \amp 0 \amp 0 \amp 0 \amp 0 \amp 0 \\
-0 \amp 0 \amp 0 \amp 0 \amp 0 \amp 0 \\
-0 \amp 0 \amp 0 \amp 1 \amp 0 \amp 0
-\end{pmatrix}\text{.}
-\end{equation*}
+\begin{align*}
+M^{-1}(A-k\Idmatrix)^{t}M\amp =M^{-1}(A-k\Idmatrix)^{t-1}(A-k\Idmatrix)M\\
+\amp =M^{-1}(A-k\Idmatrix)^{t-1}MM^{-1}(A-k\Idmatrix)M\\
+\amp =(B-k\Idmatrix)^{t-1}(B-k\Idmatrix)=(B-k\Idmatrix)^{t}
+\end{align*}
 </div>
-<p class="continuation">Il rango di questa matrice è <span class="process-math">\(2\text{:}\)</span> dunque nella successione dei ranghi siamo scesi di <span class="process-math">\(4-2\text{.}\)</span> Abbiamo pertanto <span class="process-math">\(2\)</span> blocchi di ordine almeno <span class="process-math">\(2\text{.}\)</span> Ecco il nostro schema aggiornato:</p>
 <span class="incontext"><a href="sec-jordan.html#p-3452" class="internal">Contesto</a></span>
 </body>
 </html>
