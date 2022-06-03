@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-26T19:48:33+02:00       *-->
+<!--*       on 2022-06-03T17:00:51+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,8 +14,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h6 class="heading"><span class="type">Capoverso</span></h6>
-<p>Determinare una matrice di Jordan simile ad <span class="process-math">\(A\)</span> nel caso in cui <span class="process-math">\(F=\Interi/p\)</span> con <span class="process-math">\(p\)</span> numero primo.</p>
+<h4 class="heading"><span class="type">Capoverso</span></h4>
+<p>Esiste una matrice invertibile <span class="process-math">\(M\)</span> tale che <span class="process-math">\(M^{-1}AM=B\text{.}\)</span> Ma allora <span class="process-math">\(M^{-1}(A-k\Idmatrix)M=M^{-1}AM-kM^{-1}\Idmatrix M=B-k\Idmatrix\text{.}\)</span> Dunque l'enunciato è vero per <span class="process-math">\(t=1\text{.}\)</span> Procediamo per induzione su <span class="process-math">\(t\text{:}\)</span> per <span class="process-math">\(t\gt 1\)</span> abbiamo allora</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+M^{-1}(A-k\Idmatrix)^{t}M\amp =M^{-1}(A-k\Idmatrix)^{t-1}(A-k\Idmatrix)M\\
+\amp =M^{-1}(A-k\Idmatrix)^{t-1}MM^{-1}(A-k\Idmatrix)M\\
+\amp =(B-k\Idmatrix)^{t-1}(B-k\Idmatrix)=(B-k\Idmatrix)^{t}
+\end{align*}
+</div>
 <span class="incontext"><a href="sec-jordan.html#p-3498" class="internal">Contesto</a></span>
 </body>
 </html>

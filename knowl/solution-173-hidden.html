@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-26T19:48:14+02:00       *-->
+<!--*       on 2022-06-03T17:00:27+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -13,5 +13,37 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><p>Supponiamo che <span class="process-math">\(fg\)</span> non sia primitivo e sia, dunque, <span class="process-math">\(p\)</span> un elemento irriducibile di <span class="process-math">\(D\)</span> che divide tutti i coefficienti di <span class="process-math">\(fg\text{.}\)</span> Allora <span class="process-math">\(p\)</span> divide <span class="process-math">\(fg\)</span> in <span class="process-math">\(D[x]\text{:}\)</span> poiché <span class="process-math">\(D\)</span> è un dominio a fattorizzazione unica, l'elemento <span class="process-math">\(p\)</span> è primo in <span class="process-math">\(D\)</span> e, per il <a href="" class="xref" data-knowl="./knowl/lem-gauss.html" title="Lemma 21.1.2: Lemma di Gauss">Lemma di Gauss</a>, è primo in <span class="process-math">\(D[x]\text{.}\)</span> Dunque, <span class="process-math">\(p\)</span> divide <span class="process-math">\(f\)</span> o <span class="process-math">\(g\)</span> in <span class="process-math">\(D[x]\text{,}\)</span> cioè <span class="process-math">\(p\)</span> divide tutti i coefficienti di <span class="process-math">\(f\)</span> o <span class="process-math">\(g\text{:}\)</span> in altri termini, <span class="process-math">\(f\)</span> o <span class="process-math">\(g\)</span> non è primitivo.</p></div></body>
+<body class="ignore-math"><div class="solution solution-like">
+<p>Applichiamo l'<a href="" class="xref" data-knowl="./knowl/alg-euclide_domini.html" title="Algoritmo 20.3.12: Algoritmo di Euclide per i domini euclidei">Algoritmo di Euclide per i domini euclidei</a> usando la funzione <span class="process-math">\(\euclidean\)</span> e la divisione data nell'<a href="" class="xref" data-knowl="./knowl/ex-interi_gaussiani.html" title="Esempio 20.3.9">Esempio 20.3.9</a>.</p>
+<p>Abbiamo <span class="process-math">\(\euclidean(7+17i)=7^{2}+17^{2}=338\)</span> e <span class="process-math">\(\euclidean(8-14i)=8^{2}+(-14)^{2}=260\text{.}\)</span> Dividiamo, dunque, <span class="process-math">\(7+17i\)</span> per <span class="process-math">\(8-14i\)</span> in <span class="process-math">\(\Razionali[i]\)</span> e approssimiamo poi il quoziente in <span class="process-math">\(\Interi[i]\text{.}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{7+17i}{8-14i}=\frac{7+17i}{8-14i}\frac{8-14i}{8+14i}=-\frac{182}{260}+\frac{234}{260}i\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Approssimiamo questo quoziente con <span class="process-math">\(-1+i\coloneqq q\text{.}\)</span> Troviamo allora</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+7+17i=(8-14i)(-1+i)+r
+\end{equation*}
+</div>
+<p class="continuation">- Svolgendo i calcoli troviamo che <span class="process-math">\(r=1-5i\text{.}\)</span> Dividiamo ora <span class="process-math">\(8-14i\)</span> per <span class="process-math">\(1-5i\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{8-14i}{1-5i}=\frac{8-14i}{1-5i}\frac{1+5i}{1+5i}=3+i\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Abbiamo dunque</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+8-14i=(1-5i)(3+i)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">L'ultimo resto cercato è <span class="process-math">\(1-5i\)</span> che è, dunque, il massimo comun divisore. Possiamo poi scrivere facilmente un'identità di Bezout</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+1+5i=(7+17i)\cdot1+(8-14i)(1-i)\text{.}
+\end{equation*}
+</div>
+</div></body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-26T19:48:31+02:00       *-->
+<!--*       on 2022-06-03T17:00:50+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,13 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Capoverso</span></h4>
-<p>Sia <span class="process-math">\(J\)</span> la forma canonica di Jordan di <span class="process-math">\(A\)</span> (cioè sia <span class="process-math">\(A\)</span> simile a <span class="process-math">\(J\)</span>). Se <span class="process-math">\(B\)</span> è simile ad <span class="process-math">\(A\)</span> allora è simile anche a <span class="process-math">\(J\text{.}\)</span> Viceversa se <span class="process-math">\(B\)</span> ha <span class="process-math">\(J\)</span> come sua forma canonica di Jordan (cioè se <span class="process-math">\(B\)</span> è simile a <span class="process-math">\(J\)</span>) allora <span class="process-math">\(A\)</span> e <span class="process-math">\(B\text{,}\)</span> essendo simili a <span class="process-math">\(J\)</span> sono simili fra loro.</p>
-<span class="incontext"><a href="sec-jordan.html#p-3460" class="internal">Contesto</a></span>
+<p>Determiniamo la matrice rappresentativa di <span class="process-math">\(\theta\)</span> rispetto alla base prescelta. Osserviamo che, per <span class="process-math">\(1\le i\le n-1\text{,}\)</span> si ha <span class="process-math">\(\vect{v}_{i}\theta=\vect{v}_{i+1}\text{.}\)</span> In particolare, <span class="process-math">\(\vect{v}_{1}\theta= \vect{v}_{1}\cdot 0+\vect{v}_{2}\cdot 1+\vect{v}_{3}\cdot 0+\cdots+\vect{v}_{n}\cdot 0\text{:}\)</span> quindi, i coefficienti sulla prima riga della matrice rappresentativa di <span class="process-math">\(\theta\)</span> sono <span class="process-math">\((0,1,0,\dots,0)\text{.}\)</span> In maniera analoga determiniamo le righe della matrice fino alla <span class="process-math">\(n-1\)</span>-esima. Per determinare l'ultima riga, osserviamo che <span class="process-math">\(\vect{v}p=\vect{0}\text{,}\)</span> cioè <span class="process-math">\(\vect{v}a_{0}+\vect{v}\theta a_{1}+\dots+\vect{v}\theta^{n}\)</span> vale a dire <span class="process-math">\(\vect{v}\theta^{n}=-\vect{v}a_{0}-\vect{v}\theta a_{1}+\dots-\vect{v}\theta^{n-1}a_{n-1}\text{.}\)</span> Ma allora</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\vect{v}_{n}\theta=\vect{v}\theta^{n-1}\theta=\vect{v}\theta^{n}=
+-\vect{v}_{1}a_{0}-\vect{v}_{2}a_{1}-\cdots-\vect{v}_{n}a_{n-1}\text{.}
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-matrici_compagne.html#p-3460" class="internal">Contesto</a></span>
 </body>
 </html>

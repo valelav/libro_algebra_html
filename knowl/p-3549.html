@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-26T19:48:34+02:00       *-->
+<!--*       on 2022-06-03T17:00:54+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,13 +15,16 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Capoverso</span></h3>
-<p>Dalla <a href="" class="xref" data-knowl="./knowl/prop-immagine_diretta_inversa_sottoalgebre.html" title="Proposizione A.1.8">Proposizione A.1.8</a> segue che <span class="process-math">\(\alg{a}f\)</span> è una sottoalgebra di <span class="process-math">\(B\)</span> (chiaramente contenente <span class="process-math">\(af\)</span>) e che <span class="process-math">\(\alg{af}f^{-1}\)</span> è una sottoalgebra di <span class="process-math">\(A\)</span> (chiaramente contenente <span class="process-math">\(a\)</span>). La <a href="" class="xref" data-knowl="./knowl/def-sottoalgebra_generata.html" title="Definizione A.1.5">Definizione A.1.5</a> implica allora che <span class="process-math">\(\alg{af}\subseteq\alg{a}f\)</span> e che <span class="process-math">\(\alg{a}\subseteq\alg{af}f^{-1}\text{:}\)</span> da quest'ultima segue che <span class="process-math">\(\alg{a}f\subseteq\alg{af}f^{-1}f\text{.}\)</span> Per la seconda parte della <a href="" class="xref" data-knowl="./knowl/prop-avanti_indietro.html" title="Proposizione 3.1.17">Proposizione 3.1.17</a>, abbiamo d'altra parte che <span class="process-math">\(\alg{af}f^{-1}f\subseteq\alg{af}\text{.}\)</span> Abbiamo così la catena di inclusioni</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-immagine_diretta_inversa_sottoalgebre.html ./knowl/def-sottoalgebra_generata.html ./knowl/prop-avanti_indietro.html">
-\begin{equation*}
-\alg{af}\subseteq\alg{a}f\subseteq\alg{af}f^{-1}f\subseteq\alg{af}
-\end{equation*}
+<p>Grazie al <a href="" class="xref" data-knowl="./knowl/thm-cayley_hamilton.html" title="Teorema 27.5.1: Teorema di Cayley-Hamilton">Teorema di Cayley-Hamilton</a> il polinomio minimo di una matrice quadrata <span class="process-math">\(A\)</span> è un divisore del suo polinomio caratteristico: in particolare il suo grado è minore o uguale dell'ordine della matrice. Supponiamo ora che <span class="process-math">\(A\)</span> e <span class="process-math">\(B\)</span> siano matrici quadrate simili a coefficienti in un campo <span class="process-math">\(K\)</span> (e, dunque, esista una matrice invertibile <span class="process-math">\(M\)</span> tale che <span class="process-math">\(B=M^{-1}AM\)</span>) e sia <span class="process-math">\(p\coloneqq a_{0}+a_{1}x+\dots+a_{t}x^{t}\)</span> un polinomio a coefficienti in <span class="process-math">\(K\text{.}\)</span> Allora</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/thm-cayley_hamilton.html">
+\begin{align*}
+p(B) \amp =a_{0}\Idmatrix+a_{1}B+\dots+a_{t}B^{t} \\
+\amp =a_{0}M^{-1}\Idmatrix M+a_{1}M^{-1}AM+\dots+a_{t}(M^{-1}AM)^{t}\\
+\amp =a_{0}M^{-1}\Idmatrix M+a_{1}M^{-1}AM+\dots+a_{t}M^{-1}A^{t}M\\
+\amp =M^{-1}(a_{0}\Idmatrix+a_{1}B+\dots+a_{t}B^{t})M=M^{-1}p(A)M\text{.}
+\end{align*}
 </div>
-<p class="continuation">che risultano, quindi, uguaglianze, da cui la tesi.</p>
-<span class="incontext"><a href="sec-algebre_induttive.html#p-3549" class="internal">Contesto</a></span>
+<p class="continuation">In particolare il polinomio <span class="process-math">\(p\)</span> si annulla in <span class="process-math">\(A\)</span> se e solo se si annulla in <span class="process-math">\(B\text{.}\)</span> Abbiamo dunque la</p>
+<span class="incontext"><a href="sec-polinomio_minimo_matrici.html#p-3549" class="internal">Contesto</a></span>
 </body>
 </html>

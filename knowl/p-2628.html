@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-26T19:48:05+02:00       *-->
+<!--*       on 2022-06-03T17:00:19+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,26 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Capoverso</span></h4>
-<p>Dato un anello commutativo <span class="process-math">\(R\text{,}\)</span> l'anello dei polinomi <span class="process-math">\(R[x]\)</span> non è un campo.</p>
+<p>Mostriamo ora che la moltiplicazione è associativa: siano</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+f \amp\coloneqq(a_{0},a_{1},\ldots,a_{i},\ldots) \\
+g \amp\coloneqq(b_{0},b_{1},\ldots,b_{i},\ldots) \\
+h \amp\coloneqq(c_{0},c_{1},\ldots,c_{i},\ldots) 
+\end{align*}
+</div>
+<p class="continuation">tre polinomi. Abbiamo allora che <span class="process-math">\(fg\)</span> è il polinomio il cui coefficiente di indice <span class="process-math">\(j\)</span> è <span class="process-math">\(d_{j}\coloneqq\sum_{h+k=j}a_{h}b_{k}\)</span> e, di conseguenza, il coefficiente di indice <span class="process-math">\(i\)</span> di <span class="process-math">\((fg)h\)</span> è</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sum_{j+l=i}d_{j}c_{l}=\sum_{j+l=i}\sum_{h+k=j}a_{h}b_{k}c_{l}=\sum_{h+k+l=i}a_{h}b_{k}c_{l}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Analogamente, <span class="process-math">\(gh\)</span> è il polinomio il cui coefficiente di indice <span class="process-math">\(j\)</span> è <span class="process-math">\(e_{j}\coloneqq\sum_{k+l=j}b_{k}c_{l}\)</span> e, di conseguenza, il coefficiente di indice <span class="process-math">\(i\)</span> di <span class="process-math">\(f(gh)\)</span> è</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sum_{h+j=i}a_{h}e_{j}=\sum_{h+j=i}\sum_{k+l=j}a_{h}b_{k}c_{l}=\sum_{h+k+l=i}a_{h}b_{k}c_{l}\text{.}
+\end{equation*}
+</div>
 <span class="incontext"><a href="sec-anello_polinomi.html#p-2628" class="internal">Contesto</a></span>
 </body>
 </html>
