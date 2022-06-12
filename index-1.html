@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-03T16:59:11+02:00       *-->
+<!--*       on 2022-06-12T08:36:18+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,6 +49,38 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Vai all'indice generale</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{mathtools}\require{cancel}\DeclareMathOperator{\rk}{rk}
@@ -203,7 +235,7 @@
 </ul>
 </li>
 <li class="link">
-<a href="ch-gruppi.html" data-scroll="ch-gruppi" class="internal"><span class="codenumber">7</span> <span class="title">Definizioni e prime proprietà</span></a><ul>
+<a href="ch-gruppi.html" data-scroll="ch-gruppi" class="internal"><span class="codenumber">7</span> <span class="title">Monoidi e gruppi</span></a><ul>
 <li><a href="sec-monoidi.html" data-scroll="sec-monoidi" class="internal">Monoidi</a></li>
 <li><a href="sec-gruppi.html" data-scroll="sec-gruppi" class="internal">Gruppi</a></li>
 <li><a href="sec-gruppi_piccoli.html" data-scroll="sec-gruppi_piccoli" class="internal">Alcuni esempi di gruppi piccoli</a></li>
@@ -372,14 +404,25 @@
 <div class="indexletter" id="indexletter-a">
 <div class="indexitem">Abel, Niels Henrik<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-gruppo.html" title="Definizione 7.2.1">Definizione</a></span>
 </div>
+<div class="indexitem">addizione</div>
+<div class="subindexitem">di naturali<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-addizione.html" title="Definizione A.4.4">Definizione</a></span>
+</div>
+<div class="indexitem">algebra induttiva<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-algebra_induttiva.html" title="Definizione A.1.1">Definizione</a></span>
+</div>
+<div class="subindexitem">omomorfismo<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-omomorfismo_algebre_induttive.html" title="Definizione A.1.6">Definizione</a></span>
+</div>
 <div class="indexitem">anello<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-anello.html" title="Definizione 17.1.1">Definizione</a></span>
 </div>
 <div class="subindexitem">commutativo<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-anello.html" title="Definizione 17.1.1">Definizione</a></span>
 </div>
 <div class="indexitem">applicazione<span class="indexknowl">. <span class="see"><em>Vedi</em> funzione</span></span>
 </div>
+<div class="indexitem">assiomi di Peano<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-numeri_naturali_peano.html" title="Definizione 4.1.1">Definizione</a> <a href="" class="xref" data-knowl="./knowl/def-assiomi_peano.html" title="Definizione A.2.1">Definizione</a></span>
+</div>
 </div>
 <div class="indexletter" id="indexletter-b">
+<div class="indexitem">biiettiva (funzione)<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione_biiettiva.html" title="Definizione 3.2.15">Definizione</a></span>
+</div>
 <div class="indexitem">Binet, Jacques Philippe Marie<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/example-108.html" title="Esempio 12.1.3">Esempio</a></span>
 </div>
 <div class="indexitem">Boole, George<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-insieme_parti.html" title="Definizione 1.1.11">Definizione</a></span>
@@ -395,7 +438,7 @@
 </div>
 <div class="subindexitem">di un insieme finito<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-13.html" title="Capoverso">Capoverso</a> <a href="" class="xref" data-knowl="./knowl/rem_cardinalita_finita.html" title="Osservazione A.3.7">Osservazione</a></span>
 </div>
-<div class="indexitem">Cauchy, Augustin-Louis<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-2242.html" title="Capoverso">Capoverso</a></span>
+<div class="indexitem">Cauchy, Augustin-Louis<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-2243.html" title="Capoverso">Capoverso</a></span>
 </div>
 <div class="indexitem">Cayley, Arthur<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-799.html" title="Capoverso">Capoverso</a></span>
 </div>
@@ -421,6 +464,13 @@
 </div>
 <div class="indexitem">codominio (di una funzione)<span class="indexknowl">. <span class="see"><em>Vedi</em> insieme di arrivo di una funzione</span></span>
 </div>
+<div class="indexitem">composizione</div>
+<div class="subindexitem">di corrispondenze<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/exercise-11.html" title="Esercizio 2.1.1">Esercizio</a></span>
+</div>
+<div class="subindexitem">di funzioni<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione_composta.html" title="Definizione 3.1.7">Definizione</a></span>
+</div>
+<div class="indexitem">controimmagine<span class="indexknowl">. <span class="see"><em>Vedi</em> immagine inversa</span></span>
+</div>
 <div class="indexitem">corrispondenza<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-corrispondenza.html" title="Definizione 2.1.1">Definizione</a></span>
 </div>
 <div class="subindexitem">composizione<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/exercise-11.html" title="Esercizio 2.1.1">Esercizio</a></span>
@@ -440,7 +490,7 @@
 </div>
 <div class="indexitem">equivalenza (relazione di)<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-equivalenza.html" title="Definizione 2.2.2">Definizione</a></span>
 </div>
-<div class="indexitem">Euler, Leonhard<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/example-1.html" title="Esempio 1.1.1">Esempio</a></span>
+<div class="indexitem">Eulero (Leonhard Euler)<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/example-1.html" title="Esempio 1.1.1">Esempio</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-f">
@@ -448,15 +498,29 @@
 </div>
 <div class="indexitem">funzione<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione.html" title="Definizione 3.1.1">Definizione</a></span>
 </div>
-<div class="subindexitem">codominio<span class="indexknowl"> <span class="see">(<em>vedi</em> insieme di arrivo di una funzione)</span></span>
+<div class="subindexitem">biiettiva<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione_biiettiva.html" title="Definizione 3.2.15">Definizione</a></span>
 </div>
-<div class="subindexitem">dominio<span class="indexknowl"> <span class="see">(<em>vedi</em> insieme di partenza di una funzione)</span></span>
+<div class="subindexitem">composizione<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione_composta.html" title="Definizione 3.1.7">Definizione</a></span>
+</div>
+<div class="subindexitem">identica<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione_identica.html" title="Definizione 3.1.6">Definizione</a></span>
+</div>
+<div class="subindexitem">immagine<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-immagine_diretta_inversa_sottoinsiemi.html" title="Definizione 3.1.13">Definizione</a></span>
 </div>
 <div class="subindexitem">immagine di un elemento<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione.html" title="Definizione 3.1.1">Definizione</a></span>
+</div>
+<div class="subindexitem">immagine inversa<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-immagine_diretta_inversa_sottoinsiemi.html" title="Definizione 3.1.13">Definizione</a></span>
+</div>
+<div class="subindexitem">iniettiva<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione_iniettiva.html" title="Definizione 3.2.1">Definizione</a></span>
 </div>
 <div class="subindexitem">insieme di arrivo<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione.html" title="Definizione 3.1.1">Definizione</a></span>
 </div>
 <div class="subindexitem">insieme di partenza<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione.html" title="Definizione 3.1.1">Definizione</a></span>
+</div>
+<div class="subindexitem">inversa<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/prop-funzioni_invertibili.html" title="Proposizione 3.2.23">Proposizione</a></span>
+</div>
+<div class="subindexitem">invertibile<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione_invertibile.html" title="Definizione 3.2.22">Definizione</a></span>
+</div>
+<div class="subindexitem">suriettiva<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione_suriettiva.html" title="Definizione 3.2.8">Definizione</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-g">
@@ -482,12 +546,20 @@
 <div class="indexitem">ideale</div>
 <div class="subindexitem">generato da un sottoinsieme<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-ideale_generato.html" title="Definizione 18.2.16">Definizione</a></span>
 </div>
+<div class="indexitem">immagine (di una funzione)<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-immagine_diretta_inversa_sottoinsiemi.html" title="Definizione 3.1.13">Definizione</a></span>
+</div>
+<div class="indexitem">immagine inversa (di una funzione)<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-immagine_diretta_inversa_sottoinsiemi.html" title="Definizione 3.1.13">Definizione</a></span>
+</div>
 <div class="indexitem">inclusione</div>
 <div class="subindexitem">di insiemi<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-sottoinsieme.html" title="Definizione 1.1.3">Definizione</a></span>
 </div>
 <div class="subindexitem">stretta<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-inclusione_stretta.html" title="Definizione 1.1.8">Definizione</a></span>
 </div>
 <div class="subindexitem">transitività<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/prop-inclusione_transitiva.html" title="Proposizione 1.1.5">Proposizione</a></span>
+</div>
+<div class="indexitem">induzione<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/principle-induzione.html" title="Teorema 4.2.1: Principio di induzione">Teorema</a> <a href="" class="xref" data-knowl="./knowl/p-3594.html" title="Capoverso">Capoverso</a></span>
+</div>
+<div class="indexitem">iniettiva (funzione)<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione_iniettiva.html" title="Definizione 3.2.1">Definizione</a></span>
 </div>
 <div class="indexitem">insieme<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-6.html" title="Capoverso">Capoverso</a></span>
 </div>
@@ -497,13 +569,21 @@
 </div>
 <div class="subindexitem">delle parti<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-insieme_parti.html" title="Definizione 1.1.11">Definizione</a></span>
 </div>
+<div class="subindexitem">di arrivo di una funzione<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione.html" title="Definizione 3.1.1">Definizione</a></span>
+</div>
+<div class="subindexitem">di partenza di una funzione<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione.html" title="Definizione 3.1.1">Definizione</a></span>
+</div>
 <div class="subindexitem">differenza<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-unione_intersezione_differenza.html" title="Definizione 1.2.1">Definizione</a></span>
 </div>
 <div class="subindexitem">disgiunti<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-insiemi_disgiunti.html" title="Definizione 1.2.6">Definizione</a></span>
 </div>
+<div class="subindexitem">finito<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-insieme_finito.html" title="Definizione A.3.6">Definizione</a></span>
+</div>
 <div class="subindexitem">inclusione<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-sottoinsieme.html" title="Definizione 1.1.3">Definizione</a></span>
 </div>
 <div class="subindexitem">inclusione stretta<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-inclusione_stretta.html" title="Definizione 1.1.8">Definizione</a></span>
+</div>
+<div class="subindexitem">infinito<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-insieme_finito.html" title="Definizione A.3.6">Definizione</a></span>
 </div>
 <div class="subindexitem">intersezione<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-unione_intersezione_differenza.html" title="Definizione 1.2.1">Definizione</a></span>
 </div>
@@ -527,12 +607,17 @@
 </div>
 <div class="subindexitem">vuoto<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-11.html" title="Capoverso">Capoverso</a></span>
 </div>
-<div class="indexitem">insieme di arrivo di una funzione<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione.html" title="Definizione 3.1.1">Definizione</a></span>
-</div>
-<div class="indexitem">insieme di partenza di una funzione<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione.html" title="Definizione 3.1.1">Definizione</a></span>
+<div class="indexitem">interi</div>
+<div class="subindexitem">valore assoluto<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-29.html" title="Definizione 4.1.8">Definizione</a></span>
 </div>
 <div class="indexitem">intersezione</div>
 <div class="subindexitem">di insiemi<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-unione_intersezione_differenza.html" title="Definizione 1.2.1">Definizione</a></span>
+</div>
+<div class="subindexitem">di sottoalgebre induttive<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/prop-intersezione_sottoalgebre.html" title="Proposizione A.1.4">Proposizione</a></span>
+</div>
+<div class="indexitem">inversa (funzione)<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/prop-funzioni_invertibili.html" title="Proposizione 3.2.23">Proposizione</a></span>
+</div>
+<div class="indexitem">invertibile (funzione)<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione_invertibile.html" title="Definizione 3.2.22">Definizione</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-j"><div class="indexitem">Jordan, Camille<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/prop-blocco_jordan.html" title="Proposizione 27.4.1">Proposizione</a></span>
@@ -558,14 +643,29 @@
 </div>
 <div class="indexitem">minorante<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-maggiorante-minorante.html" title="Definizione 2.3.5">Definizione</a></span>
 </div>
+<div class="indexitem">moltiplicazione</div>
+<div class="subindexitem">di naturali<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-moltiplicazione.html" title="Definizione A.4.5">Definizione</a></span>
+</div>
 <div class="indexitem">monoide<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-monoide.html" title="Definizione 7.1.1">Definizione</a></span>
 </div>
 <div class="subindexitem">commutativo<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-monoide.html" title="Definizione 7.1.1">Definizione</a></span>
 </div>
 </div>
-<div class="indexletter" id="indexletter-n"><div class="indexitem">Noether, Emmy<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/exercise-382.html" title="Esercizio 20.3.11">Esercizio</a></span>
-</div></div>
+<div class="indexletter" id="indexletter-n">
+<div class="indexitem">naturali (numeri)<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-numeri_naturali_peano.html" title="Definizione 4.1.1">Definizione</a> <a href="" class="xref" data-knowl="./knowl/def-assiomi_peano.html" title="Definizione A.2.1">Definizione</a></span>
+</div>
+<div class="subindexitem">ordinamento<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/prop-ordine_naturali.html" title="Proposizione A.2.5">Proposizione</a></span>
+</div>
+<div class="indexitem">Noether, Emmy<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/exercise-383.html" title="Esercizio 20.3.11">Esercizio</a></span>
+</div>
+<div class="indexitem">numeri</div>
+<div class="subindexitem">naturali<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-numeri_naturali_peano.html" title="Definizione 4.1.1">Definizione</a> <a href="" class="xref" data-knowl="./knowl/def-assiomi_peano.html" title="Definizione A.2.1">Definizione</a></span>
+</div>
+</div>
 <div class="indexletter" id="indexletter-o">
+<div class="indexitem">omomorfismo</div>
+<div class="subindexitem">di algebre induttive<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-omomorfismo_algebre_induttive.html" title="Definizione A.1.6">Definizione</a></span>
+</div>
 <div class="indexitem">ordine (relazione di)<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-relazione_ordine.html" title="Definizione 2.3.1">Definizione</a></span>
 </div>
 <div class="indexitem">ordine di un elemento<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-periodo_elemento.html" title="Definizione 9.1.7">Definizione</a></span>
@@ -575,6 +675,11 @@
 <div class="indexitem">paradosso di Russell<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-85.html" title="Capoverso">Capoverso</a></span>
 </div>
 <div class="indexitem">partizione<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-partizione.html" title="Definizione 2.2.9">Definizione</a></span>
+</div>
+<div class="indexitem">Peano</div>
+<div class="subindexitem">assiomi di<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-numeri_naturali_peano.html" title="Definizione 4.1.1">Definizione</a> <a href="" class="xref" data-knowl="./knowl/def-assiomi_peano.html" title="Definizione A.2.1">Definizione</a></span>
+</div>
+<div class="indexitem">Peano, Giusepee<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-295.html" title="Capoverso">Capoverso</a></span>
 </div>
 <div class="indexitem">periodo di un elemento<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-periodo_elemento.html" title="Definizione 9.1.7">Definizione</a></span>
 </div>
@@ -605,6 +710,12 @@
 </div>
 </div>
 <div class="indexletter" id="indexletter-s">
+<div class="indexitem">sottoalgebra induttiva<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-sottoalgebra_induttiva.html" title="Definizione A.1.2">Definizione</a></span>
+</div>
+<div class="subindexitem">generata da un sottoinsieme<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-sottoalgebra_generata.html" title="Definizione A.1.5">Definizione</a></span>
+</div>
+<div class="subindexitem">intersezione<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/prop-intersezione_sottoalgebre.html" title="Proposizione A.1.4">Proposizione</a></span>
+</div>
 <div class="indexitem">sottoanello</div>
 <div class="subindexitem">generato da un sottoinsieme<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-sottoanello_generato.html" title="Definizione 17.3.15">Definizione</a></span>
 </div>
@@ -640,12 +751,16 @@
 </div>
 <div class="indexitem">sottomonoide<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-sottomonoide.html" title="Definizione 8.1.3">Definizione</a></span>
 </div>
-<div class="indexitem">Sylow, Peter Ludwig Mejdell<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-2236.html" title="Capoverso">Capoverso</a></span>
+<div class="indexitem">suriettiva (funzione)<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-funzione_suriettiva.html" title="Definizione 3.2.8">Definizione</a></span>
+</div>
+<div class="indexitem">Sylow, Peter Ludwig Mejdell<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-2237.html" title="Capoverso">Capoverso</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-t"><div class="indexitem">tabella di Cayley<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-799.html" title="Capoverso">Capoverso</a></span>
 </div></div>
 <div class="indexletter" id="indexletter-u"><div class="indexitem">unione di insiemi<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def-unione_intersezione_differenza.html" title="Definizione 1.2.1">Definizione</a></span>
+</div></div>
+<div class="indexletter" id="indexletter-v"><div class="indexitem">valore assoluto<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-29.html" title="Definizione 4.1.8">Definizione</a></span>
 </div></div></section></div></main>
 </div>
 </body>

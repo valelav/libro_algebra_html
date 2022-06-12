@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-03T16:58:51+02:00       *-->
+<!--*       on 2022-06-12T08:35:52+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,6 +49,38 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Vai all'indice generale</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{mathtools}\require{cancel}\DeclareMathOperator{\rk}{rk}
@@ -203,7 +235,7 @@
 </ul>
 </li>
 <li class="link">
-<a href="ch-gruppi.html" data-scroll="ch-gruppi" class="internal"><span class="codenumber">7</span> <span class="title">Definizioni e prime proprietà</span></a><ul>
+<a href="ch-gruppi.html" data-scroll="ch-gruppi" class="internal"><span class="codenumber">7</span> <span class="title">Monoidi e gruppi</span></a><ul>
 <li><a href="sec-monoidi.html" data-scroll="sec-monoidi" class="internal">Monoidi</a></li>
 <li><a href="sec-gruppi.html" data-scroll="sec-gruppi" class="internal">Gruppi</a></li>
 <li><a href="sec-gruppi_piccoli.html" data-scroll="sec-gruppi_piccoli" class="internal">Alcuni esempi di gruppi piccoli</a></li>
@@ -369,8 +401,8 @@
 <main class="main"><div id="content" class="pretext-content"><section class="chapter" id="ch-modulisupid"><h2 class="heading">
 <span class="type">Capitolo</span> <span class="codenumber">25</span> <span class="title">Moduli finitamente generati su domini a ideali principali</span>
 </h2>
-<section class="introduction" id="introduction-103"><p id="p-3220">In matematica siamo spesso interessati in risultati di classificazione, vale a dire “elenchi” (eventualmente infiniti) che contengono tutti gli oggetti di un certo tipo a meno di equivalenze (in algebra si parla solitamente di isomorfismo). I differenti oggetti nella lista vengono solitamente distinti per mezzo di opportuni invarianti. Ad esempio, ogni spazio vettoriale ammette una base la cui cardinalità (possibilmente infinita) è detta dimensione dello spazio vettoriale. Due spazi vettoriali sono isomorfi se e solo se hanno la stessa dimensione e, quindi, la dimensione è l'unico invariante che ci serve per classificare gli spazi vettoriali. Abbiamo visto che per gli <span class="process-math">\(R\)</span>-moduli le cose sono più complicate: non tutti hanno una base. Se però facciamo delle ipotesi aggiuntive su <span class="process-math">\(R\)</span> (pur senza richiedere che sia un campo come nel caso degli spazi vettoriali) possiamo dare dei risultati di classificazione. Daremo qui la classificazione dei moduli finitamente generati su un dominio a ideali principali <span class="process-math">\(D\)</span> e vedremo poi delle applicazioni di tale classificazione.</p>
-<p id="p-3221">In tutto questo capitolo, quindi, indicheremo con <span class="process-math">\(D\)</span> un dominio a ideali principali.</p></section><nav class="summary-links"><ul>
+<section class="introduction" id="introduction-103"><p id="p-3221">In matematica siamo spesso interessati in risultati di classificazione, vale a dire “elenchi” (eventualmente infiniti) che contengono tutti gli oggetti di un certo tipo a meno di equivalenze (in algebra si parla solitamente di isomorfismo). I differenti oggetti nella lista vengono solitamente distinti per mezzo di opportuni invarianti. Ad esempio, ogni spazio vettoriale ammette una base la cui cardinalità (possibilmente infinita) è detta dimensione dello spazio vettoriale. Due spazi vettoriali sono isomorfi se e solo se hanno la stessa dimensione e, quindi, la dimensione è l'unico invariante che ci serve per classificare gli spazi vettoriali. Abbiamo visto che per gli <span class="process-math">\(R\)</span>-moduli le cose sono più complicate: non tutti hanno una base. Se però facciamo delle ipotesi aggiuntive su <span class="process-math">\(R\)</span> (pur senza richiedere che sia un campo come nel caso degli spazi vettoriali) possiamo dare dei risultati di classificazione. Daremo qui la classificazione dei moduli finitamente generati su un dominio a ideali principali <span class="process-math">\(D\)</span> e vedremo poi delle applicazioni di tale classificazione.</p>
+<p id="p-3222">In tutto questo capitolo, quindi, indicheremo con <span class="process-math">\(D\)</span> un dominio a ideali principali.</p></section><nav class="summary-links"><ul>
 <li><a href="sec-moduli_ciclici.html" class="internal"><span class="codenumber">25.1</span> <span class="title">Moduli ciclici</span></a></li>
 <li><a href="sec-moduli_primari.html" class="internal"><span class="codenumber">25.2</span> <span class="title">Moduli primari</span></a></li>
 <li><a href="sec-moduli_liberi.html" class="internal"><span class="codenumber">25.3</span> <span class="title">Moduli liberi</span></a></li>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-03T16:58:57+02:00       *-->
+<!--*       on 2022-06-12T08:35:59+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,6 +49,38 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Vai all'indice generale</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{mathtools}\require{cancel}\DeclareMathOperator{\rk}{rk}
@@ -203,7 +235,7 @@
 </ul>
 </li>
 <li class="link">
-<a href="ch-gruppi.html" data-scroll="ch-gruppi" class="internal"><span class="codenumber">7</span> <span class="title">Definizioni e prime proprietà</span></a><ul>
+<a href="ch-gruppi.html" data-scroll="ch-gruppi" class="internal"><span class="codenumber">7</span> <span class="title">Monoidi e gruppi</span></a><ul>
 <li><a href="sec-monoidi.html" data-scroll="sec-monoidi" class="internal">Monoidi</a></li>
 <li><a href="sec-gruppi.html" data-scroll="sec-gruppi" class="internal">Gruppi</a></li>
 <li><a href="sec-gruppi_piccoli.html" data-scroll="sec-gruppi_piccoli" class="internal">Alcuni esempi di gruppi piccoli</a></li>
@@ -370,7 +402,7 @@
 <section class="section" id="sec-matrici_rappresentative"><h2 class="heading hide-type">
 <span class="type">Paragrafo</span> <span class="codenumber">27.2</span> <span class="title">Matrici rappresentative</span>
 </h2>
-<p id="p-3442">Fissata una base <span class="process-math">\(\vect{v}_{1}\text{,}\)</span> <span class="process-math">\(\dots\text{,}\)</span> <span class="process-math">\(\vect{v}_{n}\)</span> di un <span class="process-math">\(K\)</span>-spazio vettoriale <span class="process-math">\(V\)</span> di dimensione finita, ricordiamo che la <dfn class="terminology">matrice rappresentativa</dfn> di un endomorfismo <span class="process-math">\(\theta\)</span> rispetto alla base assegnata è la matrice a coefficienti in <span class="process-math">\(K\)</span></p>
+<p id="p-3443">Fissata una base <span class="process-math">\(\vect{v}_{1}\text{,}\)</span> <span class="process-math">\(\dots\text{,}\)</span> <span class="process-math">\(\vect{v}_{n}\)</span> di un <span class="process-math">\(K\)</span>-spazio vettoriale <span class="process-math">\(V\)</span> di dimensione finita, ricordiamo che la <dfn class="terminology">matrice rappresentativa</dfn> di un endomorfismo <span class="process-math">\(\theta\)</span> rispetto alla base assegnata è la matrice a coefficienti in <span class="process-math">\(K\)</span></p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 A\coloneqq
@@ -383,7 +415,7 @@ a_{n1} \amp a_{n2} \amp \dots \amp a_{nn}
 \end{equation*}
 </div>
 <p class="continuation">definita da <span class="process-math">\(\vect{v}_{i}\theta=\vect{v}_{1}a_{i1}+\dots+\vect{v}_{n}a_{in}\text{.}\)</span> In altri termini, la <span class="process-math">\(i\)</span>-esima riga di <span class="process-math">\(A\)</span> dà le componenti di <span class="process-math">\(\vect{v}_{i}\theta\)</span> rispetto alla base assegnata<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-31" id="fn-31"><sup> 1 </sup></a>. Viceversa, data una matrice <span class="process-math">\(A\text{,}\)</span> le formule soprastanti definiscono un endomorfismo <span class="process-math">\(\theta\)</span> detto <dfn class="terminology">endomorfismo associato</dfn> ad <span class="process-math">\(A\)</span> rispetto alla base assegnata. Abbiamo così una corrispondenza biiettiva tra <span class="process-math">\(\End_{K}(V)\)</span> e <span class="process-math">\(\mat{n}{K}\)</span> e si vede facilmente che questa corrispondenza è un isomorfismo di anelli. Questo isomorfismo dipende dalla base scelta per <span class="process-math">\(V\text{:}\)</span> in particolare, dato un certo endomorfismo <span class="process-math">\(\theta\text{,}\)</span> le matrici che rappresentano <span class="process-math">\(\theta\)</span> al variare della base sono tutte e sole le matrici del tipo <span class="process-math">\(M^{-1}AM\)</span> dove <span class="process-math">\(M\)</span> è una matrice invertibile, vale a dire sono le matrici <dfn class="terminology">simili</dfn> ad <span class="process-math">\(A\text{.}\)</span></p>
-<p id="p-3443">Supponiamo ora che <span class="process-math">\(V\)</span> sia somma diretta di suoi sottospazi <span class="process-math">\(U\)</span> e <span class="process-math">\(W\text{.}\)</span> “Unendo”<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-32" id="fn-32"><sup> 2 </sup></a> una base <span class="process-math">\(\vect{v}_{1}\text{,}\)</span> <span class="process-math">\(\dots\text{,}\)</span> <span class="process-math">\(\vect{v}_{r}\)</span> di <span class="process-math">\(U\)</span> a una base <span class="process-math">\(\vect{v}_{r+1}\text{,}\)</span> <span class="process-math">\(\dots\text{,}\)</span> <span class="process-math">\(\vect{v}_{n}\)</span> di <span class="process-math">\(W\text{,}\)</span> otteniamo una base di <span class="process-math">\(V\text{.}\)</span> Possiamo allora rappresentare un endomorfismo <span class="process-math">\(\theta\)</span> di <span class="process-math">\(V\)</span> rispetto a questa base, evidenziando i blocchi</p>
+<p id="p-3444">Supponiamo ora che <span class="process-math">\(V\)</span> sia somma diretta di suoi sottospazi <span class="process-math">\(U\)</span> e <span class="process-math">\(W\text{.}\)</span> “Unendo”<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-32" id="fn-32"><sup> 2 </sup></a> una base <span class="process-math">\(\vect{v}_{1}\text{,}\)</span> <span class="process-math">\(\dots\text{,}\)</span> <span class="process-math">\(\vect{v}_{r}\)</span> di <span class="process-math">\(U\)</span> a una base <span class="process-math">\(\vect{v}_{r+1}\text{,}\)</span> <span class="process-math">\(\dots\text{,}\)</span> <span class="process-math">\(\vect{v}_{n}\)</span> di <span class="process-math">\(W\text{,}\)</span> otteniamo una base di <span class="process-math">\(V\text{.}\)</span> Possiamo allora rappresentare un endomorfismo <span class="process-math">\(\theta\)</span> di <span class="process-math">\(V\)</span> rispetto a questa base, evidenziando i blocchi</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 A\coloneqq
@@ -400,7 +432,7 @@ B_{3} \amp B_{4}
 \end{equation*}
 </div>
 <p class="continuation">con i primi <span class="process-math">\(r\)</span> addendi in <span class="process-math">\(U\)</span> e gli altri <span class="process-math">\(n-r\)</span> addendi in <span class="process-math">\(W\text{:}\)</span> i corrispondenti coefficienti <span class="process-math">\(a_{ij}\)</span> stanno, rispettivamente, in <span class="process-math">\(B_{1}\)</span> e in <span class="process-math">\(B_{2}\text{.}\)</span> Vediamo allora che <span class="process-math">\(\vect{v}_{i}\theta\)</span> appartiene a <span class="process-math">\(U\)</span> se e solo se <span class="process-math">\(a_{ij}=0\)</span> per <span class="process-math">\(r+j\le i\le n\text{.}\)</span> Pertanto, <span class="process-math">\(B_{2}\)</span> è la matrice nulla se e solo se <span class="process-math">\(\vect{v}_{i}\theta\)</span> appartiene a <span class="process-math">\(U\)</span> per ogni <span class="process-math">\(i\text{,}\)</span> con <span class="process-math">\(1\le i\le r\text{:}\)</span> poiché <span class="process-math">\(\vect{v}_{1}\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(\vect{v}_r\)</span> formano una base di <span class="process-math">\(U\text{,}\)</span> ciò è equivalente a dire che <span class="process-math">\(U\)</span> è un sottospazio <span class="process-math">\(\theta\)</span>-stabile. Analogamente, <span class="process-math">\(B_{3}\)</span> è la matrice nulla se e solo se <span class="process-math">\(W\)</span> è <span class="process-math">\(\theta\)</span>-stabile.</p>
-<p id="p-3444">Dunque, se <span class="process-math">\(U\)</span> e <span class="process-math">\(W\)</span> sono sottospazi <span class="process-math">\(\theta\)</span>-stabili, la matrice rappresentativa rispetto alla base scelta come sopra (cioè unendo una base di <span class="process-math">\(U\)</span> a una base di <span class="process-math">\(W\)</span>) è del tipo</p>
+<p id="p-3445">Dunque, se <span class="process-math">\(U\)</span> e <span class="process-math">\(W\)</span> sono sottospazi <span class="process-math">\(\theta\)</span>-stabili, la matrice rappresentativa rispetto alla base scelta come sopra (cioè unendo una base di <span class="process-math">\(U\)</span> a una base di <span class="process-math">\(W\)</span>) è del tipo</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 A\coloneqq
@@ -414,7 +446,7 @@ B_{1} \amp 0\\
 <article class="proposition theorem-like" id="prop-diagonale_a_blocchi"><h3 class="heading">
 <span class="type">Proposizione</span><span class="space"> </span><span class="codenumber">27.2.1</span><span class="period">.</span>
 </h3>
-<p id="p-3445">Sia <span class="process-math">\(V\)</span> un <span class="process-math">\(K\)</span>-spazio vettoriale di dimensione finita e dotato di un endomorfismo <span class="process-math">\(\theta\text{.}\)</span> Siano <span class="process-math">\(V_{1}\text{,}\)</span> <span class="process-math">\(V_{2}\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(V_{r}\)</span> sottospazi <span class="process-math">\(\theta\)</span>-stabili di <span class="process-math">\(V\)</span> tali che <span class="process-math">\(V=V_{1}\oplus V_{2}\oplus\cdots\oplus V_{r}\text{.}\)</span> Fissata una base per ciascuno dei <span class="process-math">\(V_{i}\text{,}\)</span> sia <span class="process-math">\(B_{i}\)</span> la matrice rappresentativa rispetto a tale base dell'endomorfismo di <span class="process-math">\(V_{i}\)</span> indotto da <span class="process-math">\(\theta\text{.}\)</span> Allora, la matrice rappresentativa di <span class="process-math">\(\theta\)</span> rispetto alla base di <span class="process-math">\(V\)</span> formata dall'unione delle basi scelte dei sottospazi <span class="process-math">\(V_{i}\)</span> è la <dfn class="terminology">matrice diagonale a blocchi</dfn>:</p>
+<p id="p-3446">Sia <span class="process-math">\(V\)</span> un <span class="process-math">\(K\)</span>-spazio vettoriale di dimensione finita e dotato di un endomorfismo <span class="process-math">\(\theta\text{.}\)</span> Siano <span class="process-math">\(V_{1}\text{,}\)</span> <span class="process-math">\(V_{2}\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(V_{r}\)</span> sottospazi <span class="process-math">\(\theta\)</span>-stabili di <span class="process-math">\(V\)</span> tali che <span class="process-math">\(V=V_{1}\oplus V_{2}\oplus\cdots\oplus V_{r}\text{.}\)</span> Fissata una base per ciascuno dei <span class="process-math">\(V_{i}\text{,}\)</span> sia <span class="process-math">\(B_{i}\)</span> la matrice rappresentativa rispetto a tale base dell'endomorfismo di <span class="process-math">\(V_{i}\)</span> indotto da <span class="process-math">\(\theta\text{.}\)</span> Allora, la matrice rappresentativa di <span class="process-math">\(\theta\)</span> rispetto alla base di <span class="process-math">\(V\)</span> formata dall'unione delle basi scelte dei sottospazi <span class="process-math">\(V_{i}\)</span> è la <dfn class="terminology">matrice diagonale a blocchi</dfn>:</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \begin{pmatrix}
@@ -424,11 +456,11 @@ B_{1}  \amp 0      \amp \dots  \amp 0 \\
 0      \amp 0      \amp \dots  \amp B_{s}
 \end{pmatrix}\text{.}
 \end{equation*}
-</div></article><p id="p-3446">Il calcolo con le matrici diagonali a blocchi è particolarmente comodo. Richiamiamo alcuni risultati che possono essere agevolmente dimostrati:</p>
+</div></article><p id="p-3447">Il calcolo con le matrici diagonali a blocchi è particolarmente comodo. Richiamiamo alcuni risultati che possono essere agevolmente dimostrati:</p>
 <article class="proposition theorem-like" id="prop-diagonali_blocchi"><h3 class="heading">
 <span class="type">Proposizione</span><span class="space"> </span><span class="codenumber">27.2.2</span><span class="period">.</span>
 </h3>
-<p id="p-3447">Sia <span class="process-math">\(B\coloneqq
+<p id="p-3448">Sia <span class="process-math">\(B\coloneqq
 \begin{psmallmatrix}
 B_{1}  \amp 0      \amp \dots  \amp 0 \\
 0      \amp B_{2}  \amp \dots  \amp 0 \\
@@ -436,9 +468,9 @@ B_{1}  \amp 0      \amp \dots  \amp 0 \\
 0      \amp 0      \amp \dots  \amp B_{s}
 \end{psmallmatrix}\)</span> una matrice diagonale a blocchi. Allora</p>
 <ol class="decimal">
-<li id="li-322"><p id="p-3448"><span class="process-math">\(\det B=\det B_{1}\det B_{2}\cdots\det B_{s}\text{;}\)</span></p></li>
-<li id="li-323"><p id="p-3449"><span class="process-math">\(\rk B=\rk B_{1}+\rk B_{2}+\dots+\rk B_{s}\text{;}\)</span></p></li>
-<li id="li-324"><p id="p-3450"><span class="process-math">\(B^{t}=\begin{psmallmatrix}
+<li id="li-322"><p id="p-3449"><span class="process-math">\(\det B=\det B_{1}\det B_{2}\cdots\det B_{s}\text{;}\)</span></p></li>
+<li id="li-323"><p id="p-3450"><span class="process-math">\(\rk B=\rk B_{1}+\rk B_{2}+\dots+\rk B_{s}\text{;}\)</span></p></li>
+<li id="li-324"><p id="p-3451"><span class="process-math">\(B^{t}=\begin{psmallmatrix}
 B_{1}^{t}  \amp 0      \amp \dots  \amp 0 \\
 0      \amp B_{2}^{t}  \amp \dots  \amp 0 \\
 \vdots \amp \vdots \amp \ddots \amp \vdots\\
@@ -447,8 +479,8 @@ B_{1}^{t}  \amp 0      \amp \dots  \amp 0 \\
 </ol></article><section class="exercises" id="exercises-matrici_rappresentative"><h3 class="heading hide-type">
 <span class="type">Esercizi</span> <span class="codenumber"></span> <span class="title">Esercizi</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-430"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<p id="p-3451">Dato un endomorfismo <span class="process-math">\(\theta\)</span> di uno spazio vettoriale <span class="process-math">\(V\)</span> di dimensione finita, dimostrare che <span class="process-math">\(V\)</span> è somma diretta di sottospazi <span class="process-math">\(\theta\)</span>-stabili di dimensione <span class="process-math">\(1\)</span> se e solo se <span class="process-math">\(\theta\)</span> è diagonalizzabile.</p></article></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-31"><div class="fn">Si noti che alcuni testi usano una convenzione diversa, in cui la matrice rappresentativa è la trasposta della matrice da noi usata.</div></div>
+<article class="exercise exercise-like" id="exercise-431"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<p id="p-3452">Dato un endomorfismo <span class="process-math">\(\theta\)</span> di uno spazio vettoriale <span class="process-math">\(V\)</span> di dimensione finita, dimostrare che <span class="process-math">\(V\)</span> è somma diretta di sottospazi <span class="process-math">\(\theta\)</span>-stabili di dimensione <span class="process-math">\(1\)</span> se e solo se <span class="process-math">\(\theta\)</span> è diagonalizzabile.</p></article></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-31"><div class="fn">Si noti che alcuni testi usano una convenzione diversa, in cui la matrice rappresentativa è la trasposta della matrice da noi usata.</div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-32"><div class="fn">Il termine corretto sarebbe “giustapponendo”.</div></div>
 </div></main>
 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-03T16:58:47+02:00       *-->
+<!--*       on 2022-06-12T08:35:47+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,6 +49,38 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Vai all'indice generale</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{mathtools}\require{cancel}\DeclareMathOperator{\rk}{rk}
@@ -203,7 +235,7 @@
 </ul>
 </li>
 <li class="link">
-<a href="ch-gruppi.html" data-scroll="ch-gruppi" class="internal"><span class="codenumber">7</span> <span class="title">Definizioni e prime proprietà</span></a><ul>
+<a href="ch-gruppi.html" data-scroll="ch-gruppi" class="internal"><span class="codenumber">7</span> <span class="title">Monoidi e gruppi</span></a><ul>
 <li><a href="sec-monoidi.html" data-scroll="sec-monoidi" class="internal">Monoidi</a></li>
 <li><a href="sec-gruppi.html" data-scroll="sec-gruppi" class="internal">Gruppi</a></li>
 <li><a href="sec-gruppi_piccoli.html" data-scroll="sec-gruppi_piccoli" class="internal">Alcuni esempi di gruppi piccoli</a></li>
@@ -372,17 +404,17 @@
 <article class="definition definition-like" id="def-modulo_destro"><h3 class="heading">
 <span class="type">Definizione</span><span class="space"> </span><span class="codenumber">23.1.1</span><span class="period">.</span>
 </h3>
-<p id="p-3037">Sia <span class="process-math">\(M\)</span> un gruppo abeliano scritto in notazione additiva e sia <span class="process-math">\(R\)</span> un anello. Sia definita un'operazione <dfn class="terminology">esterna</dfn> <span class="process-math">\(M\times R\to M\)</span> che manda la coppia <span class="process-math">\((x,a)\)</span> in un elemento denotato con <span class="process-math">\(xa\)</span> tale che</p>
+<p id="p-3038">Sia <span class="process-math">\(M\)</span> un gruppo abeliano scritto in notazione additiva e sia <span class="process-math">\(R\)</span> un anello. Sia definita un'operazione <dfn class="terminology">esterna</dfn> <span class="process-math">\(M\times R\to M\)</span> che manda la coppia <span class="process-math">\((x,a)\)</span> in un elemento denotato con <span class="process-math">\(xa\)</span> tale che</p>
 <ul class="disc">
-<li id="li-254"><p id="p-3038"><span class="process-math">\(x1_{R}=x\)</span> per ogni <span class="process-math">\(x\)</span> in <span class="process-math">\(M\text{;}\)</span></p></li>
-<li id="li-255"><p id="p-3039"><span class="process-math">\(x(ab)=(xa)b\)</span> per ogni <span class="process-math">\(x\)</span> in  <span class="process-math">\(M\)</span> e <span class="process-math">\(a\)</span> e <span class="process-math">\(b\)</span> in <span class="process-math">\(R\text{;}\)</span></p></li>
-<li id="li-256"><p id="p-3040"><span class="process-math">\(x(a+b)=xa+xb\)</span> per ogni <span class="process-math">\(x\)</span> in  <span class="process-math">\(M\)</span> e <span class="process-math">\(a\)</span> e <span class="process-math">\(b\)</span> in <span class="process-math">\(R\text{;}\)</span></p></li>
-<li id="li-257"><p id="p-3041"><span class="process-math">\((x+y)a=xa+ya\)</span> per ogni <span class="process-math">\(x\)</span> e <span class="process-math">\(y\)</span> in  <span class="process-math">\(M\)</span> e <span class="process-math">\(a\)</span> in <span class="process-math">\(R\text{.}\)</span></p></li>
+<li id="li-254"><p id="p-3039"><span class="process-math">\(x1_{R}=x\)</span> per ogni <span class="process-math">\(x\)</span> in <span class="process-math">\(M\text{;}\)</span></p></li>
+<li id="li-255"><p id="p-3040"><span class="process-math">\(x(ab)=(xa)b\)</span> per ogni <span class="process-math">\(x\)</span> in  <span class="process-math">\(M\)</span> e <span class="process-math">\(a\)</span> e <span class="process-math">\(b\)</span> in <span class="process-math">\(R\text{;}\)</span></p></li>
+<li id="li-256"><p id="p-3041"><span class="process-math">\(x(a+b)=xa+xb\)</span> per ogni <span class="process-math">\(x\)</span> in  <span class="process-math">\(M\)</span> e <span class="process-math">\(a\)</span> e <span class="process-math">\(b\)</span> in <span class="process-math">\(R\text{;}\)</span></p></li>
+<li id="li-257"><p id="p-3042"><span class="process-math">\((x+y)a=xa+ya\)</span> per ogni <span class="process-math">\(x\)</span> e <span class="process-math">\(y\)</span> in  <span class="process-math">\(M\)</span> e <span class="process-math">\(a\)</span> in <span class="process-math">\(R\text{.}\)</span></p></li>
 </ul>
 <p class="continuation">Diciamo allora che <span class="process-math">\(M\)</span> è un <dfn class="terminology"><span class="process-math">\(R\)</span>-modulo (destro)</dfn> o, anche, che è un modulo (destro) su <span class="process-math">\(R\)</span> o, semplicemente, che è un modulo se l'anello <span class="process-math">\(R\)</span> è chiaro dal contesto.</p></article><article class="remark remark-like" id="rem-modulo_sinistro"><h3 class="heading">
 <span class="type">Osservazione</span><span class="space"> </span><span class="codenumber">23.1.2</span><span class="period">.</span>
 </h3>
-<p id="p-3042">In maniera del tutto analoga si definisce la nozione di <span class="process-math">\(R\)</span>-modulo sinistro. Ogni risultato che dimostreremo per i moduli destri avrà un corrispondente per i moduli sinistri. Occorre fare attenzione che, dato un modulo destro, non lo si può in generale considerare come modulo sinistro. Infatti la proprietà</p>
+<p id="p-3043">In maniera del tutto analoga si definisce la nozione di <span class="process-math">\(R\)</span>-modulo sinistro. Ogni risultato che dimostreremo per i moduli destri avrà un corrispondente per i moduli sinistri. Occorre fare attenzione che, dato un modulo destro, non lo si può in generale considerare come modulo sinistro. Infatti la proprietà</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 x(ab)=(xa)b
@@ -397,30 +429,30 @@ x(ab)=(xa)b
 <p class="continuation">e, dunque, la moltiplicazione per <span class="process-math">\(ab\)</span> in un caso corrisponde a moltiplicare <span class="process-math">\(x\)</span> prima per <span class="process-math">\(a\)</span> e poi il risultato per <span class="process-math">\(b\text{,}\)</span> mentre nell'altro caso è il contrario. Ovviamente, se l'anello è commutativo, la differenza è irrilevante.</p></article><article class="note remark-like" id="note-14"><h3 class="heading">
 <span class="type">Nota</span><span class="space"> </span><span class="codenumber">23.1.3</span><span class="period">.</span>
 </h3>
-<p id="p-3043">Salvo diversa indicazione esplicita, quando scriveremo <span class="process-math">\(R\)</span>-modulo intenderemo un <span class="process-math">\(R\)</span>-modulo destro.</p></article><article class="remark remark-like" id="rem-spazi_vettoriali"><h3 class="heading">
+<p id="p-3044">Salvo diversa indicazione esplicita, quando scriveremo <span class="process-math">\(R\)</span>-modulo intenderemo un <span class="process-math">\(R\)</span>-modulo destro.</p></article><article class="remark remark-like" id="rem-spazi_vettoriali"><h3 class="heading">
 <span class="type">Osservazione</span><span class="space"> </span><span class="codenumber">23.1.4</span><span class="period">.</span>
 </h3>
-<p id="p-3044">Quando l'anello <span class="process-math">\(R\)</span> considerato è un campo, abbiamo la usuale definizione di spazio vettoriale. Dal momento che un campo è un anello commutativo, in questo caso vederlo come modulo destro o sinistro è indifferente.</p></article><article class="example example-like" id="ex-modulo_su_di_se"><h3 class="heading">
+<p id="p-3045">Quando l'anello <span class="process-math">\(R\)</span> considerato è un campo, abbiamo la usuale definizione di spazio vettoriale. Dal momento che un campo è un anello commutativo, in questo caso vederlo come modulo destro o sinistro è indifferente.</p></article><article class="example example-like" id="ex-modulo_su_di_se"><h3 class="heading">
 <span class="type">Esempio</span><span class="space"> </span><span class="codenumber">23.1.5</span><span class="period">.</span>
 </h3>
-<p id="p-3045"> Un anello <span class="process-math">\(R\)</span> può essere visto come <span class="process-math">\(R\)</span>-modulo destro semplicemente prendendo la somma in <span class="process-math">\(R\)</span> e come prodotto di un elemento di <span class="process-math">\(R\)</span> (pensato come modulo) e di un elemento di <span class="process-math">\(R\)</span> (pensato come anello dei coefficienti) il prodotto in <span class="process-math">\(R\text{.}\)</span> La verifica che le proprietà sono soddisfatte è molto semplice. Denotiamo questo modulo con <span class="process-math">\(R_{R}\text{.}\)</span> Analogamente, <span class="process-math">\(R\)</span> può assumere la struttura di <span class="process-math">\(R\)</span>-modulo sinistro, denotato con <span class="process-math">\(_{R}R\text{.}\)</span></p></article><article class="example example-like" id="ex-Z_modulo"><h3 class="heading">
+<p id="p-3046"> Un anello <span class="process-math">\(R\)</span> può essere visto come <span class="process-math">\(R\)</span>-modulo destro semplicemente prendendo la somma in <span class="process-math">\(R\)</span> e come prodotto di un elemento di <span class="process-math">\(R\)</span> (pensato come modulo) e di un elemento di <span class="process-math">\(R\)</span> (pensato come anello dei coefficienti) il prodotto in <span class="process-math">\(R\text{.}\)</span> La verifica che le proprietà sono soddisfatte è molto semplice. Denotiamo questo modulo con <span class="process-math">\(R_{R}\text{.}\)</span> Analogamente, <span class="process-math">\(R\)</span> può assumere la struttura di <span class="process-math">\(R\)</span>-modulo sinistro, denotato con <span class="process-math">\(_{R}R\text{.}\)</span></p></article><article class="example example-like" id="ex-Z_modulo"><h3 class="heading">
 <span class="type">Esempio</span><span class="space"> </span><span class="codenumber">23.1.6</span><span class="period">.</span>
 </h3>
-<p id="p-3046">Sia <span class="process-math">\(G\)</span> un gruppo abeliano, scritto in notazione additiva. Dato un elemento <span class="process-math">\(x\)</span> di <span class="process-math">\(G\)</span> e un intero <span class="process-math">\(n\text{,}\)</span> possiamo definire <span class="process-math">\(xn\)</span> semplicemente come l'usuale multiplo (quello che scriviamo solitamente come <span class="process-math">\(nx\)</span>). Dalla <a href="" class="xref" data-knowl="./knowl/prop-proprieta_potenze_elemento_invertibile.html" title="Proposizione 7.1.19">Proposizione 7.1.19</a> e <a href="" class="xref" data-knowl="./knowl/prop-potenza_del_prodotto_di_commutabili.html" title="Proposizione 7.1.22">Proposizione 7.1.22</a>, tradotte in notazione additiva, segue facilmente che <span class="process-math">\(G\)</span> è uno <span class="process-math">\(\Interi\)</span>-modulo.</p></article><p id="p-3047">Se in un <span class="process-math">\(R\)</span>-modulo consideriamo solo l'operazione di addizione, ovviamente abbiamo tutte le proprietà che abbiamo dimostrato per i gruppi abeliani e non c'è bisogno di dimostrarle nuovamente. Vediamo adesso alcune proprietà che coinvolgono la moltiplicazione.</p>
+<p id="p-3047">Sia <span class="process-math">\(G\)</span> un gruppo abeliano, scritto in notazione additiva. Dato un elemento <span class="process-math">\(x\)</span> di <span class="process-math">\(G\)</span> e un intero <span class="process-math">\(n\text{,}\)</span> possiamo definire <span class="process-math">\(xn\)</span> semplicemente come l'usuale multiplo (quello che scriviamo solitamente come <span class="process-math">\(nx\)</span>). Dalla <a href="" class="xref" data-knowl="./knowl/prop-proprieta_potenze_elemento_invertibile.html" title="Proposizione 7.1.19">Proposizione 7.1.19</a> e <a href="" class="xref" data-knowl="./knowl/prop-potenza_del_prodotto_di_commutabili.html" title="Proposizione 7.1.22">Proposizione 7.1.22</a>, tradotte in notazione additiva, segue facilmente che <span class="process-math">\(G\)</span> è uno <span class="process-math">\(\Interi\)</span>-modulo.</p></article><p id="p-3048">Se in un <span class="process-math">\(R\)</span>-modulo consideriamo solo l'operazione di addizione, ovviamente abbiamo tutte le proprietà che abbiamo dimostrato per i gruppi abeliani e non c'è bisogno di dimostrarle nuovamente. Vediamo adesso alcune proprietà che coinvolgono la moltiplicazione.</p>
 <article class="proposition theorem-like" id="prop-moltiplicazione_per_0"><h3 class="heading">
 <span class="type">Proposizione</span><span class="space"> </span><span class="codenumber">23.1.7</span><span class="period">.</span>
 </h3>
-<p id="p-3048">Sia <span class="process-math">\(M\)</span> un <span class="process-math">\(R\)</span>-modulo. Allora</p>
+<p id="p-3049">Sia <span class="process-math">\(M\)</span> un <span class="process-math">\(R\)</span>-modulo. Allora</p>
 <ol class="decimal">
-<li id="li-258"><p id="p-3049"><span class="process-math">\(x0_{R}=0_{M}\)</span> per ogni <span class="process-math">\(x\)</span> in <span class="process-math">\(M\text{;}\)</span></p></li>
-<li id="li-259"><p id="p-3050"><span class="process-math">\(0_{M}a=0_{M}\)</span> per ogni <span class="process-math">\(a\)</span> in <span class="process-math">\(R\text{.}\)</span></p></li>
-</ol></article><article class="hiddenproof" id="proof-246"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-246"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-246"><article class="hiddenproof"><p id="p-3051">Queste due proprietà si dimostrano in maniera molto simile (ma non sono una conseguenza dell'altra) e ricalcano la dimostrazione dell'analoga proprietà per gli anelli (<a href="" class="xref" data-knowl="./knowl/prop-zero_assorbente.html" title="Proposizione 17.1.10">Proposizione 17.1.10</a>). Dimostriamo la prima e lasciamo l'altra per esercizio.</p>
-<p id="p-3052">Poiché <span class="process-math">\(0_{R}\)</span> è elemento neutro per l'addizione, sappiamo che <span class="process-math">\(0_{R}+0_{R}=0_{R}\text{:}\)</span> moltiplicando <span class="process-math">\(x\)</span> per ambo i membri otteniamo <span class="process-math">\(x(0_{R}+0_{R})=x0_{R}\)</span> da cui segue <span class="process-math">\(x0_{R}+x0_{R}=x0_{R}\text{.}\)</span> Usando il fatto che <span class="process-math">\(0_{M}\)</span> è elemento neutro per l'addizione in <span class="process-math">\(M\text{,}\)</span> otteniamo <span class="process-math">\(x0_{R}+x0_{R}=x0_{R}+0_{M}\)</span> da cui segue la tesi, grazie alle <a href="" class="xref" data-knowl="./knowl/prop-cancellazione_gruppo.html" title="Proposizione 7.2.10: Leggi di cancellazione">Leggi di cancellazione</a>.</p></article></div>
+<li id="li-258"><p id="p-3050"><span class="process-math">\(x0_{R}=0_{M}\)</span> per ogni <span class="process-math">\(x\)</span> in <span class="process-math">\(M\text{;}\)</span></p></li>
+<li id="li-259"><p id="p-3051"><span class="process-math">\(0_{M}a=0_{M}\)</span> per ogni <span class="process-math">\(a\)</span> in <span class="process-math">\(R\text{.}\)</span></p></li>
+</ol></article><article class="hiddenproof" id="proof-246"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-246"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-246"><article class="hiddenproof"><p id="p-3052">Queste due proprietà si dimostrano in maniera molto simile (ma non sono una conseguenza dell'altra) e ricalcano la dimostrazione dell'analoga proprietà per gli anelli (<a href="" class="xref" data-knowl="./knowl/prop-zero_assorbente.html" title="Proposizione 17.1.10">Proposizione 17.1.10</a>). Dimostriamo la prima e lasciamo l'altra per esercizio.</p>
+<p id="p-3053">Poiché <span class="process-math">\(0_{R}\)</span> è elemento neutro per l'addizione, sappiamo che <span class="process-math">\(0_{R}+0_{R}=0_{R}\text{:}\)</span> moltiplicando <span class="process-math">\(x\)</span> per ambo i membri otteniamo <span class="process-math">\(x(0_{R}+0_{R})=x0_{R}\)</span> da cui segue <span class="process-math">\(x0_{R}+x0_{R}=x0_{R}\text{.}\)</span> Usando il fatto che <span class="process-math">\(0_{M}\)</span> è elemento neutro per l'addizione in <span class="process-math">\(M\text{,}\)</span> otteniamo <span class="process-math">\(x0_{R}+x0_{R}=x0_{R}+0_{M}\)</span> da cui segue la tesi, grazie alle <a href="" class="xref" data-knowl="./knowl/prop-cancellazione_gruppo.html" title="Proposizione 7.2.10: Leggi di cancellazione">Leggi di cancellazione</a>.</p></article></div>
 <article class="remark remark-like" id="rem-no_annulamento_in_modulo"><h3 class="heading">
 <span class="type">Osservazione</span><span class="space"> </span><span class="codenumber">23.1.8</span><span class="period">.</span>
 </h3>
-<p id="p-3053">Nella <a href="" class="xref" data-knowl="./knowl/prop-moltiplicazione_per_0.html" title="Proposizione 23.1.7">Proposizione 23.1.7</a>, abbiamo mostrato che, in un <span class="process-math">\(R\)</span>-modulo <span class="process-math">\(M\text{,}\)</span> il prodotto <span class="process-math">\(xa\)</span> con <span class="process-math">\(x\)</span> in <span class="process-math">\(M\)</span> e <span class="process-math">\(a\)</span> in <span class="process-math">\(R\)</span> si annulla se <span class="process-math">\(x=0_{M}\)</span> o <span class="process-math">\(a=0_{R}\text{.}\)</span> Nel caso in cui <span class="process-math">\(R\)</span> sia un campo, cioè <span class="process-math">\(M\)</span> sia uno spazio vettoriale, ciò può avvenire solo in questi casi: questo semplice fatto, probabilmente una delle prime proprietà che si incontrano quando si studiano gli spazi vettoriali, è alla base di molti dei risultati più significativi della teoria degli spazi vettoriali, quali, ad esempio, l'esistenza di una base.</p>
-<p id="p-3054">Per anelli qualunque, questo principio di annullamento non vale, anche se l'anello è un dominio. Si consideri, ad esempio, il gruppo additivo <span class="process-math">\(\Interi/6\text{.}\)</span> Per quanto detto nell'<a href="" class="xref" data-knowl="./knowl/ex-Z_modulo.html" title="Esempio 23.1.6">Esempio 23.1.6</a>, questo è uno <span class="process-math">\(\Interi\)</span>-modulo. Abbiamo allora</p>
+<p id="p-3054">Nella <a href="" class="xref" data-knowl="./knowl/prop-moltiplicazione_per_0.html" title="Proposizione 23.1.7">Proposizione 23.1.7</a>, abbiamo mostrato che, in un <span class="process-math">\(R\)</span>-modulo <span class="process-math">\(M\text{,}\)</span> il prodotto <span class="process-math">\(xa\)</span> con <span class="process-math">\(x\)</span> in <span class="process-math">\(M\)</span> e <span class="process-math">\(a\)</span> in <span class="process-math">\(R\)</span> si annulla se <span class="process-math">\(x=0_{M}\)</span> o <span class="process-math">\(a=0_{R}\text{.}\)</span> Nel caso in cui <span class="process-math">\(R\)</span> sia un campo, cioè <span class="process-math">\(M\)</span> sia uno spazio vettoriale, ciò può avvenire solo in questi casi: questo semplice fatto, probabilmente una delle prime proprietà che si incontrano quando si studiano gli spazi vettoriali, è alla base di molti dei risultati più significativi della teoria degli spazi vettoriali, quali, ad esempio, l'esistenza di una base.</p>
+<p id="p-3055">Per anelli qualunque, questo principio di annullamento non vale, anche se l'anello è un dominio. Si consideri, ad esempio, il gruppo additivo <span class="process-math">\(\Interi/6\text{.}\)</span> Per quanto detto nell'<a href="" class="xref" data-knowl="./knowl/ex-Z_modulo.html" title="Esempio 23.1.6">Esempio 23.1.6</a>, questo è uno <span class="process-math">\(\Interi\)</span>-modulo. Abbiamo allora</p>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/ex-Z_modulo.html">
 \begin{equation*}
 \class[6]{2}3=\class[6]{6}=\class[6]{0}\text{.}
@@ -429,7 +461,7 @@ x(ab)=(xa)b
 <p class="continuation">Più in generale, se <span class="process-math">\(x\)</span> è un elemento non nullo di un gruppo abeliano <span class="process-math">\(G\)</span> avente periodo additivo finito <span class="process-math">\(d\text{,}\)</span> allora, pensato <span class="process-math">\(G\)</span> come <span class="process-math">\(\Interi\)</span>-modulo, si ha <span class="process-math">\(xd=0\)</span> con <span class="process-math">\(x\ne 0\)</span> e <span class="process-math">\(d\ne 0\text{.}\)</span></p></article><article class="proposition theorem-like" id="prop-multiplo_per_opposto"><h3 class="heading">
 <span class="type">Proposizione</span><span class="space"> </span><span class="codenumber">23.1.9</span><span class="period">.</span>
 </h3>
-<p id="p-3055">Sia <span class="process-math">\(M\)</span> un <span class="process-math">\(R\)</span>-modulo. Allora, per ogni <span class="process-math">\(x\)</span> in <span class="process-math">\(M\)</span> e <span class="process-math">\(a\)</span> in <span class="process-math">\(R\)</span> si ha</p>
+<p id="p-3056">Sia <span class="process-math">\(M\)</span> un <span class="process-math">\(R\)</span>-modulo. Allora, per ogni <span class="process-math">\(x\)</span> in <span class="process-math">\(M\)</span> e <span class="process-math">\(a\)</span> in <span class="process-math">\(R\)</span> si ha</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 x(-a)=(-x)a=-(xa)\text{.}
@@ -440,7 +472,7 @@ x(-a)=(-x)a=-(xa)\text{.}
 \begin{equation*}
 x(-1)=-x\text{.}
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-247"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-247"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-247"><article class="hiddenproof"><p id="p-3056">Dimostriamo solo l'uguaglianza <span class="process-math">\(x(-a)=-(xa)\text{,}\)</span> lasciando per esercizio l'altra uguaglianza. Abbiamo allora</p>
+</div></article><article class="hiddenproof" id="proof-247"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-247"><h3 class="heading"><span class="type">Dimostrazione<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-247"><article class="hiddenproof"><p id="p-3057">Dimostriamo solo l'uguaglianza <span class="process-math">\(x(-a)=-(xa)\text{,}\)</span> lasciando per esercizio l'altra uguaglianza. Abbiamo allora</p>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-moltiplicazione_per_0.html">
 \begin{equation*}
 x(-a)+xa=x(-a+a)=x0_{R}=0_{M}\text{,}
@@ -450,9 +482,9 @@ x(-a)+xa=x(-a+a)=x0_{R}=0_{M}\text{,}
 <section class="exercises" id="exercises-definizione_modulo"><h3 class="heading hide-type">
 <span class="type">Esercizi</span> <span class="codenumber"></span> <span class="title">Esercizi</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-392"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<p id="p-3057">Mostrare che <span class="process-math">\(R_{R}\)</span> e <span class="process-math">\(_{R}R\)</span> come definiti nell'<a href="" class="xref" data-knowl="./knowl/ex-modulo_su_di_se.html" title="Esempio 23.1.5">Esempio 23.1.5</a> sono rispettivamente un <span class="process-math">\(R\)</span>-modulo destro e sinistro.</p></article><article class="exercise exercise-like" id="exercise-393"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<p id="p-3058">Sia <span class="process-math">\(M\)</span> un <span class="process-math">\(R\)</span>-modulo e sia <span class="process-math">\(G\)</span> il gruppo degli elementi invertibili di <span class="process-math">\(R\text{.}\)</span> Dimostrare che la struttura di <span class="process-math">\(R\)</span>-modulo definisce un'azione di <span class="process-math">\(G\)</span> su <span class="process-math">\(M\text{.}\)</span></p></article></section></section></div></main>
+<article class="exercise exercise-like" id="exercise-393"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<p id="p-3058">Mostrare che <span class="process-math">\(R_{R}\)</span> e <span class="process-math">\(_{R}R\)</span> come definiti nell'<a href="" class="xref" data-knowl="./knowl/ex-modulo_su_di_se.html" title="Esempio 23.1.5">Esempio 23.1.5</a> sono rispettivamente un <span class="process-math">\(R\)</span>-modulo destro e sinistro.</p></article><article class="exercise exercise-like" id="exercise-394"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<p id="p-3059">Sia <span class="process-math">\(M\)</span> un <span class="process-math">\(R\)</span>-modulo e sia <span class="process-math">\(G\)</span> il gruppo degli elementi invertibili di <span class="process-math">\(R\text{.}\)</span> Dimostrare che la struttura di <span class="process-math">\(R\)</span>-modulo definisce un'azione di <span class="process-math">\(G\)</span> su <span class="process-math">\(M\text{.}\)</span></p></article></section></section></div></main>
 </div>
 </body>
 </html>

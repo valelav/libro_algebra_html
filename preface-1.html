@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-03T16:57:55+02:00       *-->
+<!--*       on 2022-06-12T08:34:54+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,6 +49,38 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Vai all'indice generale</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{mathtools}\require{cancel}\DeclareMathOperator{\rk}{rk}
@@ -203,7 +235,7 @@
 </ul>
 </li>
 <li class="link">
-<a href="ch-gruppi.html" data-scroll="ch-gruppi" class="internal"><span class="codenumber">7</span> <span class="title">Definizioni e prime proprietà</span></a><ul>
+<a href="ch-gruppi.html" data-scroll="ch-gruppi" class="internal"><span class="codenumber">7</span> <span class="title">Monoidi e gruppi</span></a><ul>
 <li><a href="sec-monoidi.html" data-scroll="sec-monoidi" class="internal">Monoidi</a></li>
 <li><a href="sec-gruppi.html" data-scroll="sec-gruppi" class="internal">Gruppi</a></li>
 <li><a href="sec-gruppi_piccoli.html" data-scroll="sec-gruppi_piccoli" class="internal">Alcuni esempi di gruppi piccoli</a></li>
@@ -369,8 +401,8 @@
 <main class="main"><div id="content" class="pretext-content"><section class="preface" id="preface-1"><h2 class="heading hide-type">
 <span class="type">Prefazione</span> <span class="codenumber"></span> <span class="title">Prefazione</span>
 </h2>
-<p id="p-1">Questo libro nasce dall'esperienza di diversi anni di insegnamento nei corsi di Algebra 1 e Algebra 2 nel corso di laurea in Matematica presso la sede di Como dell'Università dell'Insubria e dalla volontà di offrire agli studenti di questi corsi uno strumento che si spera utile nello studio. La scelta degli argomenti e l'ordine in cui sono presentati riflette, pertanto, il contenuto di questi corsi ed esclude argomenti che vengono affrontati in corsi analoghi presso altri atenei.</p>
-<p id="p-2">Non sono richiesti particolari prerequisiti per un corso in algebra, se non le usuali conoscenze delle scuole superiori. La familiarità con argomenti di base di algebra lineare è utile alla comprensione di alcuni esempi e nel <a href="ch-formecanoniche.html" class="internal" title="Capitolo 27: Forme canoniche di matrici">Capitolo 27</a>  relativo alle forme canoniche di matrici.</p>
+<p id="p-1">Questo libro nasce dall'esperienza di diversi anni di insegnamento nei corsi di Algebra 1 e Algebra 2 nel corso di laurea in Matematica presso la sede di Como dell'Università dell'Insubria. L'obiettivo è, quindi, quello di fornire agli studenti di questi corsi uno strumento che si spera possa aiutarli nell'affrontare (presumibilmente per la prima volta) argomenti di algebra astratta. La scelta degli argomenti e l'ordine in cui sono presentati riflettono, pertanto, il programma di questi corsi: non c'è quindi nessuna pretesa di completezza né di omogeneità rispetto agli argomenti che vengono affrontati in corsi analoghi presso altri atenei.</p>
+<p id="p-2">Non sono richiesti particolari prerequisiti per un corso in algebra, se non le usuali conoscenze delle scuole superiori. La familiarità con argomenti di base di algebra lineare è tuttavia utile alla comprensione di alcuni esempi ed è necessaria per affrontare il <a href="ch-formecanoniche.html" class="internal" title="Capitolo 27: Forme canoniche di matrici">Capitolo 27</a>,  relativo alle forme canoniche di matrici.</p>
 <p id="p-3">Al termine della maggior parte dei paragrafi è presente una lista di esercizi di vario tipo: in alcuni casi è richiesto di completare delle dimostrazioni o di provare fatti nuovi, in altri è necessario un approccio più algoritmico. In ogni caso, gli studenti dovrebbero cercare di affrontare quanti più esercizi possibile: anche se non si riesce sempre a trovarne rapidamente la soluzione, è il metodo migliore per consolidare le proprie conoscenze. Di alcuni esercizi vengono forniti suggerimenti e/o risposte più o meno dettagliate.</p>
 <p id="p-4">Questo libro viene reso disponibile in forma gratuita e in due formati diversi: come un sito web e in formato pdf.</p></section></div></main>
 </div>
