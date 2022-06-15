@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-12T08:37:47+02:00       *-->
+<!--*       on 2022-06-15T20:01:05+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,8 +14,21 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Capoverso</span></h3>
-<p>Nel <a href="sec-kx_moduli.html" class="internal" title="Paragrafo 27.1: Spazi vettoriali con endomorfismi visti come moduli">Paragrafo 27.1</a> abbiamo dato un significato alla valutazione di un polinomio <span class="process-math">\(f\)</span> a coefficienti in un campo <span class="process-math">\(K\)</span> in un endomorfismo di uno spazio vettoriale <span class="process-math">\(V\)</span> su <span class="process-math">\(K\text{,}\)</span> anche se <span class="process-math">\(\End_{K}(V)\)</span> non è un anello commutativo. Analogamente, data una matrice quadrata <span class="process-math">\(A\)</span> a coefficienti in un campo <span class="process-math">\(K\text{,}\)</span> possiamo definire un omomorfismo da <span class="process-math">\(K[x]\)</span> in <span class="process-math">\(\mat{n}{K}\)</span> che manda un elemento <span class="process-math">\(k\)</span> di <span class="process-math">\(K\)</span> nella matrice <span class="process-math">\(k\Idmatrix\)</span> e manda <span class="process-math">\(x\)</span> in <span class="process-math">\(A\text{.}\)</span> Esplicitamente, se <span class="process-math">\(f\coloneqq a_{0}+a_{1}x+\dots+a_{s}x^{s}\)</span> è un polinomio in <span class="process-math">\(K[x]\text{,}\)</span> poniamo <span class="process-math">\(f(A)\coloneqq a_{0}\Idmatrix +a_{1}A+\dots+a_{s}A^{s}\text{.}\)</span></p>
-<span class="incontext"><a href="sec-polinomio_minimo_matrici.html#p-3543" class="internal">Contesto</a></span>
+<h6 class="heading"><span class="type">Capoverso</span></h6>
+<p>Possiamo riprendere i calcoli del punto precedente. Poiché <span class="process-math">\(F=\Interi/p\)</span> dobbiamo stabilire, in dipendenza da <span class="process-math">\(p\text{,}\)</span> se gli autovalori sono distinti o meno. Gli autovalori <span class="process-math">\(1\)</span> e <span class="process-math">\(-1\)</span> coincidono se e solo se la loro differenza <span class="process-math">\(1-(-1)\)</span> è multipla di <span class="process-math">\(p\text{,}\)</span> cioè se e solo se <span class="process-math">\(p=2\text{.}\)</span> Analogamente <span class="process-math">\(1\)</span> e <span class="process-math">\(3\)</span> coincidono se e solo se <span class="process-math">\(3-1\)</span> è multiplo di <span class="process-math">\(p\text{,}\)</span> il che avviene se e solo se <span class="process-math">\(p=2\text{.}\)</span> Infine <span class="process-math">\(-1\)</span> e <span class="process-math">\(3\)</span> coincidono se e solo se <span class="process-math">\(3-(-1)\)</span> è multiplo di <span class="process-math">\(2\)</span> il che avviene, ancora una volta, se e solo se <span class="process-math">\(p=2\text{.}\)</span> Riassumendo: se <span class="process-math">\(p\ne2\)</span> la matrice <span class="process-math">\(A\)</span> ha tre autovalori aventi molteplicità algebrica <span class="process-math">\(1\)</span> e, quindi, come nel caso <span class="process-math">\(F=\Razionali\)</span> la matrice è simile alla matrice diagonale <span class="process-math">\(\begin{psmallmatrix}
+1 \amp  0 \amp 0 \\
+0 \amp -1 \amp 0 \\
+0 \amp  0 \amp 3
+\end{psmallmatrix}\text{.}\)</span> Se, invece <span class="process-math">\(p=2\text{,}\)</span> la matrice <span class="process-math">\(A\)</span> ha un unico autovalore <span class="process-math">\(1\)</span> di molteplicità algebrica <span class="process-math">\(3\text{.}\)</span> Consideriamo la solita successione dei ranghi partendo da <span class="process-math">\(3\text{,}\)</span> ordine di <span class="process-math">\(A\text{.}\)</span> Consideriamo ora la matrice <span class="process-math">\(A-\Idmatrix=
+\begin{psmallmatrix}
+0 \amp  0 \amp 1 \\
+0 \amp  0 \amp 0 \\
+0 \amp  0 \amp 0
+\end{psmallmatrix}\)</span> (si noti che in questo campo <span class="process-math">\(2=0\)</span>). La matrice <span class="process-math">\(A-\Idmatrix\)</span> ha rango <span class="process-math">\(1\text{:}\)</span> dall'intero <span class="process-math">\(3\)</span> siamo scesi di <span class="process-math">\(2\)</span> e, quindi ci sono due blocchi relativi a <span class="process-math">\(1\text{.}\)</span> Non abbiamo bisogno di proseguire oltre: ci deve necessariamente essere un blocco di ordine <span class="process-math">\(2\)</span> e un blocco di ordine <span class="process-math">\(1\)</span> e, dunque, <span class="process-math">\(A\)</span> è simile alla matrice <span class="process-math">\(\begin{psmallmatrix}
+1 \amp  1 \amp 0 \\
+0 \amp  1 \amp 0 \\
+0 \amp  0 \amp 1
+\end{psmallmatrix}\text{.}\)</span></p>
+<span class="incontext"><a href="sec-jordan.html#p-3543" class="internal">Contesto</a></span>
 </body>
 </html>

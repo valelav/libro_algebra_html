@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-12T08:37:45+02:00       *-->
+<!--*       on 2022-06-15T20:01:03+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,43 +15,13 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Dimostrazione</span></h3>
-<p>La matrice <span class="process-math">\(J_{n}(\lambda)-\lambda\Idmatrix\)</span> è la matrice</p>
+<p>Esiste una matrice invertibile <span class="process-math">\(M\)</span> tale che <span class="process-math">\(M^{-1}AM=B\text{.}\)</span> Ma allora <span class="process-math">\(M^{-1}(A-k\Idmatrix)M=M^{-1}AM-kM^{-1}\Idmatrix M=B-k\Idmatrix\text{.}\)</span> Dunque l'enunciato è vero per <span class="process-math">\(t=1\text{.}\)</span> Procediamo per induzione su <span class="process-math">\(t\text{:}\)</span> per <span class="process-math">\(t\gt 1\)</span> abbiamo allora</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\begin{pmatrix}
-0       \amp 1       \amp 0      \amp \dots   \amp \dots  \amp 0\\
-0       \amp 0       \amp 1      \amp \dots   \amp \dots  \amp 0\\
-\vdots  \amp \vdots  \amp \ddots \amp \ddots  \amp \dots  \amp \vdots\\
-0       \amp \dots   \amp \dots  \amp 0       \amp 1      \amp 0      \\
-0       \amp \dots   \amp \dots  \amp 0       \amp 0      \amp 1\\
-0       \amp \dots   \amp \dots  \amp 0       \amp 0      \amp 0
-\end{pmatrix}
-\end{equation*}
-</div>
-<p class="continuation">il cui rango è <span class="process-math">\(n-1\text{.}\)</span> Calcolando le potenze successive di <span class="process-math">\(J_{n}(\lambda)-\lambda\Idmatrix\)</span> si trovano le matrici</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\begin{pmatrix}
-0       \amp  0       \amp 1       \amp 0      \amp \dots   \amp \dots  \amp 0\\
-0       \amp  0       \amp 0       \amp 1      \amp \dots   \amp \dots  \amp 0\\
-\vdots  \amp  \vdots  \amp \vdots  \amp \ddots \amp \ddots  \amp \dots  \amp \vdots\\
-0       \amp  0       \amp \dots   \amp \dots  \amp 0       \amp 1      \amp 0      \\
-0       \amp  0       \amp \dots   \amp \dots  \amp 0       \amp 0      \amp 1\\
-0       \amp  0       \amp \dots   \amp \dots  \amp 0       \amp 0      \amp 0\\
-0       \amp  0       \amp \dots   \amp \dots  \amp 0       \amp 0      \amp 0
-\end{pmatrix}\qquad
-\begin{pmatrix}
-0       \amp0       \amp  0       \amp 1       \amp 0      \amp \dots   \amp \dots  \amp 0\\
-0       \amp0       \amp  0       \amp 0       \amp 1      \amp \dots   \amp \dots  \amp 0\\
-\vdots  \amp\vdots  \amp  \vdots  \amp \vdots  \amp \ddots \amp \ddots  \amp \dots  \amp \vdots\\
-0       \amp0       \amp  0       \amp \dots   \amp \dots  \amp 0       \amp 1      \amp 0      \\
-0       \amp0       \amp  0       \amp \dots   \amp \dots  \amp 0       \amp 0      \amp 1\\
-0       \amp0       \amp  0       \amp \dots   \amp \dots  \amp 0       \amp 0      \amp 0\\
-0       \amp0       \amp  0       \amp \dots   \amp \dots  \amp 0       \amp 0      \amp 0\\
-0       \amp0       \amp  0       \amp \dots   \amp \dots  \amp 0       \amp 0      \amp 0
-\end{pmatrix}
-\end{equation*}
-</div>
-<p class="continuation">e così via. A ogni passo il rango decresce di <span class="process-math">\(1\)</span> fino ad azzerarsi.</p></article><span class="incontext"><a href="sec-jordan.html#proof-295" class="internal">Contesto</a></span>
+\begin{align*}
+M^{-1}(A-k\Idmatrix)^{t}M\amp =M^{-1}(A-k\Idmatrix)^{t-1}(A-k\Idmatrix)M\\
+\amp =M^{-1}(A-k\Idmatrix)^{t-1}MM^{-1}(A-k\Idmatrix)M\\
+\amp =(B-k\Idmatrix)^{t-1}(B-k\Idmatrix)=(B-k\Idmatrix)^{t}
+\end{align*}
+</div></article><span class="incontext"><a href="sec-jordan.html#proof-295" class="internal">Contesto</a></span>
 </body>
 </html>

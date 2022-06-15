@@ -2,7 +2,7 @@
 <html lang="it-IT">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-12T08:37:45+02:00       *-->
+<!--*       on 2022-06-15T20:01:03+02:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,8 +14,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Capoverso</span></h3>
-<p>Per poter determinare più facilmente il numero di blocchi di Jordan di un dato ordine a partire dalla sequenza di interi <span class="process-math">\(n\text{,}\)</span> <span class="process-math">\(\rk(A-\lambda_{i}\Idmatrix)\text{,}\)</span> <span class="process-math">\(\rk((A-\lambda_{i}\Idmatrix)^{2})\text{,}\)</span> <span class="process-math">\(\dots\)</span> possiamo utilizzare un grafico di questo tipo. Innanzitutto consideriamo la differenza tra il primo e il secondo termine della sequenza <span class="process-math">\(n-\rk(A-\lambda_{i}\Idmatrix)\)</span> e disegniamo una riga contenente dei simboli (ad esempio, dei quadrati) in tal numero:</p>
+<h4 class="heading"><span class="type">Capoverso</span></h4>
+<p>Esiste una matrice invertibile <span class="process-math">\(M\)</span> tale che <span class="process-math">\(M^{-1}AM=B\text{.}\)</span> Ma allora <span class="process-math">\(M^{-1}(A-k\Idmatrix)M=M^{-1}AM-kM^{-1}\Idmatrix M=B-k\Idmatrix\text{.}\)</span> Dunque l'enunciato è vero per <span class="process-math">\(t=1\text{.}\)</span> Procediamo per induzione su <span class="process-math">\(t\text{:}\)</span> per <span class="process-math">\(t\gt 1\)</span> abbiamo allora</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+M^{-1}(A-k\Idmatrix)^{t}M\amp =M^{-1}(A-k\Idmatrix)^{t-1}(A-k\Idmatrix)M\\
+\amp =M^{-1}(A-k\Idmatrix)^{t-1}MM^{-1}(A-k\Idmatrix)M\\
+\amp =(B-k\Idmatrix)^{t-1}(B-k\Idmatrix)=(B-k\Idmatrix)^{t}
+\end{align*}
+</div>
 <span class="incontext"><a href="sec-jordan.html#p-3508" class="internal">Contesto</a></span>
 </body>
 </html>
